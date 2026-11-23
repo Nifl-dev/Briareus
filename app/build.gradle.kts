@@ -403,8 +403,11 @@ android {
         applicationId = "dev.nifl.briareus"
         minSdk = 26
         targetSdk = 34
-        versionCode = 53
-        versionName = "1.12.2+2"
+        // Briareus fork: date-derived versionCode (YYMMDDnn) so every build
+        // increases no matter what upstream ships. Bump the trailing two-digit
+        // sequence for a second build on the same day.
+        versionCode = 26112301
+        versionName = "1.12.2+3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
