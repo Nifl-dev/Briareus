@@ -474,16 +474,16 @@ class SSHFileConnectionManager private constructor(private val context: Context)
                 
                 val config = connection.config
                 val mountCommands = """
-                    # 检查 sshfs 是否安装
+                    # Check whether sshfs is installed
                     if ! command -v sshfs &> /dev/null; then
                         echo "sshfs not installed"
                         exit 1
                     fi
                     
-                    # 创建挂载点目录
+                    # Create the mount point directory
                     mkdir -p ~/storage ~/sdcard 2>/dev/null || true
                     
-                    # 挂载 ~/storage
+                    # Mount ~/storage
                     if ! mountpoint -q ~/storage 2>/dev/null; then
                         sshfs -p ${config.remoteTunnelPort} \
                             ${config.localSshUsername}@localhost:/ \
@@ -497,7 +497,7 @@ class SSHFileConnectionManager private constructor(private val context: Context)
                         echo "MOUNT_SUCCESS:~/storage"
                     fi
                     
-                    # 挂载 ~/sdcard
+                    # Mount ~/sdcard
                     if ! mountpoint -q ~/sdcard 2>/dev/null; then
                         sshfs -p ${config.remoteTunnelPort} \
                             ${config.localSshUsername}@localhost:/ \

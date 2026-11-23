@@ -565,7 +565,7 @@ class LocalTerminalProvider(
         env["TMPDIR"] = File(filesDir, "tmp").absolutePath
         env["PROOT_TMP_DIR"] = File(filesDir, "tmp").absolutePath
         env["TERM"] = "xterm-256color"
-        env["LANG"] = "en_US.UTF-8"
+        env["LANG"] = "C.UTF-8"
         return env
     }
 }

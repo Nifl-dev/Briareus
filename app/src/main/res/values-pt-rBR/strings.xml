@@ -1034,7 +1034,7 @@
     <string name="permission_guide_location_title">permissões de localização</string>
     <string name="permission_guide_location_desc">Permitir que aplicativos obtenham informações de localização</string>
     <string name="permission_guide_check_permissions">Verifique o status da permissão</string>
-    <string name="permission_guide_all_granted">所有基础权限已授予，可以继续下一步</string>
+    <string name="permission_guide_all_granted">Todas as permissões básicas concedidas, você pode continuar para a próxima etapa</string>
     <string name="permission_guide_warning_title">Concessão de permissão incompleta</string>
     <string name="permission_guide_warning_message">Você não concedeu todas as permissões necessárias, o que pode resultar na funcionalidade incompleta do aplicativo ou na saída inesperada. Tem certeza de que deseja continuar?</string>
     <string name="permission_guide_warning_continue">continuar</string>
@@ -1799,7 +1799,7 @@
     <string name="tts_stop">parar</string>
     <string name="tts_stop_speech">Pare de jogar</string>
     <string name="tts_engine_initialized">O mecanismo de fala foi inicializado</string>
-    <string name="tts_engine_not_initialized">语音引擎未初始化</string>
+    <string name="tts_engine_not_initialized">Mecanismo de fala não inicializado</string>
     <string name="tts_playing">Agora jogando...</string>
     <string name="tts_not_playing">Não jogado</string>
     <string name="tts_error">erro</string>
@@ -2576,7 +2576,7 @@ Agora é possível usar o modo AutoGLM na interface de diálogo.</string>
     <string name="parameters_label">parâmetro:</string>
     <string name="detailed_result">Resultados detalhados:</string>
     <string name="retest">Teste novamente</string>
-    <string name="env_setup_group">环境准备 (顺序执行)</string>
+    <string name="env_setup_group">Preparação do Ambiente (Sequencial)</string>
     <string name="basic_http_group">Noções básicas e HTTP (paralelo)</string>
     <string name="file_readonly_group">Arquivo somente leitura (paralelo)</string>
     <string name="file_write_group">Gravação de arquivo (sequencial)</string>
@@ -3567,7 +3567,7 @@ Agora é possível usar o modo AutoGLM na interface de diálogo.</string>
     <string name="tag_import_summary">Importação de tag concluída: criar %1$d, atualizar %2$d, pular %3$d</string>
     <string name="content_preview">Conteúdo: %1$s...</string>
     <string name="old_prompt_config">Configuração de palavra de prompt de versão antiga</string>
-    <string name="old_prompt_config_desc">这些是旧版系统的提示词配置，您可以查看和复制内容到新的角色卡系统中。</string>
+    <string name="old_prompt_config_desc">Estas são configurações de prompt do sistema legado. Você pode visualizar e copiar o conteúdo para o novo sistema de cartões de personagem.</string>
     <string name="intro_prompt_preview">Palavra introdutória: %1$s...</string>
     <string name="view_details">verifique os detalhes</string>
     <string name="create_character_card">Crie um novo cartão de personagem</string>
@@ -4525,7 +4525,7 @@ Agora é possível usar o modo AutoGLM na interface de diálogo.</string>
     <string name="backup_room_db_restart_later">mais tarde</string>
     <string name="backup_room_db_last_success">Último backup bem-sucedido: %1$s</string>
     <string name="backup_room_db_last_error">Último erro: %1$s</string>
-    <string name="backup_files_location_hint">提示：备份文件保存在 Download/Operit 文件夹</string>
+    <string name="backup_files_location_hint">Dica: os arquivos de backup são salvos na pasta Download/Operit</string>
     <string name="backup_raw_snapshot_title">Backup de instantâneo de arquivo (experimental)</string>
     <string name="backup_raw_snapshot_subtitle">Backup e recuperação compactados gerais em unidades de arquivos/diretórios</string>
     <string name="backup_raw_snapshot_desc">Arquivos/shared_prefs/datastore/databases no diretório de dados interno do aplicativo serão empacotados (o ambiente do terminal Linux é muito grande e não tem backup por padrão). A restauração substituirá os dados atuais e exigirá a reinicialização do aplicativo para ter efeito. Alguns dados criptografados podem não estar disponíveis após alterar/reinstalar o dispositivo.</string>
@@ -5797,7 +5797,7 @@ Agora é possível usar o modo AutoGLM na interface de diálogo.</string>
     <string name="context_unit_times">Segunda categoria</string>
     <string name="context_reset_all_settings">Redefinir todas as configurações</string>
     <string name="mcp_deploy_error_cannot_get_path">Não foi possível obter o caminho do plugin: %1$s</string>
-    <string name="mcp_deploy_error_cannot_determine">无法确定如何部署此插件，请查看README手动部署</string>
+    <string name="mcp_deploy_error_cannot_determine">Não foi possível determinar como implantar este plugin, consulte o README para implantação manual</string>
     <string name="mcp_deploy_error_analysis_failed">Erro ao analisar o plugin: %1$s</string>
     <string name="mcp_deploy_status_preparing">Preparando para implantar o plugin</string>
     <string name="mcp_deploy_output_prefix">Saída:</string>
@@ -5838,7 +5838,7 @@ Agora é possível usar o modo AutoGLM na interface de diálogo.</string>
     <string name="tool_collapse_mode_read_only">Recolher várias ferramentas somente leitura</string>
     <string name="tool_collapse_mode_all">Recolher várias ferramentas</string>
     <string name="tool_collapse_mode_full">Recolher todas as ferramentas</string>
-    <string name="anr_main_thread_not_responding">主线程未响应: %1$dms</string>
+    <string name="anr_main_thread_not_responding">Thread principal não está respondendo: %1$dms</string>
     <string name="anr_thread_dump_header">=== Despejo de thread (%1$s) ===</string>
     <string name="anr_main_thread_with_state">Tópico principal \'%1$s\' (Status: %2$s):\n%3$s</string>
     <string name="anr_cannot_get_main_thread_stack">Não foi possível obter a pilha de threads principal: %1$s</string>

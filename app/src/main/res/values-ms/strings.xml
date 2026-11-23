@@ -6227,7 +6227,7 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="functional_config_model_count">%1$d model</string>
     <string name="functional_config_test_title_generation_user_text">Saya mahu merancang perjalanan tiga hari ke Tokyo, termasuk pengangkutan, hotel dan cadangan makanan.</string>
     <string name="functional_config_test_grep_intent">Cari segmen yang mengandungi ucapan salam.</string>
-    <string name="functional_config_test_grep_display_path">&lt;测试&gt;</string>
+    <string name="functional_config_test_grep_display_path">&lt;uji&gt;</string>
     <string name="functional_config_test_grep_candidates_digest">#1 [fail: example.txt]\nHai dunia\n#2 [fail: main.kt]\nfun main() {}</string>
     <string name="functional_config_test_ui_controller_prompt">Status UI semasa: [Button(label="OK", bounds="[0,0][100,50]")]\nObjektif tugas: Klik OK.\nSejarah pelaksanaan: []</string>
     <string name="functional_config_test_memory_prompt">Kandungan perbualan:\nPengguna: Masalah ujian sambungan.\nPembantu: Jawapan ujian sambungan.</string>

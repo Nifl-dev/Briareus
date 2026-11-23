@@ -2207,7 +2207,7 @@
     <string name="disable_tools_desc">Al desactivarlo, la IA no podrá usar herramientas integradas, incluidas las del sistema de archivos, HTTP y consulta de memoria.</string>
     <string name="tools_disabled">Herramientas desactivadas</string>
     <string name="max_mode_title">Modo Max</string>
-    <string name="max_mode_info">El Modo Max (modo de contexto超大) usará una ventana de contexto de %2$sk al activarse, y volverá a %1$sk al desactivarse. Puede personalizar estos valores en la configuración.</string>
+    <string name="max_mode_info">El Modo Max (contexto extra grande) usará una ventana de contexto de %2$sk al activarse, y volverá a %1$sk al desactivarse. Puede personalizar estos valores en la configuración.</string>
     <string name="ai_planning_desc">Se realizará descomposición de tareas y se activarán múltiples subagentes para recopilar información, y finalmente se resumirá. La capacidad de invocación de herramientas de los subagentes es la misma que la del agente de chat. Esto puede ser muy lento, solo se recomienda activarlo al recopilar información.</string>
     <string name="ui_automation_in_progress">Ejecutando tarea de interfaz...</string>
     <string name="settings_global_display">Visualización y comportamiento</string>

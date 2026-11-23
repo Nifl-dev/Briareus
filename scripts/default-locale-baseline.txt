@@ -1,0 +1,6 @@
+# Inherited CJK in non-Chinese resource buckets, frozen 2026-11-23.
+# Format: <resource-dir>:<string-name>
+# This list should only SHRINK. Delete a line when the string
+# gets translated; a new line means a new leak got in.
+# Regenerate with: python3 scripts/check-default-locale.py --update
+

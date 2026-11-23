@@ -22,6 +22,23 @@ import sys
 BASELINE = "scripts/cjk-literal-baseline.txt"
 CHECKER = "scripts/find-hardcoded-cjk.py"
 
+# Every module root the checker scans. An earlier version filtered with
+# line.startswith("app/src"), which silently discarded every finding from the
+# other modules -- so :terminal could not regression-protect itself. Keep this
+# list in sync with ROOTS in find-hardcoded-cjk.py.
+MODULE_ROOTS = (
+    "app/src",
+    "terminal/src",
+    "llm/",
+    "quickjs/src",
+    "avator/",
+    "showerclient/src",
+)
+
+
+def is_module_finding(line):
+    return line.startswith(MODULE_ROOTS)
+
 
 def current_findings():
     out = subprocess.run(
@@ -29,7 +46,7 @@ def current_findings():
         capture_output=True, text=True, check=False,
     ).stdout
     return sorted(
-        line for line in out.splitlines() if line.startswith("app/src")
+        line for line in out.splitlines() if is_module_finding(line)
     )
 
 
@@ -40,7 +57,7 @@ def load_baseline():
         return sorted(
             line.rstrip("\n")
             for line in handle
-            if line.startswith("app/src")
+            if is_module_finding(line)
         )
 
 

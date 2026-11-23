@@ -8,10 +8,13 @@ into code paths where they reach the user (a getString() fallback in
 StreamGroup.kt shipped Chinese whenever its context was null).
 
 Scope rules, deliberately narrow:
-  * Only Kotlin sources under app/src/main/java.
+  * Kotlin sources under every module root in ROOTS below -- not just :app.
+    Scoping this to app-only originally left module code (e.g. :terminal)
+    invisible to the gate.
   * Only CJK inside a STRING literal, never inside a comment. Comments are a
     separate, much larger question (~547 files) and translating them would turn
-    every upstream merge into a conflict.
+    every upstream merge into a conflict. XML resources are also out of scope
+    here; scripts/check-default-locale.py covers those.
   * A literal is classified INFO when the call it belongs to is a logger call
     (AppLogger.*, StreamLogger.*, *Log.*). Everything else is FAIL, because
     that is text which can reach a user or a tool result.
@@ -34,7 +37,22 @@ import os
 import re
 import sys
 
-ROOT = "app/src/main/java"
+# Every Kotlin source root in the build, not just :app. Scoped to app-only
+# originally, which meant module code (e.g. :terminal) was invisible to the gate.
+ROOTS = [
+    "app/src/main/java",
+    "terminal/src/main/java",
+    "llm/llama/src/main/java",
+    "llm/mnn/src/main/java",
+    "quickjs/src/main/java",
+    "avator/dragonbones/src/main/java",
+    "avator/fbx/src/main/java",
+    "avator/mmd/src/main/java",
+    "showerclient/src/main/java",
+]
+# Build-cache / generated trees: vendored upstream deps keep Chinese in their
+# demo apps and comments. Never user-visible, gitignored, must not be counted.
+EXCLUDE_DIRS = {".cxx", "build", ".gradle", "generated"}
 CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
 
 # Names that identify a logging call. The codebase has both logger objects
@@ -198,17 +216,22 @@ def main():
     fail_only = "--fail-only" in sys.argv
     stats_only = "--stats" in sys.argv
 
-    if not os.path.isdir(ROOT):
-        print(f"error: {ROOT} not found (run from the repo root)", file=sys.stderr)
+    roots = [r for r in ROOTS if os.path.isdir(r)]
+    if not roots:
+        print("error: no source roots found (run from the repo root)", file=sys.stderr)
         return 2
 
     fails, infos, scanned = [], [], 0
-    for dirpath, _dirnames, filenames in os.walk(ROOT):
-        for name in filenames:
-            if not name.endswith(".kt"):
-                continue
+    targets = []
+    for root in roots:
+        for dirpath, dirnames, filenames in os.walk(root):
+            dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS]
+            for name in filenames:
+                if name.endswith(".kt"):
+                    targets.append(os.path.join(dirpath, name))
+    for path in sorted(targets):
+        if True:
             scanned += 1
-            path = os.path.join(dirpath, name)
             for classification, line, value, ctx in scan_file(path):
                 entry = (path, line, value, ctx)
                 (fails if classification == "FAIL" else infos).append(entry)

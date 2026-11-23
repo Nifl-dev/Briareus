@@ -1,0 +1,53 @@
+# Allowlist for scripts/check-default-locale.py
+#
+# Each line DELIBERATELY exempts one string resource that contains CJK.
+# Format:  <resource-dir>:<string-name>
+#
+# Keep this list short and honest. If a line here is actually a bug, fix the
+# string instead of allowlisting it -- this file records deliberate choices,
+# not a place to silence the gate.
+
+# --- PRC legal instrument cited by its official Chinese name --------------
+# The regulation title is a proper noun; transliterating it would make the
+# regulatory disclosure unverifiable against the actual instrument.
+values:agreement_serious_content
+values-es:agreement_serious_content
+values-id:agreement_serious_content
+values-ko:agreement_serious_content
+values-ms:agreement_serious_content
+values-pt-rBR:agreement_serious_content
+
+# --- Measuring glyph: the character whose width the layout is sized to -----
+values:graph_char_for_measurement
+values-es:graph_char_for_measurement
+values-id:graph_char_for_measurement
+values-ko:graph_char_for_measurement
+values-ms:graph_char_for_measurement
+values-pt-rBR:graph_char_for_measurement
+
+# --- Angle-bracket placeholder notation, visually a symbol not a word ------
+values-es:avatar_empty_value_placeholder
+values-id:avatar_empty_value_placeholder
+values-ko:avatar_empty_value_placeholder
+values-ms:avatar_empty_value_placeholder
+values-pt-rBR:avatar_empty_value_placeholder
+values-es:functional_config_test_grep_display_path
+
+# --- Mimo TTS preset voice identifiers: literal API parameter values ------
+values:speech_services_mimo_voice_id_placeholder
+values:speech_services_mimo_voice_id_hint
+values-es:speech_services_mimo_voice_id_placeholder
+values-es:speech_services_mimo_voice_id_hint
+values-id:speech_services_mimo_voice_id_placeholder
+values-id:speech_services_mimo_voice_id_hint
+values-ko:speech_services_mimo_voice_id_placeholder
+values-ko:speech_services_mimo_voice_id_hint
+values-ms:speech_services_mimo_voice_id_placeholder
+values-ms:speech_services_mimo_voice_id_hint
+values-pt-rBR:speech_services_mimo_voice_id_placeholder
+values-pt-rBR:speech_services_mimo_voice_id_hint
+
+# --- Chinese calendar date format, legitimately offered as a format option -
+values-es:date_format_pattern
+values-id:date_format_chinese
+values-ms:date_format_chinese

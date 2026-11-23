@@ -5650,7 +5650,7 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="functional_config_model_count">%1$d model</string>
     <string name="functional_config_test_title_generation_user_text">Saya ingin merencanakan perjalanan tiga hari ke Tokyo, termasuk transportasi, hotel, dan rekomendasi makanan.</string>
     <string name="functional_config_test_grep_intent">Temukan potongan yang berisi sapaan.</string>
-    <string name="functional_config_test_grep_display_path">&lt;测试&gt;</string>
+    <string name="functional_config_test_grep_display_path">&lt;uji&gt;</string>
     <string name="functional_config_test_grep_candidates_digest">#1 [file: example.txt]\nHalo dunia\n#2 [file: main.kt]\nfun main() {}</string>
     <string name="functional_config_test_ui_controller_prompt">Status UI saat ini: [Button(label="OK", bounds="[0,0][100,50]")]\nTujuan tugas: Klik OK.\nRiwayat eksekusi: []</string>
     <string name="functional_config_test_memory_prompt">Isi percakapan:\nPengguna: Masalah uji koneksi.\nAsisten: Jawaban uji koneksi.</string>
@@ -6559,7 +6559,7 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="workspace_browser_preview">Pratinjau peramban</string>
     <string name="perform_edit_edittext_empty">EditText tidak boleh kosong</string>
     <string name="graph_char_for_measurement">中</string>
-    <string name="date_format_pattern">yyyy年MM月dd日</string>
+    <string name="date_format_pattern">dd MMMM yyyy</string>
     <string name="demo_complete_message">Baik, jika Anda memiliki pertanyaan atau memerlukan bantuan, jangan ragu untuk menghubungi saya kapan saja.\n\n\n&lt;status type="complete"&gt;&lt;/status&gt;</string>
     <string name="update_check_failed">Pemeriksaan pembaruan gagal: %1$s</string>
     <string name="update_cannot_fetch_info">Tidak dapat mengambil informasi pembaruan.</string>

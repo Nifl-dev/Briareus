@@ -2,7 +2,6 @@
 # Each line is file:line:text. Regenerate with:
 #   python3 scripts/check-cjk-baseline.py --update
 # Entries are removed as they get translated; new ones fail CI.
-app/src/main/java/com/ai/assistance/operit/api/chat/enhance/ConversationMarkupManager.kt:20: \n[工具结果过长，已截断]
 app/src/main/java/com/ai/assistance/operit/api/chat/library/MemoryLibrary.kt:705: (?s)问题\\s*[：:]\\s*(.+?)(?:\\n\\s*解决方案\\s*[：:]|\\z)
 app/src/main/java/com/ai/assistance/operit/api/chat/library/MemoryLibrary.kt:725: 历史记录:
 app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:106: 未知工具

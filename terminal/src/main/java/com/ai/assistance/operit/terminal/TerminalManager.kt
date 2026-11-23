@@ -882,7 +882,7 @@ EOF
                 /usr/bin/env -i \
                   HOME=/root \
                   TERM=xterm-256color \
-                  LANG=en_US.UTF-8 \
+                  LANG=C.UTF-8 \
                   PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
                   /bin/bash --noprofile --norc -c 'exit 0' 2>&1
             )"
@@ -898,7 +898,7 @@ EOF
                 /usr/bin/env -i \
                   HOME=/root \
                   TERM=xterm-256color \
-                  LANG=en_US.UTF-8 \
+                  LANG=C.UTF-8 \
                   PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
                   /bin/bash --noprofile --norc -c 'exit 0' 2>&1
             )"
@@ -943,7 +943,7 @@ EOF
             /usr/bin/env -i \
               HOME=/root \
               TERM=xterm-256color \
-              LANG=en_US.UTF-8 \
+              LANG=C.UTF-8 \
               PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
               /bin/bash --noprofile --norc -c 'exit 0' >/dev/null 2>&1
         }
@@ -1091,7 +1091,7 @@ EOF
 
         val configureSources = """
         configure_sources(){
-          # 配置APT源
+          # Configure APT sources
           cat <<'EOF' > ${'$'}UBUNTU_PATH/etc/apt/sources.list
         # From Operit Settings - ${aptSource.name}
         deb ${aptSource.url} noble main restricted universe multiverse
@@ -1099,7 +1099,7 @@ EOF
         deb ${aptSource.url} noble-backports main restricted universe multiverse
         EOF
           
-          # 配置Pip/Uv源
+          # Configure pip/uv sources
           mkdir -p ${'$'}UBUNTU_PATH/root/.config/pip 2>/dev/null
           echo '[global]' > ${'$'}UBUNTU_PATH/root/.config/pip/pip.conf
           echo 'index-url = ${pipSource.url}' >> ${'$'}UBUNTU_PATH/root/.config/pip/pip.conf
@@ -1107,7 +1107,7 @@ EOF
           mkdir -p ${'$'}UBUNTU_PATH/root/.config/uv 2>/dev/null
           echo 'index-url = "${pipSource.url}"' > ${'$'}UBUNTU_PATH/root/.config/uv/uv.toml
           
-          # 配置NPM源
+          # Configure npm sources
           mkdir -p ${'$'}UBUNTU_PATH/root 2>/dev/null
           echo 'registry=${npmSource.url}' > ${'$'}UBUNTU_PATH/root/.npmrc
         }
@@ -1161,10 +1161,10 @@ EOF
             fi
           fi
 
-          # 使用 proot 直接进入解压的 Ubuntu 根文件系统。
-          # - 清理并设置 PATH，避免继承宿主 PATH 造成命令找不到或混用 busybox。
-          # - 绑定常见伪文件系统、外部存储与 Operit 应用沙箱，保障交互和软件包管理工作正常。
-          # 在 proot 环境中创建必要的目录
+          # Enter the unpacked Ubuntu rootfs directly via proot.
+          # - Reset PATH so host binaries cannot leak in or clash with busybox.
+          # - Bind pseudo-filesystems, external storage and the Operit sandbox so the box is usable.
+          # Create the directories the proot environment needs
           mkdir -p "${'$'}UBUNTU_PATH/storage/emulated" 2>/dev/null
           mkdir -p "${'$'}UBUNTU_PATH$operitUserDataMountPath" 2>/dev/null
           mkdir -p "${'$'}UBUNTU_PATH$operitLegacyDataMountPath" 2>/dev/null
@@ -1207,7 +1207,7 @@ EOF
         "${'$'}BIN/busybox" mount --bind /data/local/tmp "${'$'}UBUNTU_PATH/data/local/tmp" 2>/dev/null || true
         "${'$'}BIN/busybox" mount --bind "${'$'}HOME_DIR" "${'$'}UBUNTU_PATH${'$'}HOME_DIR" 2>/dev/null || true
         COMMAND_TO_EXEC="$(cat "${'$'}CMD_FILE" 2>/dev/null)"
-        "${'$'}BIN/busybox" chroot "${'$'}UBUNTU_PATH" /usr/bin/env -i HOME=/root TERM=xterm-256color LANG=en_US.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin "COMMAND_TO_EXEC=${'$'}COMMAND_TO_EXEC" "OPERIT_UID=${'$'}OPERIT_UID" "OPERIT_GID=${'$'}OPERIT_GID" "OPERIT_GROUPS=${'$'}OPERIT_GROUPS" /bin/bash -lc 'echo LOGIN_SUCCESSFUL; echo TERMINAL_READY; umask 0002; if [ -n "${'$'}OPERIT_GID" ]; then chown 0:"${'$'}OPERIT_GID" /root 2>/dev/null || true; chmod 2775 /root 2>/dev/null || true; fi; eval "${'$'}COMMAND_TO_EXEC"'
+        "${'$'}BIN/busybox" chroot "${'$'}UBUNTU_PATH" /usr/bin/env -i HOME=/root TERM=xterm-256color LANG=C.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin "COMMAND_TO_EXEC=${'$'}COMMAND_TO_EXEC" "OPERIT_UID=${'$'}OPERIT_UID" "OPERIT_GID=${'$'}OPERIT_GID" "OPERIT_GROUPS=${'$'}OPERIT_GROUPS" /bin/bash -lc 'echo LOGIN_SUCCESSFUL; echo TERMINAL_READY; umask 0002; if [ -n "${'$'}OPERIT_GID" ]; then chown 0:"${'$'}OPERIT_GID" /root 2>/dev/null || true; chmod 2775 /root 2>/dev/null || true; fi; eval "${'$'}COMMAND_TO_EXEC"'
         ret=${'$'}?
         cleanup_mounts
         exit ${'$'}ret
@@ -1243,7 +1243,7 @@ $prootBindSetup
               /usr/bin/env -i \
                 HOME=/root \
                 TERM=xterm-256color \
-                LANG=en_US.UTF-8 \
+                LANG=C.UTF-8 \
                 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
                 COMMAND_TO_EXEC="${'$'}COMMAND_TO_EXEC" \
                 /bin/bash -lc 'echo LOGIN_SUCCESSFUL; echo TERMINAL_READY; eval "${'$'}COMMAND_TO_EXEC"'
@@ -1256,7 +1256,7 @@ $prootBindSetup
               /usr/bin/env -i \
                 HOME=/root \
                 TERM=xterm-256color \
-                LANG=en_US.UTF-8 \
+                LANG=C.UTF-8 \
                 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
                 COMMAND_TO_EXEC="${'$'}COMMAND_TO_EXEC" \
                 /bin/bash -lc 'echo LOGIN_SUCCESSFUL; echo TERMINAL_READY; eval "${'$'}COMMAND_TO_EXEC"'
@@ -1273,8 +1273,8 @@ $prootBindSetup
           sleep 1
           bump_progress
           
-          # 先进入Ubuntu环境，然后连接SSH
-          # 当SSH退出时，用户会回到本地Ubuntu shell
+          # Enter Ubuntu first, then open the SSH connection
+          # When SSH exits, the user lands back in the local Ubuntu shell
           login_ubuntu 'echo "Connecting to SSH..."; '"${'$'}SSH_COMMAND"'; echo "SSH connection closed. You are now in local Ubuntu terminal."; /bin/bash -il'
         }
         """.trimIndent()

@@ -92,10 +92,17 @@ object LocaleUtils {
     }
 
     /**
-     * 日本語で未翻訳の項目は英語リソースを使用し、中国語の既定リソースを表示しない。
+     * Untranslated entries fall back to English, never to the Chinese default
+     * resources.
+     *
+     * Upstream applied this to Japanese alone, but the problem is not
+     * Japanese-specific: any locale without a complete translation would
+     * otherwise resolve untranslated keys against values/, which is the
+     * Chinese bucket. English is the correct secondary for every non-Chinese
+     * locale. Chinese keeps a single-locale list so its own UI is unaffected.
      */
     fun createCompatLocaleList(locale: Locale): LocaleListCompat {
-        return if (locale.language.equals(LanguageCodes.JAPANESE, ignoreCase = true)) {
+        return if (needsEnglishFallback(locale)) {
             LocaleListCompat.forLanguageTags("${locale.toLanguageTag()},${LanguageCodes.ENGLISH}")
         } else {
             LocaleListCompat.create(locale)
@@ -103,11 +110,26 @@ object LocaleUtils {
     }
 
     fun createPlatformLocaleList(locale: Locale): LocaleList {
-        return if (locale.language.equals(LanguageCodes.JAPANESE, ignoreCase = true)) {
+        return if (needsEnglishFallback(locale)) {
             LocaleList(locale, Locale.ENGLISH)
         } else {
             LocaleList(locale)
         }
+    }
+
+    /**
+     * True when [locale] should carry English as a secondary locale.
+     *
+     * Every non-Chinese locale qualifies: none of them ship a complete
+     * translation set, so each has keys that would otherwise fall through to
+     * the Chinese default bucket.
+     */
+    private fun needsEnglishFallback(locale: Locale): Boolean {
+        val language = locale.language.lowercase(Locale.ROOT)
+        if (language == LanguageCodes.CHINESE) return false
+        // English as its own secondary would be a duplicate; skip it.
+        if (language == LanguageCodes.ENGLISH) return false
+        return true
     }
 
     fun setDefaultLocales(locale: Locale) {
