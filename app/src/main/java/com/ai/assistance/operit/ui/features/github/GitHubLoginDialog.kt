@@ -1,6 +1,8 @@
 package com.ai.assistance.operit.ui.features.github
 
 import android.annotation.SuppressLint
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
@@ -8,15 +10,13 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Language
 import androidx.compose.material.icons.filled.OpenInBrowser
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedButton
@@ -28,313 +28,191 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.ai.assistance.operit.R
-import com.ai.assistance.operit.data.api.GitHubOAuthBrokerStartResponse
-import com.ai.assistance.operit.ui.common.browser.BrowserCallbackDialog
+import com.ai.assistance.operit.data.api.GitHubDeviceCodeResponse
 import com.ai.assistance.operit.util.AppLogger
 import kotlinx.coroutines.CancellationException
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.NonCancellable
-import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import kotlinx.coroutines.withTimeout
 
-private enum class GitHubLoginMode {
-    CHOOSER,
-    EMBEDDED,
-    EXTERNAL
-}
-
-@Composable
-fun GitHubLoginDialog(
-    onDismissRequest: () -> Unit,
-    onLoginSuccess: (() -> Unit)? = null
-) {
-    var loginMode by rememberSaveable { mutableStateOf(GitHubLoginMode.CHOOSER) }
-
-    when (loginMode) {
-        GitHubLoginMode.CHOOSER -> GitHubLoginMethodDialog(
-            onDismissRequest = onDismissRequest,
-            onUseEmbeddedLogin = { loginMode = GitHubLoginMode.EMBEDDED },
-            onUseExternalLogin = { loginMode = GitHubLoginMode.EXTERNAL }
-        )
-        GitHubLoginMode.EMBEDDED -> GitHubEmbeddedLoginDialog(
-            onDismissRequest = onDismissRequest,
-            onLoginSuccess = onLoginSuccess
-        )
-        GitHubLoginMode.EXTERNAL -> GitHubExternalLoginDialog(
-            onDismissRequest = onDismissRequest,
-            onLoginSuccess = onLoginSuccess
-        )
-    }
-}
-
-@Composable
-private fun GitHubLoginMethodDialog(
-    onDismissRequest: () -> Unit,
-    onUseEmbeddedLogin: () -> Unit,
-    onUseExternalLogin: () -> Unit
-) {
-    AlertDialog(
-        onDismissRequest = onDismissRequest,
-        title = { Text(stringResource(R.string.login_github)) },
-        text = {
-            Column {
-                Text(stringResource(R.string.github_login_method_description))
-                Spacer(modifier = Modifier.height(16.dp))
-                Button(
-                    onClick = onUseEmbeddedLogin,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Icon(Icons.Default.Language, contentDescription = null)
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Text(stringResource(R.string.github_login_method_embedded))
-                }
-                Spacer(modifier = Modifier.height(12.dp))
-                OutlinedButton(
-                    onClick = onUseExternalLogin,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Icon(Icons.Default.OpenInBrowser, contentDescription = null)
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Text(stringResource(R.string.github_login_method_external))
-                }
-            }
-        },
-        confirmButton = {},
-        dismissButton = {
-            TextButton(onClick = onDismissRequest) {
-                Text(stringResource(R.string.cancel))
-            }
-        }
-    )
-}
-
+/*
+ * GitHub login via OAuth Device Flow.
+ *
+ * The previous UI offered "embedded page" and "external browser" modes, both of
+ * which routed through a hosted broker. Device flow replaces both with a single
+ * flow: we show a short code, the user approves it on github.com in whatever
+ * browser they prefer, and we poll for the result. There is no WebView, no
+ * loopback server and no third-party endpoint involved.
+ */
 @SuppressLint("LocalContextGetResourceValueCall")
 @Composable
-private fun GitHubEmbeddedLoginDialog(
+fun GitHubLoginDialog(
     onDismissRequest: () -> Unit,
     onLoginSuccess: (() -> Unit)? = null
 ) {
     val context = LocalContext.current
     val coordinator = remember { GitHubOAuthCoordinator(context) }
     val scope = rememberCoroutineScope()
-    var transaction by remember { mutableStateOf<GitHubOAuthBrokerStartResponse?>(null) }
 
-    LaunchedEffect(Unit) {
-        coordinator.startEmbeddedLogin().fold(
-            onSuccess = { started -> transaction = started },
+    var code by remember { mutableStateOf<GitHubDeviceCodeResponse?>(null) }
+    var errorMessage by remember { mutableStateOf<String?>(null) }
+    var attempt by remember { mutableStateOf(0) }
+    var completed by remember { mutableStateOf(false) }
+
+    // Step 1: request a fresh code. Re-runs when the user taps Retry, which is
+    // the only recovery path when the 15-minute device code expires.
+    LaunchedEffect(attempt) {
+        errorMessage = null
+        code = null
+        completed = false
+        coordinator.startDeviceLogin().fold(
+            onSuccess = { requested -> code = requested },
             onFailure = { error ->
-                AppLogger.e(TAG, "Failed to start embedded GitHub login", error)
-                Toast.makeText(
-                    context,
-                    context.getString(R.string.main_github_login_failed, error.message.orEmpty()),
-                    Toast.LENGTH_LONG
-                ).show()
-                onDismissRequest()
+                AppLogger.e(TAG, "Failed to start GitHub device login", error)
+                errorMessage = error.message.orEmpty()
             }
         )
     }
 
-    val activeTransaction = transaction
-    if (activeTransaction == null) {
-        AlertDialog(
-            onDismissRequest = {
-                scope.launch { coordinator.cancelLogin() }
-                onDismissRequest()
-            },
-            title = { Text(stringResource(R.string.login_github)) },
-            text = {
-                Row(
-                    horizontalArrangement = Arrangement.spacedBy(16.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    CircularProgressIndicator(modifier = Modifier.size(24.dp))
-                    Column {
-                        Text(stringResource(R.string.github_login_starting))
-                    }
-                }
-            },
-            confirmButton = {},
-            dismissButton = {
-                TextButton(
-                    onClick = {
-                        scope.launch { coordinator.cancelLogin() }
-                        onDismissRequest()
-                    }
-                ) {
-                    Text(stringResource(R.string.cancel))
-                }
-            }
-        )
-        return
-    }
-
-    BrowserCallbackDialog(
-        title = stringResource(R.string.login_github),
-        authorizationUrl = activeTransaction.authorizationUrl,
-        completionRedirectUri = Uri.parse(activeTransaction.completionRedirectUri),
-        expiresAt = activeTransaction.expiresAt,
-        onCompletion = { completionUri ->
-            scope.launch {
-                coordinator.completeLogin(completionUri).fold(
-                    onSuccess = { user ->
-                        Toast.makeText(
-                            context,
-                            context.getString(R.string.main_github_login_success, user.login),
-                            Toast.LENGTH_LONG
-                        ).show()
-                        onLoginSuccess?.invoke()
-                        onDismissRequest()
-                    },
-                    onFailure = { error ->
-                        AppLogger.e(TAG, "Failed to complete embedded GitHub login", error)
-                        Toast.makeText(
-                            context,
-                            context.getString(R.string.main_github_login_failed, error.message.orEmpty()),
-                            Toast.LENGTH_LONG
-                        ).show()
-                        onDismissRequest()
-                    }
-                )
-            }
-        },
-        onCancelled = {
-            scope.launch { coordinator.cancelLogin() }
-            onDismissRequest()
-        },
-        onFailure = { error ->
-            scope.launch { coordinator.cancelLogin() }
-            AppLogger.e(TAG, "Embedded GitHub browser callback failed", error)
-            Toast.makeText(
-                context,
-                context.getString(R.string.main_github_login_failed, error.message.orEmpty()),
-                Toast.LENGTH_LONG
-            ).show()
-            onDismissRequest()
-        }
-    )
-}
-
-@SuppressLint("LocalContextGetResourceValueCall")
-@Composable
-private fun GitHubExternalLoginDialog(
-    onDismissRequest: () -> Unit,
-    onLoginSuccess: (() -> Unit)? = null
-) {
-    val context = LocalContext.current
-    val coordinator = remember { GitHubOAuthCoordinator(context) }
-    var callbackServer by remember { mutableStateOf<GitHubOAuthLoopbackCallbackServer?>(null) }
-    var isLaunching by remember { mutableStateOf(true) }
-    var isCompleting by remember { mutableStateOf(false) }
-    var isCancelRequested by remember { mutableStateOf(false) }
-
-    LaunchedEffect(Unit) {
-        var loopbackServer: GitHubOAuthLoopbackCallbackServer? = null
+    // Step 2: poll until the user approves. Cancelled automatically when the
+    // dialog leaves composition, which is why CancellationException is expected.
+    val activeCode = code
+    LaunchedEffect(activeCode) {
+        if (activeCode == null) return@LaunchedEffect
         try {
-            loopbackServer = withContext(Dispatchers.IO) {
-                GitHubOAuthLoopbackCallbackServer.open()
-            }
-            callbackServer = loopbackServer
-            val transaction = coordinator.startLogin(loopbackServer.completionRedirectUri).getOrElse { error ->
-                throw error
-            }
-            context.startActivity(
-                Intent(Intent.ACTION_VIEW, Uri.parse(transaction.authorizationUrl)).apply {
-                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                }
+            coordinator.awaitAuthorization(activeCode).fold(
+                onSuccess = { user ->
+                    completed = true
+                    Toast.makeText(
+                        context,
+                        context.getString(R.string.main_github_login_success, user.login),
+                        Toast.LENGTH_LONG
+                    ).show()
+                    onLoginSuccess?.invoke()
+                    onDismissRequest()
+                },
+                onFailure = { error -> errorMessage = error.message.orEmpty() }
             )
-            isLaunching = false
-
-            val remainingMillis = transaction.expiresAt - System.currentTimeMillis()
-            if (remainingMillis <= 0L) {
-                throw IllegalStateException("GitHub login transaction expired before the browser opened")
-            }
-            val completionUri = withTimeout(remainingMillis) {
-                loopbackServer.awaitCompletion()
-            }
-            isCompleting = true
-            val user = coordinator.completeLogin(completionUri).getOrElse { error -> throw error }
-            Toast.makeText(
-                context,
-                context.getString(R.string.main_github_login_success, user.login),
-                Toast.LENGTH_LONG
-            ).show()
-            onLoginSuccess?.invoke()
-            onDismissRequest()
-        } catch (error: TimeoutCancellationException) {
-            AppLogger.e(TAG, "External GitHub login timed out", error)
-            Toast.makeText(
-                context,
-                context.getString(R.string.main_github_login_failed, error.message.orEmpty()),
-                Toast.LENGTH_LONG
-            ).show()
-            onDismissRequest()
-        } catch (error: CancellationException) {
-            throw error
+        } catch (cancellation: CancellationException) {
+            throw cancellation
         } catch (error: Exception) {
-            if (isCancelRequested) {
-                AppLogger.d(TAG, "External GitHub login cancelled by user")
-                return@LaunchedEffect
-            }
-            AppLogger.e(TAG, "External GitHub login failed", error)
-            Toast.makeText(
-                context,
-                context.getString(R.string.main_github_login_failed, error.message.orEmpty()),
-                Toast.LENGTH_LONG
-            ).show()
-            onDismissRequest()
-        } finally {
-            loopbackServer?.close()
-            withContext(NonCancellable) {
-                coordinator.cancelLogin()
-            }
+            AppLogger.e(TAG, "GitHub device login failed", error)
+            errorMessage = error.message.orEmpty()
         }
     }
 
-    val cancelExternalLogin = {
-        isCancelRequested = true
-        callbackServer?.close()
+    val dismiss = {
+        scope.launch { coordinator.cancelLogin() }
         onDismissRequest()
     }
+
     AlertDialog(
-        onDismissRequest = {
-            if (!isCompleting) {
-                cancelExternalLogin()
-            }
-        },
+        onDismissRequest = { if (!completed) dismiss() },
         title = { Text(stringResource(R.string.login_github)) },
         text = {
-            Row(
-                horizontalArrangement = Arrangement.spacedBy(16.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                CircularProgressIndicator(modifier = Modifier.size(24.dp))
-                Text(
-                    stringResource(
-                        if (isLaunching) {
-                            R.string.github_login_starting
-                        } else {
-                            R.string.github_login_external_waiting
+            Column {
+                when {
+                    errorMessage != null -> {
+                        Text(
+                            stringResource(
+                                R.string.main_github_login_failed,
+                                errorMessage.orEmpty()
+                            )
+                        )
+                    }
+                    activeCode == null -> {
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(16.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            CircularProgressIndicator(modifier = Modifier.size(24.dp))
+                            Text(stringResource(R.string.github_login_starting))
                         }
-                    )
-                )
+                    }
+                    else -> {
+                        Text(
+                            stringResource(
+                                R.string.github_device_code_description,
+                                activeCode.verificationUri
+                            )
+                        )
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Text(
+                            text = activeCode.userCode,
+                            fontFamily = FontFamily.Monospace,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 28.sp
+                        )
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(16.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            CircularProgressIndicator(modifier = Modifier.size(18.dp))
+                            Text(stringResource(R.string.github_device_login_waiting))
+                        }
+                    }
+                }
             }
         },
-        confirmButton = {},
+        confirmButton = {
+            val current = activeCode
+            if (current != null && errorMessage == null) {
+                // AlertDialog places a single composable here, so the action
+                // button and the copy shortcut share one row explicitly.
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    TextButton(
+                        onClick = {
+                            val clipboard = context.getSystemService(
+                                ClipboardManager::class.java
+                            )
+                            clipboard?.setPrimaryClip(
+                                ClipData.newPlainText(
+                                    context.getString(R.string.login_github),
+                                    current.userCode
+                                )
+                            )
+                        }
+                    ) {
+                        Text(stringResource(R.string.github_device_login_copy))
+                    }
+                    Spacer(modifier = Modifier.width(4.dp))
+                    OutlinedButton(
+                        onClick = {
+                            context.startActivity(
+                                Intent(
+                                    Intent.ACTION_VIEW,
+                                    Uri.parse(current.verificationUri)
+                                ).apply {
+                                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                                }
+                            )
+                        }
+                    ) {
+                        Icon(Icons.Default.OpenInBrowser, contentDescription = null)
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text(stringResource(R.string.github_device_login_open))
+                    }
+                }
+            } else if (errorMessage != null) {
+                TextButton(
+                    onClick = { attempt += 1 },
+                    modifier = Modifier.padding(end = 8.dp)
+                ) {
+                    Text(stringResource(R.string.github_device_login_retry))
+                }
+            }
+        },
         dismissButton = {
-            TextButton(
-                onClick = cancelExternalLogin,
-                enabled = !isCompleting
-            ) {
+            TextButton(onClick = dismiss, enabled = !completed) {
                 Text(stringResource(R.string.cancel))
             }
         }

@@ -4699,9 +4699,6 @@
 
     <string name="github_account">GitHub Account</string>
     <string name="login_github">Login to GitHub</string>
-    <string name="github_login_method_description">Choose how to sign in to GitHub. Embedded page completes authorization in the app; external browser opens your system browser and returns after authorization.</string>
-    <string name="github_login_method_embedded">Login with Embedded Page</string>
-    <string name="github_login_method_external">Login with External Browser</string>
     <string name="github_login_starting">Preparing GitHub authorization…</string>
     <string name="publish_mcp_plugins_to_market">• Publish your MCP plugins to the market</string>
     <string name="manage_published_plugins">• Manage your published plugins</string>
@@ -8111,7 +8108,6 @@
     <string name="speech_services_vits_options_placeholder">{\"sample_rate\":\"22050\",\"noise_scale\":\"0.667\",\"length_scale\":\"1.0\",\"noise_w\":\"0.8\",\"frontend\":\"lexicon\"}</string>
     <string name="speech_services_vits_options_hint">Optional: sample_rate, threads, noise_scale, length_scale, noise_w, frontend, text_mode, speaker_count, input names, blank/bos/eos tokens, model_path, config_path, lexicon_path, etc.</string>
     <string name="speech_services_vits_options_error">Invalid VITS/Piper Parameters JSON</string>
-    <string name="github_login_external_waiting">Browser opened. Please return to the app after completing authorization.</string>
     <string name="chat_message_locator_favorites_filter">Favorites Only</string>
     <string name="attachment_package">Package</string>
     <string name="attachment_package_select_title">Select Package</string>
@@ -8585,4 +8581,10 @@
     <string name="tool_permission_overlay_required_for_confirmation">Overlay permission is required to confirm tool execution.</string>
     <string name="forge_coming_soon_title">Community forge coming soon</string>
     <string name="forge_coming_soon_body">Browsing, publishing and installing community extensions will open once the new forge goes live. Package management keeps working in the meantime.</string>
+    <!-- GitHub device flow (Q4) -->
+    <string name="github_device_code_description">Enter this code at %1$s to authorize Briareus. GitHub opens in your browser; this dialog finishes on its own.</string>
+    <string name="github_device_login_open">Open GitHub</string>
+    <string name="github_device_login_copy">Copy code</string>
+    <string name="github_device_login_waiting">Waiting for authorization…</string>
+    <string name="github_device_login_retry">Get a new code</string>
 </resources>

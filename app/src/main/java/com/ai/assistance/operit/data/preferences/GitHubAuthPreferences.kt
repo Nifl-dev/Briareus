@@ -8,6 +8,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import com.ai.assistance.operit.data.security.SecretCipher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
@@ -100,7 +101,11 @@ class GitHubAuthPreferences(private val context: Context) {
 
     // 访问令牌Flow
     val accessTokenFlow: Flow<String?> = context.githubAuthDataStore.data.map { preferences ->
-        if (isAuthSessionCurrent(preferences)) preferences[ACCESS_TOKEN] else null
+        if (!isAuthSessionCurrent(preferences)) {
+            return@map null
+        }
+        // Stored encrypted since Q4; legacy plaintext passes through unchanged.
+        SecretCipher.decrypt(preferences[ACCESS_TOKEN])
     }
 
     // 用户信息Flow
@@ -138,7 +143,10 @@ class GitHubAuthPreferences(private val context: Context) {
     ) {
         context.githubAuthDataStore.edit { preferences ->
             preferences[IS_LOGGED_IN] = true
-            preferences[ACCESS_TOKEN] = accessToken
+            preferences[ACCESS_TOKEN] = SecretCipher.encrypt(accessToken)
+                ?: throw IllegalStateException(
+                    "Refusing to persist a GitHub token that could not be encrypted"
+                )
             preferences[TOKEN_TYPE] = tokenType
             preferences[USER_INFO] = json.encodeToString(userInfo)
             preferences[LAST_LOGIN_TIME] = System.currentTimeMillis()
@@ -190,7 +198,7 @@ class GitHubAuthPreferences(private val context: Context) {
         if (!isAuthSessionCurrent(preferences)) {
             return null
         }
-        return preferences[ACCESS_TOKEN]
+        return SecretCipher.decrypt(preferences[ACCESS_TOKEN])
     }
 
     /**

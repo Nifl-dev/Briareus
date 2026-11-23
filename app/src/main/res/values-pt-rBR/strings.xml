@@ -6842,7 +6842,6 @@ Agora é possível usar o modo AutoGLM na interface de diálogo.</string>
     <string name="character_card_memory_profile_fixed_profile">Perfil fixo</string>
     <string name="character_card_memory_profile_specify_fixed_profile">Especificar perfil de memória fixo</string>
     <string name="character_card_memory_profile_select">Selecionar perfil de memória</string>
-    <string name="github_login_external_waiting">Navegador aberto. Volte ao aplicativo após concluir a autorização.</string>
     <string name="artifact_publication_pending_review_waiting_schedule">Em revisão, aguarde o agendamento da publicação</string>
     <string name="artifact_publication_approved_waiting_schedule">Aprovado, aguarde o agendamento da publicação</string>
     <string name="toolpkg_widget_host_label">Widget personalizado</string>
@@ -7407,9 +7406,6 @@ Agora é possível usar o modo AutoGLM na interface de diálogo.</string>
     <string name="market_manage_submit_revision">Enviar nova versão após modificação</string>
     <string name="market_manage_loading_request_title">Carregando solicitação</string>
     <string name="market_manage_loading_request_message">A solicitação está sendo processada, aguarde...</string>
-    <string name="github_login_method_description">Escolha o método de login do GitHub. A página incorporada conclui a autorização dentro do aplicativo; o navegador externo abre o navegador do sistema e retorna ao aplicativo após a autorização.</string>
-    <string name="github_login_method_embedded">Entrar com página incorporada</string>
-    <string name="github_login_method_external">Entrar com navegador externo</string>
     <string name="github_login_starting">Preparando autorização do GitHub...</string>
     <string name="artifact_publish_toolpkg_version_readonly">A versão de publicação do ToolPkg vem do manifesto do pacote e não pode ser alterada manualmente antes da publicação</string>
     <string name="market_toolpkg_api_incompatible_title">Não é possível instalar: API do ToolPkg não suportada</string>

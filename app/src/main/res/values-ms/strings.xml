@@ -7002,7 +7002,6 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="character_card_memory_profile_fixed_profile">Konfigurasi Tetap</string>
     <string name="character_card_memory_profile_specify_fixed_profile">Tentukan Konfigurasi Ingatan Tetap</string>
     <string name="character_card_memory_profile_select">Pilih Konfigurasi Ingatan</string>
-    <string name="github_login_external_waiting">Penyemak imbas telah dibuka, sila kembali ke aplikasi selepas selesai pengesahan.</string>
     <string name="artifact_publication_pending_review_waiting_schedule">Dalam semakan, sila tunggu penjadualan penerbitan</string>
     <string name="artifact_publication_approved_waiting_schedule">Diluluskan, sila tunggu penjadualan penerbitan</string>
     <string name="toolpkg_widget_host_label">Widget Tersuai</string>
@@ -7566,9 +7565,6 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="market_manage_submit_revision">Hantar versi baharu selepas pengubahsuaian</string>
     <string name="market_manage_loading_request_title">Memuatkan permintaan</string>
     <string name="market_manage_loading_request_message">Permintaan sedang diproses, sila tunggu…</string>
-    <string name="github_login_method_description">Sila pilih kaedah log masuk GitHub. Halaman terbenam akan melengkapkan kebenaran dalam aplikasi; penyemak imbas luaran akan membuka penyemak imbas sistem dan kembali ke aplikasi selepas kebenaran.</string>
-    <string name="github_login_method_embedded">Log masuk dengan halaman terbenam</string>
-    <string name="github_login_method_external">Log masuk dengan penyemak imbas luaran</string>
     <string name="github_login_starting">Menyediakan kebenaran GitHub…</string>
     <string name="artifact_publish_toolpkg_version_readonly">Versi keluaran ToolPkg berasal daripada manifest dalam pakej, tidak boleh diubah suai secara manual sebelum penerbitan</string>
     <string name="market_toolpkg_api_incompatible_title">Tidak dapat memasang: API ToolPkg tidak disokong</string>

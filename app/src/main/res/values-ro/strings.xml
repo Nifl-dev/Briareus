@@ -4445,7 +4445,6 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
 
     <string name="github_account">GitHub Cont</string>
     <string name="login_github">Autentificare GitHub</string>
-    <string name="github_login_external_waiting">Browserul este deschis; vă rugăm să reveniți la aplicație după finalizarea autorizării.</string>
     <string name="publish_mcp_plugins_to_market">• Publicați-vă MCP Adăugarea pluginului în magazin</string>
     <string name="manage_published_plugins">• Gestionați pluginurile pe care le-ați publicat</string>
     <string name="better_installation_experience">• O experiență de instalare îmbunătățită</string>
@@ -8164,9 +8163,6 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="market_manage_submit_revision">Trimiteți o nouă versiune după modificare</string>
     <string name="market_manage_loading_request_title">Se încarcă cererea</string>
     <string name="market_manage_loading_request_message">Cererea este în curs de procesare, vă rugăm să așteptați…</string>
-    <string name="github_login_method_description">Alegeți metoda de autentificare GitHub. Pagina încorporată va finaliza autorizarea în aplicație; browserul extern va deschide browserul de sistem și va reveni la aplicație după autorizare.</string>
-    <string name="github_login_method_embedded">Autentificați-vă cu pagina încorporată</string>
-    <string name="github_login_method_external">Autentificați-vă cu browserul extern</string>
     <string name="github_login_starting">Se pregătește autorizarea GitHub…</string>
     <string name="artifact_publish_toolpkg_version_readonly">Versiunea de publicare ToolPkg provine din manifestul pachetului și nu poate fi modificată manual înainte de publicare</string>
     <string name="market_toolpkg_api_incompatible_title">Nu se poate instala: API ToolPkg nu este acceptată</string>

@@ -7005,7 +7005,6 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="character_card_memory_profile_fixed_profile">Konfigurasi Tetap</string>
     <string name="character_card_memory_profile_specify_fixed_profile">Tentukan Konfigurasi Memori Tetap</string>
     <string name="character_card_memory_profile_select">Pilih Konfigurasi Memori</string>
-    <string name="github_login_external_waiting">Browser telah dibuka, silakan kembali ke aplikasi setelah menyelesaikan otorisasi.</string>
     <string name="artifact_publication_pending_review_waiting_schedule">Sedang ditinjau, harap tunggu jadwal rilis</string>
     <string name="artifact_publication_approved_waiting_schedule">Disetujui, harap tunggu jadwal rilis</string>
     <string name="toolpkg_widget_host_label">Widget Kustom</string>
@@ -7569,9 +7568,6 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="market_manage_submit_revision">Kirim versi baru setelah modifikasi</string>
     <string name="market_manage_loading_request_title">Memuat permintaan</string>
     <string name="market_manage_loading_request_message">Permintaan sedang diproses, harap tunggu…</string>
-    <string name="github_login_method_description">Pilih metode login GitHub. Halaman tertanam akan menyelesaikan otorisasi di dalam aplikasi; browser eksternal akan membuka browser sistem dan kembali ke aplikasi setelah otorisasi.</string>
-    <string name="github_login_method_embedded">Masuk dengan halaman tertanam</string>
-    <string name="github_login_method_external">Masuk dengan browser eksternal</string>
     <string name="github_login_starting">Menyiapkan otorisasi GitHub…</string>
     <string name="artifact_publish_toolpkg_version_readonly">Versi rilis ToolPkg berasal dari manifest dalam paket, tidak dapat dimodifikasi secara manual sebelum rilis</string>
     <string name="market_toolpkg_api_incompatible_title">Tidak dapat menginstal: API ToolPkg tidak didukung</string>

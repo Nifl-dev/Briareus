@@ -4741,11 +4741,7 @@
 
     <string name="github_account">GitHub 账户</string>
     <string name="login_github">登录 GitHub</string>
-    <string name="github_login_method_description">请选择 GitHub 登录方式。内嵌页面会在应用内完成授权；外部浏览器会调起系统浏览器并在授权后回到应用。</string>
-    <string name="github_login_method_embedded">使用内嵌页面登录</string>
-    <string name="github_login_method_external">使用外部浏览器登录</string>
     <string name="github_login_starting">正在准备 GitHub 授权…</string>
-    <string name="github_login_external_waiting">已打开浏览器，请在完成授权后返回应用。</string>
     <string name="publish_mcp_plugins_to_market">• 发布您的 MCP 插件到市场</string>
     <string name="manage_published_plugins">• 管理您已发布的插件</string>
     <string name="better_installation_experience">• 获得更好的安装体验</string>
@@ -8566,4 +8562,10 @@
     <string name="thinking_config_placeholder_high">例如：high</string>
     <string name="forge_coming_soon_title">社区工坊即将上线</string>
     <string name="forge_coming_soon_body">社区扩展的浏览、发布与安装将在新工坊上线后开放。在此期间包管理功能可正常使用。</string>
+    <!-- GitHub device flow (Q4) -->
+    <string name="github_device_code_description">在 %1$s 输入此代码以授权 Briareus。GitHub 将在浏览器中打开，本对话框会自动完成。</string>
+    <string name="github_device_login_open">打开 GitHub</string>
+    <string name="github_device_login_copy">复制代码</string>
+    <string name="github_device_login_waiting">正在等待授权…</string>
+    <string name="github_device_login_retry">获取新代码</string>
 </resources>
