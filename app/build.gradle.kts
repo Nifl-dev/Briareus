@@ -393,8 +393,14 @@ android {
         }
     }
 
+    // Briareus fork: pin the NDK explicitly. Upstream leaves this unset, so AGP
+    // silently auto-provisions an arbitrary NDK (observed 27.0.12077973 during
+    // the 2026-11-23 build) even though CI pins 25.1.8937393.
+    ndkVersion = "25.1.8937393"
+
     defaultConfig {
-        applicationId = "com.ai.assistance.operit"
+        // Briareus fork: distinct applicationId so it can coexist with upstream Operit.
+        applicationId = "dev.nifl.briareus"
         minSdk = 26
         targetSdk = 34
         versionCode = 53
