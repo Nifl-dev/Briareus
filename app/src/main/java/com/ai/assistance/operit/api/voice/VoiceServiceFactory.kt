@@ -6,6 +6,12 @@ import kotlinx.coroutines.runBlocking
 
 /** 语音服务工厂，用于创建不同类型的语音服务实例 */
 object VoiceServiceFactory {
+    /**
+     * Default model id sent to a Kokoro server. Most OpenAI-compatible Kokoro servers ignore or
+     * default this, but the request shape requires the field to be present.
+     */
+    const val DEFAULT_KOKORO_MODEL = "kokoro"
+
     /** 语音服务类型枚举 */
     enum class VoiceServiceType {
         /** 基于Android系统TTS的简单语音实现 */
@@ -25,6 +31,10 @@ object VoiceServiceFactory {
         OPENAI_TTS,
         /** 基于 VITS/Piper ONNX Runtime 推理形态的本地 TTS 服务 */
         VITS_TTS,
+        /** Phonon: bundled libptts_ffi.so, on-device GGUF inference (Briareus) */
+        PHONON_TTS,
+        /** Kokoro-82M served from a user-run OpenAI-compatible endpoint (Briareus) */
+        KOKORO_TTS,
     }
 
     /**
@@ -98,10 +108,29 @@ object VoiceServiceFactory {
                         initialVoiceId = profile.httpConfig.voiceId
                     )
                 }
+                VoiceServiceType.KOKORO_TTS -> {
+                    // Kokoro is served by the user's own OpenAI-compatible endpoint, so auth and
+                    // voice are both optional. No default URL is shipped: the model card warns
+                    // that third-party "kokoro" domains are likely scams.
+                    OpenAIVoiceProvider(
+                        context = context,
+                        endpointUrl = profile.httpConfig.urlTemplate,
+                        apiKey = profile.httpConfig.apiKey,
+                        model = profile.httpConfig.modelName.ifBlank { DEFAULT_KOKORO_MODEL },
+                        initialVoiceId = profile.httpConfig.voiceId,
+                        allowAnonymous = true
+                    )
+                }
                 VoiceServiceType.VITS_TTS -> {
                     VitsVoiceProvider(
                         context = context,
                         config = profile.vitsConfig
+                    )
+                }
+                VoiceServiceType.PHONON_TTS -> {
+                    PhononVoiceProvider(
+                        context = context,
+                        config = profile.phononConfig
                     )
                 }
             }

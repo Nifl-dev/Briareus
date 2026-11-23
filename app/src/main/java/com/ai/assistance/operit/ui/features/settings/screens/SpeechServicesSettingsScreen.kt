@@ -35,6 +35,7 @@ import androidx.compose.material.icons.automirrored.filled.FormatListBulleted
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.DropdownMenu
@@ -70,6 +71,7 @@ import androidx.compose.ui.unit.dp
 import com.ai.assistance.operit.R
 import com.ai.assistance.operit.api.speech.SpeechServiceFactory
 import com.ai.assistance.operit.api.voice.HttpTtsResponsePipelineStep
+import com.ai.assistance.operit.api.voice.PhononModelDownloader
 import com.ai.assistance.operit.api.voice.VoiceServiceFactory
 import com.ai.assistance.operit.data.preferences.SpeechServiceProfilesPreferences
 import com.ai.assistance.operit.data.preferences.SpeechServicesPreferences
@@ -162,6 +164,20 @@ fun SpeechServicesSettingsScreen(
     var vitsPackagePathInput by remember(vitsConfig) { mutableStateOf(vitsConfig.packagePath) }
     var vitsSpeakerIdInput by remember(vitsConfig) { mutableStateOf(vitsConfig.speakerId) }
     var vitsOptionsInput by remember(vitsConfig) { mutableStateOf(Json.encodeToString(vitsConfig.options)) }
+
+    // --- Phonon state ---
+    val phononConfig = activeTtsProfile.phononConfig
+    var phononModelDirInput by remember(phononConfig) { mutableStateOf(phononConfig.modelDir) }
+    var phononVoiceInput by remember(phononConfig) { mutableStateOf(phononConfig.voice) }
+    var phononLangInput by remember(phononConfig) { mutableStateOf(phononConfig.lang) }
+    var phononThreadsInput by remember(phononConfig) { mutableStateOf(phononConfig.threads.toString()) }
+    var phononModelReady by remember {
+        mutableStateOf(PhononModelDownloader.isModelReady(PhononModelDownloader.defaultModelDir(context)))
+    }
+    var phononDownloading by remember { mutableStateOf(false) }
+    var phononDownloadProgress by remember { mutableStateOf<Pair<String, Int>?>(null) }
+    var phononDownloadError by remember { mutableStateOf<String?>(null) }
+    var phononShowDownloadConfirm by remember { mutableStateOf(false) }
     var ttsSpeechRateInput by remember(ttsSpeechRate) { mutableStateOf(ttsSpeechRate) }
     var ttsPitchInput by remember(ttsPitch) { mutableStateOf(ttsPitch) }
     var ttsHeadersJsonError by remember { mutableStateOf<String?>(null) }
@@ -209,6 +225,10 @@ fun SpeechServicesSettingsScreen(
             vitsPackagePathInput != vitsConfig.packagePath ||
             vitsSpeakerIdInput != vitsConfig.speakerId ||
             vitsOptionsInput != Json.encodeToString(vitsConfig.options) ||
+            phononModelDirInput != phononConfig.modelDir ||
+            phononVoiceInput != phononConfig.voice ||
+            phononLangInput != phononConfig.lang ||
+            phononThreadsInput != phononConfig.threads.toString() ||
             ttsCleanerRegexsState.toList() != ttsCleanerRegexs ||
             ttsSpeechRateInput != ttsSpeechRate ||
             ttsPitchInput != ttsPitch ||
@@ -311,6 +331,13 @@ fun SpeechServicesSettingsScreen(
             options = vitsOptions
         )
 
+        val phononConfigData = SpeechServicesPreferences.PhononTtsConfig(
+            modelDir = phononModelDirInput.trim(),
+            voice = phononVoiceInput.trim(),
+            lang = phononLangInput.trim().ifBlank { "en" },
+            threads = phononThreadsInput.trim().toIntOrNull()?.coerceIn(1, 8) ?: 2,
+        )
+
         val sttHttpConfigData = SpeechServicesPreferences.SttHttpConfig(
             endpointUrl = sttEndpointUrlInput,
             apiKey = sttApiKeyInput,
@@ -323,6 +350,7 @@ fun SpeechServicesSettingsScreen(
                     serviceType = ttsServiceTypeInput,
                     httpConfig = httpConfigData,
                     vitsConfig = vitsConfigData,
+                    phononConfig = phononConfigData,
                     cleanerRegexs = ttsCleanerRegexsState.toList(),
                     speechRate = ttsSpeechRateInput,
                     pitch = ttsPitchInput,
@@ -492,6 +520,8 @@ fun SpeechServicesSettingsScreen(
                                     VoiceServiceFactory.VoiceServiceType.DOUBAO_TTS -> stringResource(R.string.speech_services_tts_type_doubao)
                                     VoiceServiceFactory.VoiceServiceType.OPENAI_TTS -> stringResource(R.string.speech_services_tts_type_openai)
                                     VoiceServiceFactory.VoiceServiceType.VITS_TTS -> stringResource(R.string.speech_services_tts_type_vits)
+                                    VoiceServiceFactory.VoiceServiceType.PHONON_TTS -> stringResource(R.string.speech_services_tts_type_phonon)
+                                    VoiceServiceFactory.VoiceServiceType.KOKORO_TTS -> stringResource(R.string.speech_services_tts_type_kokoro)
                                 },
                                 onValueChange = {},
                                 readOnly = true,
@@ -519,6 +549,8 @@ fun SpeechServicesSettingsScreen(
                                                     VoiceServiceFactory.VoiceServiceType.DOUBAO_TTS -> stringResource(R.string.speech_services_tts_type_doubao)
                                                     VoiceServiceFactory.VoiceServiceType.OPENAI_TTS -> stringResource(R.string.speech_services_tts_type_openai)
                                                     VoiceServiceFactory.VoiceServiceType.VITS_TTS -> stringResource(R.string.speech_services_tts_type_vits)
+                                                    VoiceServiceFactory.VoiceServiceType.PHONON_TTS -> stringResource(R.string.speech_services_tts_type_phonon)
+                                                    VoiceServiceFactory.VoiceServiceType.KOKORO_TTS -> stringResource(R.string.speech_services_tts_type_kokoro)
                                                 },
                                                 fontWeight = if (ttsServiceTypeInput == type) FontWeight.Medium else FontWeight.Normal
                                             ) 
@@ -1091,6 +1123,287 @@ fun SpeechServicesSettingsScreen(
                                         modifier = Modifier.padding(top = 4.dp)
                                     )
                                 }
+                            }
+                        }
+
+                        AnimatedVisibility(visible = ttsServiceTypeInput == VoiceServiceFactory.VoiceServiceType.PHONON_TTS) {
+                            Column(modifier = Modifier.padding(top = 16.dp)) {
+                                Text(
+                                    text = stringResource(R.string.speech_services_phonon_config),
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Medium
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                // Model status + explicit, size-disclosed download. Nothing is
+                                // fetched until the user confirms in the dialog below.
+                                Text(
+                                    text = stringResource(R.string.speech_services_phonon_model_section),
+                                    style = MaterialTheme.typography.titleSmall,
+                                    fontWeight = FontWeight.Medium
+                                )
+
+                                Spacer(modifier = Modifier.height(4.dp))
+
+                                Text(
+                                    text = if (phononModelReady) {
+                                        stringResource(R.string.speech_services_phonon_model_ready)
+                                    } else {
+                                        stringResource(R.string.speech_services_phonon_model_missing)
+                                    },
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = if (phononModelReady) {
+                                        MaterialTheme.colorScheme.onSurfaceVariant
+                                    } else {
+                                        MaterialTheme.colorScheme.error
+                                    }
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                if (!phononModelReady) {
+                                    OutlinedButton(
+                                        onClick = { phononShowDownloadConfirm = true },
+                                        enabled = !phononDownloading,
+                                        modifier = Modifier.fillMaxWidth()
+                                    ) {
+                                        Text(stringResource(R.string.speech_services_phonon_download_button))
+                                    }
+                                }
+
+                                if (phononDownloading) {
+                                    Spacer(modifier = Modifier.height(8.dp))
+                                    val progress = phononDownloadProgress
+                                    LinearProgressIndicator(
+                                        progress = {
+                                            (progress?.second ?: 0).coerceIn(0, 100) / 100f
+                                        },
+                                        modifier = Modifier.fillMaxWidth()
+                                    )
+                                    Spacer(modifier = Modifier.height(4.dp))
+                                    Text(
+                                        text = stringResource(
+                                            R.string.speech_services_phonon_downloading,
+                                            progress?.first ?: "",
+                                            progress?.second ?: 0
+                                        ),
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                }
+
+                                phononDownloadError?.let { error ->
+                                    Spacer(modifier = Modifier.height(4.dp))
+                                    Text(
+                                        text = stringResource(
+                                            R.string.speech_services_phonon_download_failed,
+                                            error
+                                        ),
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.error
+                                    )
+                                }
+
+                                Spacer(modifier = Modifier.height(16.dp))
+
+                                OutlinedTextField(
+                                    value = phononModelDirInput,
+                                    onValueChange = { phononModelDirInput = it },
+                                    label = { Text(stringResource(R.string.speech_services_phonon_model_dir)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true,
+                                    supportingText = {
+                                        Text(
+                                            text = stringResource(R.string.speech_services_phonon_model_dir_hint),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = phononVoiceInput,
+                                    onValueChange = { phononVoiceInput = it },
+                                    label = { Text(stringResource(R.string.speech_services_phonon_voice)) },
+                                    placeholder = { Text(stringResource(R.string.speech_services_phonon_voice_placeholder)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true,
+                                    supportingText = {
+                                        Text(
+                                            text = stringResource(R.string.speech_services_phonon_voice_hint),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = phononLangInput,
+                                    onValueChange = { phononLangInput = it },
+                                    label = { Text(stringResource(R.string.speech_services_phonon_lang)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true,
+                                    supportingText = {
+                                        Text(
+                                            text = stringResource(R.string.speech_services_phonon_lang_hint),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = phononThreadsInput,
+                                    onValueChange = { phononThreadsInput = it.filter(Char::isDigit) },
+                                    label = { Text(stringResource(R.string.speech_services_phonon_threads)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true,
+                                    supportingText = {
+                                        Text(
+                                            text = stringResource(R.string.speech_services_phonon_threads_hint),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                )
+
+                                if (phononShowDownloadConfirm) {
+                                    AlertDialog(
+                                        onDismissRequest = { phononShowDownloadConfirm = false },
+                                        title = {
+                                            Text(stringResource(R.string.speech_services_phonon_download_confirm_title))
+                                        },
+                                        text = {
+                                            Text(stringResource(R.string.speech_services_phonon_download_confirm_message))
+                                        },
+                                        confirmButton = {
+                                            TextButton(
+                                                onClick = {
+                                                    phononShowDownloadConfirm = false
+                                                    phononDownloading = true
+                                                    phononDownloadError = null
+                                                    phononDownloadProgress = null
+                                                    scope.launch {
+                                                        try {
+                                                            PhononModelDownloader.download(
+                                                                PhononModelDownloader.defaultModelDir(context)
+                                                            ) { name, done, total ->
+                                                                val pct = if (total > 0) {
+                                                                    ((done * 100) / total).toInt()
+                                                                } else {
+                                                                    0
+                                                                }
+                                                                phononDownloadProgress = name to pct
+                                                            }
+                                                            phononModelReady = true
+                                                            phononDownloadProgress = null
+                                                        } catch (t: Throwable) {
+                                                            AppLogger.e("SpeechServicesSettings", "Phonon model download failed", t)
+                                                            phononDownloadError = t.message ?: t.javaClass.simpleName
+                                                        } finally {
+                                                            phononDownloading = false
+                                                        }
+                                                    }
+                                                }
+                                            ) {
+                                                Text(stringResource(R.string.speech_services_phonon_download_confirm_action))
+                                            }
+                                        },
+                                        dismissButton = {
+                                            TextButton(onClick = { phononShowDownloadConfirm = false }) {
+                                                Text(stringResource(R.string.speech_services_phonon_download_cancel))
+                                            }
+                                        }
+                                    )
+                                }
+                            }
+                        }
+
+                        AnimatedVisibility(visible = ttsServiceTypeInput == VoiceServiceFactory.VoiceServiceType.KOKORO_TTS) {
+                            Column(modifier = Modifier.padding(top = 16.dp)) {
+                                Text(
+                                    text = stringResource(R.string.speech_services_kokoro_config),
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Medium
+                                )
+
+                                Spacer(modifier = Modifier.height(4.dp))
+
+                                Text(
+                                    text = stringResource(R.string.speech_services_kokoro_intro),
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = ttsUrlTemplateInput,
+                                    onValueChange = { ttsUrlTemplateInput = it },
+                                    label = { Text(stringResource(R.string.speech_services_kokoro_url)) },
+                                    placeholder = { Text(stringResource(R.string.speech_services_kokoro_url_placeholder)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true,
+                                    supportingText = {
+                                        Text(
+                                            text = stringResource(R.string.speech_services_kokoro_url_hint),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = ttsApiKeyInput,
+                                    onValueChange = { ttsApiKeyInput = it },
+                                    label = { Text(stringResource(R.string.speech_services_kokoro_api_key)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true,
+                                    supportingText = {
+                                        Text(
+                                            text = stringResource(R.string.speech_services_kokoro_api_key_hint),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = ttsModelNameInput,
+                                    onValueChange = { ttsModelNameInput = it },
+                                    label = { Text(stringResource(R.string.speech_services_kokoro_model)) },
+                                    placeholder = { Text(stringResource(R.string.speech_services_kokoro_model_placeholder)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true
+                                )
+
+                                Spacer(modifier = Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = ttsVoiceIdInput,
+                                    onValueChange = { ttsVoiceIdInput = it },
+                                    label = { Text(stringResource(R.string.speech_services_kokoro_voice)) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    singleLine = true,
+                                    supportingText = {
+                                        Text(
+                                            text = stringResource(R.string.speech_services_kokoro_voice_hint),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
+                                    }
+                                )
                             }
                         }
 

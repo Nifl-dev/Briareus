@@ -406,8 +406,8 @@ android {
         // Briareus fork: date-derived versionCode (YYMMDDnn) so every build
         // increases no matter what upstream ships. Bump the trailing two-digit
         // sequence for a second build on the same day.
-        versionCode = 26112302
-        versionName = "1.12.2+4"
+        versionCode = 26112303
+        versionName = "1.12.2+5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -594,6 +594,9 @@ dependencies {
     implementation(project(":fbx"))
     implementation(project(":showerclient"))
     implementation(project(":quickjs"))
+
+    // Phonon TTS: JNA bridge to libptts_ffi.so (bundled in jniLibs/arm64-v8a)
+    implementation("net.java.dev.jna:jna:5.17.0@aar")
 
     // glTF runtime rendering (Filament)
     implementation("com.google.android.filament:filament-android:1.69.2")

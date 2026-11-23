@@ -1,4 +1,4 @@
- <resources>
+<resources>
     <string name="app_name">Briareus</string>
     <string name="accessibility_service_description">Used to obtain the UI hierarchy, providing faster interface analysis capabilities for AI assistants, and does not collect or store any personal information.</string>
     
@@ -8097,6 +8097,41 @@
     <string name="web_session_dialog_title_prompt">Page Input</string>
     <string name="web_session_dialog_empty_message">(Empty Message)</string>
     <string name="speech_services_tts_type_vits">VITS/Piper TTS (Local)</string>
+    <string name="speech_services_tts_type_phonon">Phonon TTS (On-device)</string>
+    <string name="speech_services_tts_type_kokoro">Kokoro TTS (Self-hosted)</string>
+    <string name="speech_services_kokoro_config">Kokoro (Self-hosted Server)</string>
+    <string name="speech_services_kokoro_intro">Kokoro-82M runs on a server you host and control, and is reached through an OpenAI-compatible /audio/speech endpoint. Nothing is sent anywhere unless you configure a URL here.</string>
+    <string name="speech_services_kokoro_url">Server endpoint URL</string>
+    <string name="speech_services_kokoro_url_placeholder">http://192.168.1.10:8880/v1/audio/speech</string>
+    <string name="speech_services_kokoro_url_hint">Full URL of your server\'s /audio/speech endpoint. There is no built-in default: use only a server you run yourself.</string>
+    <string name="speech_services_kokoro_api_key">API key (optional)</string>
+    <string name="speech_services_kokoro_api_key_hint">Leave blank for a typical local Kokoro server, which usually has no auth. Fill it only if your server requires one.</string>
+    <string name="speech_services_kokoro_model">Model name</string>
+    <string name="speech_services_kokoro_model_placeholder">kokoro</string>
+    <string name="speech_services_kokoro_voice">Voice</string>
+    <string name="speech_services_kokoro_voice_hint">Kokoro voice id, e.g. af_heart, am_michael, bf_emma, zm_yunxi. Leave blank to let the server choose.</string>
+    <string name="speech_services_phonon_config">Phonon Configuration</string>
+    <string name="speech_services_phonon_model_section">Model</string>
+    <string name="speech_services_phonon_model_missing">Model not downloaded. Phonon needs the 31m English checkpoint (about 56 MB) before it can speak.</string>
+    <string name="speech_services_phonon_model_ready">Model ready</string>
+    <string name="speech_services_phonon_download_button">Download model (about 56 MB)</string>
+    <string name="speech_services_phonon_download_confirm_title">Download Phonon model?</string>
+    <string name="speech_services_phonon_download_confirm_message">This downloads about 56 MB of speech model data from huggingface.co (gradium/phonon-31m-en, Apache-2.0) into this app\'s private storage. Nothing is downloaded unless you tap Download. Mobile data charges may apply.</string>
+    <string name="speech_services_phonon_download_confirm_action">Download</string>
+    <string name="speech_services_phonon_download_cancel">Cancel</string>
+    <string name="speech_services_phonon_downloading">Downloading %1$s: %2$d%%</string>
+    <string name="speech_services_phonon_download_failed">Download failed: %1$s</string>
+    <string name="speech_services_phonon_download_done">Model downloaded</string>
+    <string name="speech_services_phonon_model_dir">Model folder (optional)</string>
+    <string name="speech_services_phonon_model_dir_hint">Leave blank to use the downloaded model. Set a path only if you placed the checkpoint files yourself.</string>
+    <string name="speech_services_phonon_voice">Voice</string>
+    <string name="speech_services_phonon_voice_placeholder">default</string>
+    <string name="speech_services_phonon_voice_hint">Voice name shipped by the checkpoint. Leave blank for the checkpoint default.</string>
+    <string name="speech_services_phonon_lang">Text normalisation language</string>
+    <string name="speech_services_phonon_lang_hint">One of en, fr, de, es, pt, or none. The 31m checkpoint is English-only.</string>
+    <string name="speech_services_phonon_threads">Synthesis threads</string>
+    <string name="speech_services_phonon_threads_hint">Threads for the synthesis engine. 2 is a good default on phones that mix fast and slow cores.</string>
+
     <string name="speech_services_vits_config">VITS/Piper TTS Configuration</string>
     <string name="speech_services_vits_package_path">VITS/Piper Package Path</string>
     <string name="speech_services_vits_package_path_placeholder">e.g., /sdcard/Download/tts/voice.zip</string>

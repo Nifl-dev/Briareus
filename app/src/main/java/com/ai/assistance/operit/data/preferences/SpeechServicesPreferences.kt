@@ -53,6 +53,22 @@ class SpeechServicesPreferences(private val context: Context) {
         val options: Map<String, String> = emptyMap()
     )
 
+    /**
+     * Phonon (libptts_ffi) configuration.
+     *
+     * @param modelDir checkpoint folder; empty means "the default location under filesDir".
+     * @param voice voice name shipped by the checkpoint; empty means the checkpoint's `default`.
+     * @param lang text normalisation language (`en`, `fr`, `de`, `es`, `pt`, or `none`).
+     * @param threads value for RAYON_NUM_THREADS.
+     */
+    @Serializable
+    data class PhononTtsConfig(
+        val modelDir: String = "",
+        val voice: String = "",
+        val lang: String = "en",
+        val threads: Int = 2
+    )
+
     @Serializable
     data class SttHttpConfig(
         val endpointUrl: String,
@@ -65,6 +81,7 @@ class SpeechServicesPreferences(private val context: Context) {
         val TTS_SERVICE_TYPE = stringPreferencesKey("tts_service_type")
         val TTS_HTTP_CONFIG = stringPreferencesKey("tts_http_config")
         val TTS_VITS_PACKAGE_CONFIG = stringPreferencesKey("tts_vits_package_config")
+        val TTS_PHONON_CONFIG = stringPreferencesKey("tts_phonon_config")
         val TTS_CLEANER_REGEXS = stringSetPreferencesKey("tts_cleaner_regexs")
         val TTS_SPEECH_RATE = floatPreferencesKey("tts_speech_rate")
         val TTS_PITCH = floatPreferencesKey("tts_pitch")
@@ -145,6 +162,15 @@ class SpeechServicesPreferences(private val context: Context) {
         }
     }
 
+    val ttsPhononConfigFlow: Flow<PhononTtsConfig> = dataStore.data.map { prefs ->
+        val json = prefs[TTS_PHONON_CONFIG]
+        if (json == null) {
+            PhononTtsConfig()
+        } else {
+            serializerJson.decodeFromString<PhononTtsConfig>(json)
+        }
+    }
+
     val ttsCleanerRegexsFlow: Flow<List<String>> = dataStore.data.map { prefs ->
         val storedRegexs = prefs[TTS_CLEANER_REGEXS]
         if (storedRegexs == null) {
@@ -185,6 +211,7 @@ class SpeechServicesPreferences(private val context: Context) {
         serviceType: VoiceServiceFactory.VoiceServiceType,
         httpConfig: TtsHttpConfig? = null,
         vitsConfig: VitsTtsPackageConfig? = null,
+        phononConfig: PhononTtsConfig? = null,
         cleanerRegexs: List<String>? = null,
         speechRate: Float? = null,
         pitch: Float? = null
@@ -204,6 +231,10 @@ class SpeechServicesPreferences(private val context: Context) {
 
             if (serviceType == VoiceServiceFactory.VoiceServiceType.VITS_TTS) {
                 vitsConfig?.let { prefs[TTS_VITS_PACKAGE_CONFIG] = serializerJson.encodeToString(it) }
+            }
+
+            if (serviceType == VoiceServiceFactory.VoiceServiceType.PHONON_TTS) {
+                phononConfig?.let { prefs[TTS_PHONON_CONFIG] = serializerJson.encodeToString(it) }
             }
         }
     }

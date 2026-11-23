@@ -32,6 +32,12 @@ class OpenAIVoiceProvider(
     private val context: Context,
     private val endpointUrl: String,
     private val apiKey: String,
+    /**
+     * Self-hosted mode: skips the OpenAI-specific API-key requirement. A locally hosted Kokoro
+     * server usually has no auth, and demanding a dummy key there is pure friction. Request shape
+     * is unchanged. Defaults to false, so OpenAI behaviour is untouched.
+     */
+    private val allowAnonymous: Boolean = false,
     private val model: String,
     initialVoiceId: String
 ) : VoiceService {
@@ -48,6 +54,22 @@ class OpenAIVoiceProvider(
             VoiceService.Voice("nova", "nova", "en-US", "NEUTRAL"),
             VoiceService.Voice("shimmer", "shimmer", "en-US", "NEUTRAL")
         )
+
+        /**
+         * Kokoro-82M voices (Apache-2.0), for self-hosted OpenAI-compatible servers. The first
+         * letter pair is the language/voice pack (a=American English, b=British, z=Mandarin, ...),
+         * then gender, then a name. Servers expose these as the `voice` field.
+         */
+        val KOKORO_VOICES = listOf(
+            "af_heart", "af_alloy", "af_aoede", "af_bella", "af_jessica",
+            "af_kore", "af_nicole", "af_nova", "af_river", "af_sarah", "af_sky",
+            "am_adam", "am_echo", "am_eric", "am_fenrir", "am_liam",
+            "am_michael", "am_onyx", "am_puck",
+            "bf_alice", "bf_emma", "bf_isabella", "bf_lily",
+            "bm_daniel", "bm_fable", "bm_george", "bm_lewis",
+            "zf_xiaobei", "zf_xiaoni", "zf_xiaoxiao", "zf_xiaoyi",
+            "zm_yunjian", "zm_yunxi", "zm_yunxia", "zm_yunyang",
+        ).map { VoiceService.Voice(it, it, "en-US", "NEUTRAL") }
     }
 
     @Serializable
@@ -97,13 +119,13 @@ class OpenAIVoiceProvider(
             if (!endpointUrl.contains("/audio/speech")) {
                 throw TtsException(context.getString(R.string.openai_tts_error_url_invalid_path))
             }
-            if (apiKey.isBlank()) {
+            if (apiKey.isBlank() && !allowAnonymous) {
                 throw TtsException(context.getString(R.string.openai_tts_error_api_key_not_set))
             }
             if (model.isBlank()) {
                 throw TtsException(context.getString(R.string.openai_tts_error_model_not_set))
             }
-            if (voiceId.isBlank()) {
+            if (voiceId.isBlank() && !allowAnonymous) {
                 throw TtsException(context.getString(R.string.openai_tts_error_voice_not_set))
             }
 
@@ -159,7 +181,11 @@ class OpenAIVoiceProvider(
                 val request = Request.Builder()
                     .url(endpointUrl)
                     .post(requestBody)
-                    .addHeader("Authorization", "Bearer $apiKey")
+                    .apply {
+                        if (apiKey.isNotBlank()) {
+                            addHeader("Authorization", "Bearer $apiKey")
+                        }
+                    }
                     .addHeader("Content-Type", "application/json")
                     .build()
 
