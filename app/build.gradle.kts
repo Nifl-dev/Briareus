@@ -406,8 +406,8 @@ android {
         // Briareus fork: date-derived versionCode (YYMMDDnn) so every build
         // increases no matter what upstream ships. Bump the trailing two-digit
         // sequence for a second build on the same day.
-        versionCode = 26112301
-        versionName = "1.12.2+3"
+        versionCode = 26112302
+        versionName = "1.12.2+4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
