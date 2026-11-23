@@ -96,6 +96,7 @@ class RemoteAnnouncementRepository(
     suspend fun fetchDisplayableAnnouncement(locale: Locale = Locale.getDefault()): RemoteAnnouncementDisplay? {
         return withContext(Dispatchers.IO) {
             runCatching {
+                if (!REMOTE_ANNOUNCEMENTS_ENABLED) return@runCatching null
                 val pointer = fetchPointer()
                 if (pointer.latestFile.isBlank()) return@runCatching null
 
@@ -256,6 +257,15 @@ class RemoteAnnouncementRepository(
 
     companion object {
         private const val TAG = "RemoteAnnouncementRepo"
+
+        /**
+         * Upstream announcement feed. Disabled in Briareus: this app is a
+         * derivative of Operit AI, so showing upstream's announcements would
+         * present another project's notices as our own. Re-enable only when
+         * pointed at a feed we control.
+         */
+        private const val REMOTE_ANNOUNCEMENTS_ENABLED = false
+
         const val DEFAULT_POINTER_URL = "https://operit.app/announcements/latest.json"
     }
 }

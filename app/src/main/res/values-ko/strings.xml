@@ -539,10 +539,10 @@
     <string name="about_title">Briareus AI 소개</string>
     <string name="about_version">버전: %1$s</string>
     <string name="about_description">Briareus AI는 인터페이스 분석, 채팅 대화 등을 제공하여 사용자가 장치를 보다 효율적으로 사용할 수 있도록 돕는 지능형 보조 애플리케이션입니다.</string>
-    <string name="about_developer">개발자: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
+    <string name="about_developer">AAswordman의 Operit AI 기반 &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">연락처: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
-    <string name="about_copyright">© 2025 - 2026 Operit. 모든 권리 보유.</string>
+    <string name="about_copyright">© 2025 - 2026 Briareus 기여자. AAswordman의 Operit AI 기반, LGPL-3.0.</string>
     <string name="star_on_github">GitHub에 스타 추가</string>
     <string name="update_log">업데이트 로그</string>
     <string name="app_logo_description">앱 로고</string>

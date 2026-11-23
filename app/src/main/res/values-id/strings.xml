@@ -503,10 +503,10 @@
     <string name="about_title">Tentang Briareus AI</string>
     <string name="about_version">Versi: %1$s</string>
     <string name="about_description">Briareus AI adalah aplikasi asisten cerdas yang membantu pengguna menggunakan perangkat dengan lebih efisien, menyediakan analisis antarmuka, percakapan obrolan, dan fungsi lainnya.</string>
-    <string name="about_developer">Pengembang: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
+    <string name="about_developer">Berdasarkan Operit AI oleh &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">Hubungi kami: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
-    <string name="about_copyright">© 2025 - 2026 Operit. Hak cipta dilindungi undang-undang.</string>
+    <string name="about_copyright">© 2025 - 2026 Kontributor Briareus. Berdasarkan Operit AI oleh AAswordman, LGPL-3.0.</string>
     <string name="star_on_github">Beri Bintang di GitHub</string>
     <string name="update_log">Catatan Pembaruan</string>
     <string name="app_logo_description">Ikon Aplikasi</string>

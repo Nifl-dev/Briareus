@@ -86,10 +86,10 @@
     <string name="about_title">Acerca de Briareus AI</string>
     <string name="about_version">Versión: %1$s</string>
     <string name="about_description">Briareus AI es una aplicación de asistente inteligente que ayuda a los usuarios a utilizar sus dispositivos de manera más eficiente, proporcionando funciones como análisis de interfaz y chat.</string>
-    <string name="about_developer">Desarrollador: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
+    <string name="about_developer">Basado en Operit AI de &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">Contáctenos: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
-    <string name="about_copyright">© 2025 - 2026 Operit. Todos los derechos reservados.</string>
+    <string name="about_copyright">© 2025 - 2026 Colaboradores de Briareus. Basado en Operit AI de AAswordman, LGPL-3.0.</string>
 
     <!-- AI Chat Screen -->
     <string name="configure_ai">Configurar interfaz AI</string>

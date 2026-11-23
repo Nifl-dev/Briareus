@@ -587,10 +587,10 @@
     <string name="about_title">Despre Briareus AI</string>
     <string name="about_version">Versiune: %1$s</string>
     <string name="about_description">Briareus AIEste o aplicație de asistență inteligentă, care ajută utilizatorii să-și folosească dispozitivele mai eficient, oferind funcții precum analiza interfeței și conversații prin chat.</string>
-    <string name="about_developer">Dezvoltator: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
+    <string name="about_developer">Bazat pe Operit AI de &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">Contactați-ne: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
-    <string name="about_copyright">© 2025 - 2026 Operit. Toate drepturile rezervate.</string>
+    <string name="about_copyright">© 2025 - 2026 Contribuitorii Briareus. Bazat pe Operit AI de AAswordman, LGPL-3.0.</string>
     <string name="star_on_github">în GitHub Dă un clic pe Star</string>
     <string name="update_log">Jurnalul de actualizări</string>
     <string name="app_logo_description">Pictograma aplicației</string>

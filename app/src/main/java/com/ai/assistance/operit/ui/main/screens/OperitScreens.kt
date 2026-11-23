@@ -97,6 +97,39 @@ import com.ai.assistance.operit.ui.main.navigation.AppRouterGateway
 // 路由配置类
 typealias ScreenNavigationHandler = (Screen) -> Unit
 
+/**
+ * Briareus community forge switch.
+ *
+ * false = the Market entry stays visible (discoverable, not a dead end) but
+ * renders a "coming soon" notice instead of the upstream Operit forge, whose
+ * backend belongs to another project. Flip to true once our own forge and its
+ * extension index are live.
+ */
+private const val MARKET_FORGE_ENABLED = false
+
+@Composable
+private fun ForgeComingSoon() {
+    Box(
+            modifier = Modifier.fillMaxSize().padding(24.dp),
+            contentAlignment = Alignment.Center
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                    text = stringResource(id = R.string.forge_coming_soon_title),
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+            )
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(
+                    text = stringResource(id = R.string.forge_coming_soon_body),
+                    style = MaterialTheme.typography.bodyMedium,
+                    textAlign = TextAlign.Center
+            )
+        }
+    }
+}
+
 // 重构的Screen类，添加了路由相关属性和内容渲染函数
 sealed class Screen(
         // 对应的导航项，仅用于侧边栏高亮归属。
@@ -232,6 +265,10 @@ sealed class Screen(
                 onError: (String) -> Unit,
                 onGestureConsumed: (Boolean) -> Unit
         ) {
+            if (!MARKET_FORGE_ENABLED) {
+                ForgeComingSoon()
+                return
+            }
             UnifiedMarketScreen(
                 initialTab = initialTab,
                 onNavigateToArtifactPublish = { navigateTo(ArtifactPublish) },
