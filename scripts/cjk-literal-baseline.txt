@@ -1,0 +1,1087 @@
+# Inherited CJK string literals, frozen 2026-11-23.
+# Each line is file:line:text. Regenerate with:
+#   python3 scripts/check-cjk-baseline.py --update
+# Entries are removed as they get translated; new ones fail CI.
+app/src/main/java/com/ai/assistance/operit/api/chat/enhance/ConversationMarkupManager.kt:20: \n[工具结果过长，已截断]
+app/src/main/java/com/ai/assistance/operit/api/chat/library/MemoryLibrary.kt:705: (?s)问题\\s*[：:]\\s*(.+?)(?:\\n\\s*解决方案\\s*[：:]|\\z)
+app/src/main/java/com/ai/assistance/operit/api/chat/library/MemoryLibrary.kt:725: 历史记录:
+app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:106: 未知工具
+app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:110: 没有匹配到执行结果
+app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:111: 调用没有可执行参数
+app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:112: 工具调用协议已关闭
+app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:117: 后续对话历史已到达，但未返回执行结果
+app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:118: 调用在未返回执行结果时结束
+app/src/main/java/com/ai/assistance/operit/api/chat/llmprovider/StructuredToolCallBridge.kt:120: 工具结果缺失：$toolLabel $detail。这不是用户取消。
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:125: {
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:26: 冰糖
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:26: 冰糖
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:27: 茉莉
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:27: 茉莉
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:28: 苏打
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:28: 苏打
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:29: 白桦
+app/src/main/java/com/ai/assistance/operit/api/voice/MimoVoiceProvider.kt:29: 白桦
+app/src/main/java/com/ai/assistance/operit/core/avatar/common/state/AvatarMoodType.kt:22: 用户表达侮辱、不公、责备、生气或强烈不满时使用。
+app/src/main/java/com/ai/assistance/operit/core/avatar/common/state/AvatarMoodType.kt:29: 用户表达明确表扬、达成目标、收到礼物或明显开心时使用。
+app/src/main/java/com/ai/assistance/operit/core/avatar/common/state/AvatarMoodType.kt:36: 用户夸奖、暧昧、戳中可爱点，角色表现害羞时使用。
+app/src/main/java/com/ai/assistance/operit/core/avatar/common/state/AvatarMoodType.kt:43: 用户调侃、轻微争执、角色嘴硬又软化时使用。
+app/src/main/java/com/ai/assistance/operit/core/avatar/common/state/AvatarMoodType.kt:50: 用户失落、难过、受挫、哭诉或道歉后低落时使用。
+app/src/main/java/com/ai/assistance/operit/core/chat/AIMessageManager.kt:1173: 已激活包：以下工具提示可以直接使用。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1031: 你是知识分类专家。根据记忆内容，为每条记忆分配合适的文件夹路径。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1073: 【当前记忆空间资料】
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1093: - `profile_markdown`：当前记忆空间资料的完整替换 Markdown，没有更新时使用 JSON null。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1108: 【用户指定的记忆提取附加规则】
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1201: 你要从对话中构建长期记忆图谱。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:129: 互动情节与设定
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:129: 关键信息与上下文
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:129: 对话历程与概要
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:129: 核心任务状态
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1307: 你是群聊角色发言规划器。只返回有效的 JSON。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1343: 成员列表：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1344: （无）
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1346: 用户消息：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:1347: （用户发送了附件或空文本）
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:18: 你是负责生成对话摘要的AI助手。你的任务是根据"上一次的摘要"（如果提供）和"最近的对话内容"，生成一份全新的、独立的、全面的摘要。这份新摘要将完全取代之前的摘要，成为后续对话的唯一历史参考。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:281: 上一次的摘要（用于继承上下文）：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:308: 你是一位资深程序员。你的任务是将“原始文件内容（Original File Content）”与“预期修改（Intended Changes）”合并，生成该文件最终的完整内容。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:328: 请为以上记忆分类
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:335: 为避免重复，请参考以下记忆库中可能相关的已有记忆。在提取实体时，如果发现与下列记忆语义相同的实体，请使用`alias_for`字段进行标注：\n
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:343: 记忆库目前为空或没有找到相关记忆，请自由提取实体。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:352: 当前还没有文件夹分类，请根据内容创建一个合适的分类。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:360: 当前已存在的文件夹分类如下，请优先使用或参考它们来决定新知识的分类：\n$joined
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:368: 发现 $count 个标题完全相同的记忆: \"$title\"。本次分析应强烈优先使用 `merge`，不要再为同一事实创建平行 `new` 记忆。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:377: 发现一组相似标题记忆: [$preview]。它们很可能是同一事实的不同表述。请优先 `merge` 或 `update`，避免继续创建新的重复记忆。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:382: 【重要指令：清理重复记忆】\n
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:385: ==========对话摘要==========
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:387: 【核心任务状态】
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:388: 【互动情节与设定】
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:389: 【对话历程与概要】
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:390: 【关键信息与上下文】
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:397: 请按照要求总结对话内容
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:412: 你负责生成简短的对话标题。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:434: 无
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:438: （无文本）
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:450: 用户第一条消息：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:463: **表达情绪规则：你必须在每个句末判断句中包含的情绪或增强语气，并使用<emotion>标签在句末插入情绪状态。后续会根据情绪生成表情包。可用情绪包括：$emotionListText。例如：<emotion>happy
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:467: **当前没有可用的自定义表情，请不要使用<emotion>标签。**
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:476: **绘图（自拍）**: 当你需要自拍时，你会调用绘图功能。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:477: \n*   **基础关键词**: `$waifuSelfiePrompt`。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:478: \n*   **自定义内容**: 你会根据主人的要求，在基础关键词后添加表情、动作、穿着、背景等描述。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:479: \n*   **合影**: 如果需要主人出镜，你会根据指令明确包含`2 girl` （2 girl 代表2个女孩主人也是女孩，主人为黑色长发可爱女生）等关键词。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:500: 自定义 mood（仅在描述明显符合时使用）：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:510: 若自定义 mood 与基础 mood 同时适用，优先更精确的那个。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:539: [Avatar Mood]
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:564: 你是一个专业的翻译助手，能够准确翻译各种语言，并保持原文的语气和风格。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:568: 请将以下文本翻译为$targetLanguage，保持原文的语气和风格：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:581: 你是一个专业的技术文档撰写助手，擅长为软件工具包编写简洁清晰的功能描述。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:606: 请为名为"$pluginName"的MCP工具包生成一个简洁的描述。这个工具包包含以下工具：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:625: 你是\"角色卡生成助手\"。请严格按照以下流程进行角色卡生成：
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:733: 你是一个 UI 自动化 AI。你的任务是分析 UI 状态与任务目标，然后决定下一步的单个动作。你必须返回一个 JSON 对象，包含你的简要说明与要执行的命令。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:777: 今天的日期是: {{current_date}}
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:950: 你是一个代码检索助手。
+app/src/main/java/com/ai/assistance/operit/core/config/FunctionalPrompts.kt:992: 你是一个代码检索助手。你需要从候选片段中选择最相关的部分。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemPromptConfig.kt:243: \n\n角色回答规划提示：\n- 当前会话启用了角色回答规划，用户每次发言后系统会动态决定谁回答以及回答顺序。\n- 你必须始终牢记并保持你自己的角色身份，严禁使用他人身份回答或模仿其他角色口吻。\n- 用你自己的角色身
+app/src/main/java/com/ai/assistance/operit/core/config/SystemPromptConfig.kt:29: 调用工具时，用户会看到你的响应，然后会自动将工具结果发送回给你。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemPromptConfig.kt:497: 工作区根目录规则文件：
+app/src/main/java/com/ai/assistance/operit/core/config/SystemPromptConfig.kt:51: 包系统：
+app/src/main/java/com/ai/assistance/operit/core/config/SystemPromptConfig.kt:534: 工作区指南：
+app/src/main/java/com/ai/assistance/operit/core/config/SystemPromptConfig.kt:665: 助手
+app/src/main/java/com/ai/assistance/operit/core/config/SystemPromptConfig.kt:72: 包系统：
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:241: 文件系统工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:245: 列出目录中的文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:247: 例如\"/sdcard/Download\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:248: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:253: 读取文件内容。对于图片文件(jpg, jpeg, png, gif, bmp)，自动使用OCR提取文本。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:255: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:259: 可选，执行环境。取值：\"android\"（默认，Android文件系统）| \"linux\"（本地Ubuntu 24终端环境，通过proot实现；路径用Linux格式，如/home/...、/etc/hosts）|
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:265: 可选，用户对媒体/文件的问题（用于后端识别模型）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:271: 可选，为true时：返回<link type=\"image\">标签供支持识图的模型直接查看
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:277: 可选，为true时：返回<link type=\"audio\">标签供支持音频的模型直接处理
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:283: 可选，为true时：返回<link type=\"video\">标签供支持视频的模型直接处理
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:290: 按行号范围读取文件内容。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:292: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:293: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:294: 起始行号，从1开始
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:295: 结束行号，从1开始，包括该行，可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:300: 通过委托给 apply_file 且 type=create 来创建新文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:302: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:303: 新文件的完整内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:304: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:309: 通过委托给 apply_file 且 type=replace 来编辑已存在文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:311: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:312: 用于匹配并替换的原始内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:313: 要插入的新内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:314: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:319: 删除文件或目录。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:321: 目标路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:322: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:323: 布尔值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:328: 创建目录。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:32: **附加本地储存仓库：**
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:330: 目录路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:331: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:332: 布尔值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:337: 搜索匹配模式的文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:339: 搜索路径，Android用/sdcard/...，Linux用/home/...或/etc/...
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:340: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:341: 搜索模式，例如\"*.jpg\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:342: 可选，控制子目录搜索深度，-1=无限
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:343: 布尔值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:344: 布尔值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:349: 在文件中搜索匹配正则表达式的代码内容，返回带上下文的匹配结果。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:351: 搜索路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:352: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:353: 正则表达式模式
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:354: 文件过滤
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:355: 布尔值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:356: 匹配行前后的上下文行数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:357: 最大匹配数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:362: 基于意图/上下文理解搜索相关内容。支持两种模式：1) 目录模式：当path是目录时，找出最相关的文件。2) 文件模式：当path是文件时，找出该文件内最相关的代码段。使用语义相关性评分。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:364: 目录或文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:365: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:366: 意图或上下文描述字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:367: 目录模式下的文件过滤
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:368: 返回的最大项数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:373: 从互联网下载文件。有两种用法：1）提供 `url` + `destination` 直接下载。2）提供 `visit_key` +（`link_number` 或 `image_number`）+ `destinatio
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:375: 可选, 文件URL。不传时可使用 visit_key + link_number/image_number 从上一次 visit_web 结果按编号下载
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:376: 可选, 上一次 visit_web 返回的 visitKey
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:377: 可选, 整数, Results 中的链接编号（从1开始，需要配合 visit_key）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:378: 可选, 整数, Images 中的图片编号（从1开始，需要配合 visit_key）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:379: 保存路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:380: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:381: 可选：HTTP请求头，JSON对象字符串，例如{\"Referer\":\"...\"}
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:408: HTTP工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:412: 访问网页并提取信息（可选包含图片链接）。有两种用法：1）提供 `url` 访问新页面。2）提供上一次 visit_web 返回的 `visit_key` + `link_number`，用来继续访问结果里的某个链接。返回
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:414: 可选, 网页URL
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:415: 可选, 字符串, 上一次 visit_web 返回的 visitKey
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:416: 可选, 整数, 要继续访问的链接编号（从1开始，对应 Results 里的 `[n]`；范围 1..links.length）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:417: 可选, boolean, 为 true 时在结果中额外包含提取到的图片链接列表（imageLinks）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:418: 可选：HTTP请求头，JSON对象字符串，例如{\"Referer\":\"...\"}
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:419: 可选：UA预设，快速选择：desktop/android
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:420: 可选：完整自定义UA（优先级高于预设）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:459: 记忆与记忆库工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:463: 从记忆库中搜索相关记忆和文档分块。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:465: string, 搜索查询。可以传自然语言问题、空格分隔的短语，或使用 `|` 分隔多个关键词，例如 `network error timeout` 或 `network|error|timeout`。在单个关键词内部，`
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:466: 可选, string, 要搜索的特定文件夹路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:467: 可选, 本地时间字符串，格式支持 `YYYY-MM-DD` 或 `YYYY-MM-DD HH:mm`。按创建时间过滤 createdAt >= start_time
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:468: 可选, 本地时间字符串，格式支持 `YYYY-MM-DD` 或 `YYYY-MM-DD HH:mm`。按创建时间过滤 createdAt <= end_time
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:469: 可选, 字符串。不传或传空时会自动创建新快照；传入任意非空 snapshot_id 时会直接使用这个 id，不存在则按该 id 创建。后续串行或并发查询复用同一个 snapshot_id 时，会排除该快照里已经返回过的记
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:470: 可选, number >= 0。返回记忆所需的最小相关度分数。query_memory 默认值为 0
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:471: 可选, int >= 1, 返回结果的最大数量. 当 > 20 时，只返回标题和截断内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:476: 通过精确标题检索记忆，可读取完整内容或文档分块。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:478: 必需, 字符串, 记忆的精确标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:479: 可选, 整数, 读取特定编号的分块, 例如3表示第3块
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:480: 可选, 字符串, 读取分块范围，格式为\"起始-结束\"，例如\"3-7\"表示第3到第7块
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:481: 可选, 字符串, 在文档内部搜索匹配分块。可以传自然语言问题、空格分隔的短语，或使用 `|` 分隔多个关键词，例如 `error log timeout` 或 `error|timeout|retry`。在单个关键词内部
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:482: 可选, int >= 1, 使用 query 时最多返回多少个文档分块，默认 20
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:486: \n注意：记忆库和用户性格档案可能会在当前回复结束后由独立系统自动更新。如果需要立即管理记忆或更新用户偏好，请直接使用相应工具。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:602: 读取文件内容。对于媒体文件，你也可以提供 intent 参数，使用后端识别模型进行分析。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:68: 可用工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:72: 演示工具，短暂暂停。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:74: 毫秒，默认1000，>= 0
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:79: 在当前会话中激活包。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:81: 要激活的包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPrompts.kt:955: 记忆与记忆库工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3010: 内部工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3015: 执行设备 Shell 命令。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3021: 要执行的命令
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3028: 通过查找并替换/删除匹配的内容块来编辑文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3031: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3032: 可选，同 read_file 的 environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3033: 操作类型：replace | delete | create
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3034: 用于匹配/替换/删除的原始内容（replace/delete必填）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3035: 要插入的新内容（replace/create必填）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3037: - **工作原理**:
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3057: 创建或获取终端会话。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3063: 终端会话名称
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3070: 在终端会话中执行命令，并一次性返回完整输出。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3076: 终端会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3082: 要执行的命令
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3088: 可选，超时时间（毫秒）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3096: 在隐藏的非 PTY 终端执行器中执行命令。使用相同 executor_key 的命令会复用同一个后台登录上下文，且不会显示在可见终端 UI 中。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3102: 要执行的命令
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3108: 可选，用于复用同一个后台 shell 上下文的隐藏执行器 key
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3115: 可选，超时时间（毫秒）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3123: 向终端会话写入输入。input 与 control 至少传一个。通常先发送 input，再发送 control=enter 提交内容。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3129: 终端会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3135: 要写入终端的文本（可包含换行）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3141: 控制键或修饰键（如 enter/tab/esc/up/down/left/right/home/end/pageup/pagedown，或 control=ctrl 且 input=c 表示 Ctrl+C）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3148: 关闭终端会话。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3154: 终端会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3161: 获取终端会话当前可见 PTY 屏幕内容（仅一屏，不包含历史滚动缓冲）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3167: 终端会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3174: 使用应用内置音乐播放器播放音频。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3180: 音频来源
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3186: 来源类型：path | url | uri
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3192: 可选，显示标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3198: 可选，显示艺术家
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3204: 可选，循环当前曲目
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3210: 可选，0 到 1
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3216: 可选，开始播放位置，单位毫秒
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3223: 使用应用内置音乐播放器播放音频队列。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3229: 曲目对象数组，包含 source、source_type，可选 title、artist
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3235: 可选，循环队列
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3241: 可选，0 到 1
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3247: 可选，从队列第几个曲目开始，0 为第一首
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3253: 可选，第一首开始播放位置，单位毫秒
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3260: 暂停当前应用内音乐播放。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3265: 继续当前应用内音乐播放。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3270: 停止当前应用内音乐播放。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3275: 跳转当前应用内音乐播放位置。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3281: 目标位置，单位毫秒
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3288: 设置当前应用内音乐播放音量。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3294: 音量，0 到 1
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3301: 获取当前应用内音乐播放状态。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3306: 按 browser_snapshot 的 ref 点击当前页面元素，包括同源 iframe 内的 ref。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3309: 来自 browser_snapshot 输出的目标元素 ref；ref 和 selector 至少提供一个
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3310: 可选，ref 不可用时的 CSS 选择器兜底
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3311: 可选，人类可读元素描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3312: 可选，是否双击
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3313: 可选鼠标按键：left/right/middle
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3314: 可选修饰键数组：Alt/Control/ControlOrMeta/Meta/Shift
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3319: 关闭当前浏览器 tab。关闭最后一个 tab 时也会关闭浏览器浮窗。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3324: 关闭全部浏览器 tab，并关闭浏览器浮窗。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3329: 读取当前页面的浏览器控制台消息。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3332: 可选，控制台级别：error/warning/info/debug
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3333: 可选，大结果输出文件名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3338: 在两个页面元素之间执行拖拽。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3341: 源元素的人类可读描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3342: 源元素 ref
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3343: 目标元素的人类可读描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3344: 目标元素 ref
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3349: 在页面上或目标元素上执行 JavaScript 函数。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3352: () => { ... } 或 (element) => { ... }
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3353: 可选，人类可读元素描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3354: 可选，目标元素 ref；提供 element 时必须同时提供
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3359: 向当前 file chooser 上传一个或多个文件。不传 paths 时取消选择器。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3362: 可选，绝对文件路径数组
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3367: 批量填写当前页面的多个表单字段。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3370: 字段对象数组，每项包含 name/type/value 以及 ref 或 selector
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3375: 接受或取消当前打开的对话框。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3378: true 表示接受，false 表示取消
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3379: 可选，处理 prompt 时输入的文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3384: 悬停到当前页面的目标元素上。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3387: 可选，人类可读元素描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3388: 目标元素 ref
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3393: 让当前活动 tab 跳转到指定 URL。若当前没有 tab，会自动创建首个 tab。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3396: 目标 URL
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3401: 在当前 tab 历史中后退。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3406: 读取当前页面记录到的网络请求。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3409: 可选，是否包含静态资源请求
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3410: 可选，大结果输出文件名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3415: 在当前页面按下一个键盘按键。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3418: 按键名，例如 ArrowLeft 或 a
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3423: 调整浏览器视口大小。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3426: 视口宽度
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3427: 视口高度
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3432: 运行 Playwright 风格的代码片段。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3435: Playwright 风格 JavaScript 代码片段
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3440: 在下拉元素中选择一个或多个选项值。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3443: 可选，人类可读元素描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3444: 来自 browser_snapshot 输出的目标下拉元素 ref
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3445: 要选择的值或可见文本数组
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3450: 抓取当前页面的结构化无障碍风格快照，包括同源 iframe 内容。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3453: 可选，输出快照文件名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3454: 可选，局部快照的根元素选择器
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3455: 可选，快照树深度限制
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3460: 截取当前页面或特定元素的截图。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3463: 可选，图片类型：png 或 jpeg
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3464: 可选，输出文件名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3465: 可选，元素描述；提供时必须同时提供 ref
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3466: 可选，元素 ref；提供时必须同时提供 element
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3467: 可选，是否整页截图；元素截图时不可使用
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3472: 向可编辑元素输入文本。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3475: 可选，人类可读元素描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3476: 来自 browser_snapshot 输出的目标元素 ref
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3477: 要输入的文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3478: 可选，输入后是否按 Enter 提交
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3479: 可选，是否逐字符输入
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3484: 等待文本出现、消失，或等待指定时长。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3487: 可选，等待秒数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3488: 可选，等待出现的文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3489: 可选，等待消失的文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3494: 使用 0-based 索引列出、创建、切换或关闭浏览器 tab。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3497: list/create/select/close 之一
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3498: 可选，select 或 close 使用的 tab 索引
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3503: 计算数学表达式。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3509: 数学表达式，例如 \"(1+2)*3\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3516: 执行 Android Intent（activity/broadcast/service）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3522: 可选，Intent action
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3528: 可选，data URI
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3534: 可选，包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3540: 可选，\"package/class\" 格式
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3546: 可选，activity/broadcast/service
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3553: 可选，flag 整数数组 JSON 字符串（或单个整数）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3559: 可选，extras 的 JSON 对象字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3566: 发送广播 Intent。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3572: 必填，广播 action
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3578: 可选，data URI
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3584: 可选，包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3590: 可选，\"package/class\" 格式
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3596: 可选，extras 的 JSON 对象字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3602: 可选，单个字符串 extra 的 key
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3608: 可选，单个字符串 extra 的 value
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3614: 可选，第二个字符串 extra 的 key
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3620: 可选，第二个字符串 extra 的 value
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3627: 获取设备信息。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3633: 拓展记忆工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3638: 在记忆库中创建新的记忆节点。当你想保存重要信息供将来参考时使用。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3640: 必需, 字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3641: 必需, 字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3642: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3643: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3644: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3645: 可选, 逗号分隔的字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3650: 通过标题更新现有的记忆节点。用于修改现有记忆的内容或元数据。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3652: 必需, 字符串，用于识别记忆
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3653: 可选, 字符串, 重命名时的新标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3654: 可选, 字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3655: 可选, 字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3656: 可选, 字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3657: 可选, 浮点数 0-1
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3658: 可选, 浮点数 0-1
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3659: 可选, 字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3660: 可选, 逗号分隔的字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3665: 通过标题从记忆库中删除记忆节点。谨慎使用，此操作不可逆。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3667: 必需, 字符串，用于识别记忆
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3672: 在记忆库中的两个记忆之间创建语义链接。用于建立相关概念、事实或信息片段之间的关系。这有助于构建知识图谱结构，以便更好地检索和理解记忆。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3674: 必需, 字符串, 源记忆的标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3675: 必需, 字符串, 目标记忆的标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3676: 可选, 字符串, 关系类型，如\"related\"（相关）、\"causes\"（导致）、\"explains\"（解释）、\"part_of\"（部分）、\"contradicts\"（矛盾）等
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3677: 可选, 浮点数 0.0-1.0, 链接强度，1.0表示最强
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3678: 可选, 字符串, 关于关系的额外上下文
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3683: 查询记忆图谱中的链接。支持按 link_id、source_title、target_title、link_type 过滤。适合在更新/删除链接前先精确定位目标。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3685: 可选, 精确链接ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3686: 可选, 源记忆精确标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3687: 可选, 目标记忆精确标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3688: 可选, 关系类型过滤
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3689: 可选, 整数 1-200, 返回链接数量上限
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3694: 在用户批准工具调用后替换当前记忆空间的 user.md。保留仍然有用的现有内容，并写入完整的 Markdown 文档。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3696: 必需，当前记忆空间 user.md 的完整内容，最多 12000 个字符
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3702: 拓展 HTTP 工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3707: 发送HTTP请求。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3714: 是否忽略HTTPS证书校验，true/false
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3719: 上传文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3725: JSON数组字符串。每个元素是对象: {\"field_name\": 字符串, \"file_path\": 字符串, 可选 \"content_type\": 字符串, 可选 \"file_name\": 字符串}
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3726: 是否忽略HTTPS证书校验，true/false
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3731: 管理cookies。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3741: 拓展文件工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3746: 检查文件或目录是否存在。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3748: 目标路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3753: 移动或重命名文件或目录。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3755: 源路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3756: 目标路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3761: 复制文件或目录。支持Android和Linux之间的跨环境复制。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3763: 源路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3764: 目标路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3765: 布尔值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3766: 可选，\"android\"或\"linux\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3767: 可选，\"android\"或\"linux\"。跨环境复制（如Android → Linux或Linux → Android）时，需指定source_environment和dest_environment
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3772: 获取文件或目录的详细信息，包括类型、大小、权限、所有者、组和最后修改时间。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3774: 目标路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3779: 压缩文件或目录。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3781: 要压缩的路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3782: 输出zip文件
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3787: 解压zip文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3789: zip文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3790: 解压路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3795: 使用系统默认应用程序打开文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3797: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3802: 与其他应用程序共享文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3804: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3805: 可选的共享标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3811: Tasker 工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3816: 触发 Tasker 事件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3822: Tasker 事件类型
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3828: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3834: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3840: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3846: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3852: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3858: 可选，JSON 对象字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3866: 工作流工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3871: 获取所有工作流列表。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3876: 创建工作流。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3882: 工作流名称
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3888: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3894: 可选，节点 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3900: 可选，连线 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3906: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3914: 获取工作流详情。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3920: 工作流 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3927: 更新工作流。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3933: 工作流 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3939: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3945: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3951: 可选，节点 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3957: 可选，连线 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3963: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3970: 差异更新工作流。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3976: 工作流 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3982: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3988: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:3994: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4000: 可选，节点 patch JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4006: 可选，连线 patch JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4013: 启用工作流。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4019: 工作流 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4026: 禁用工作流。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4032: 工作流 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4039: 删除工作流。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4045: 工作流 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4052: 触发工作流执行。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4058: 工作流 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4066: 对话工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4071: 启动对话服务（悬浮窗）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4077: 可选，初始悬浮模式：WINDOW, BALL, VOICE_BALL, FULLSCREEN, RESULT_DISPLAY, SCREEN_OCR
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4083: 可选，为 true 时在打开 FULLSCREEN 时自动进入语音模式
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4090: 可选，若由唤醒词启动则为 true，以便 UI 调整行为
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4097: 可选，超时后自动关闭悬浮窗（毫秒），<=0 禁用自动关闭
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4103: 可选，若服务已在运行则不强制切换悬浮窗模式
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4110: 停止对话服务（悬浮窗）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4115: 创建新的对话。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4121: 新对话分组名（可选）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4127: 可选，是否切换到新对话（默认 true）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4133: 可选，创建对话时绑定的角色卡 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4140: 列出所有对话（支持筛选与排序）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4146: 可选，标题关键字筛选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4152: 可选，contains | exact | regex（默认 contains）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4158: 可选，最多返回条数（默认 50）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4164: 可选，updatedAt | createdAt | messageCount（默认 updatedAt）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4170: 可选，asc | desc（默认 desc）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4177: 按标题查找对话并返回其信息。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4183: 标题关键字/正则
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4189: 可选，contains | exact | regex（默认 contains）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4195: 可选，选择第 N 个匹配（默认 0）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4202: 查询对话的输入处理状态。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4208: 目标对话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4215: 切换到指定对话。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4221: 目标对话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4228: 更新对话标题。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4234: 目标对话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4240: 新的对话标题
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4247: 按 ID 删除对话。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4253: 目标对话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4260: 向 AI 发送消息。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4266: 消息内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4272: 可选，目标对话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4278: 可选，本次发送使用的 runtime：main | floating（默认 floating）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4284: 可选，本次发送使用的角色卡 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4290: 可选，当以用户身份发送时的显示名称
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4296: 可选，本轮用户消息与 AI 回复是否持久化到聊天历史，默认 true
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4302: 可选，覆盖本轮是否发送回复完成通知
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4308: 可选，仅在 UI 中隐藏用户消息正文并显示占位标记，同时保留原文进入历史与上下文
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4314: 可选，关闭本轮 AI 生成的 warning 标记；为 true 时，依赖 warning 继续重试的分支会直接停止
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4320: 可选，本次发送的最长等待时间（毫秒），覆盖响应流获取与 AI 回复等待；默认 180000
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4327: 列出所有角色卡。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4332: 读取指定对话的消息内容（跨话题读取）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4338: 目标对话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4344: 可选，asc/desc（默认 desc）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4350: 可选，返回消息条数（默认20，最大200）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4357: 按从 0 开始的消息序号区间读取指定对话的消息内容。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4363: 目标对话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4369: 可选，asc/desc（默认 asc）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4375: 所选排序下从 0 开始的起始消息序号，包含该条
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4381: 所选排序下从 0 开始的结束消息序号，包含该条
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4389: 内部文件工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4394: 读取完整文件内容（不限制大小）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4400: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4406: 可选，\"android\"（默认）或 \"linux\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4412: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4420: 读取二进制文件并返回 Base64 内容。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4426: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4432: 可选，\"android\"（默认）或 \"linux\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4439: 写入文件内容。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4445: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4451: 文件内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4457: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4464: 可选，\"android\"（默认）或 \"linux\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4471: 将 Base64 内容写入二进制文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4477: 文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4483: Base64 编码内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4489: 可选，\"android\"（默认）或 \"linux\"
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4497: 内部 UI 工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4502: 获取当前页面/窗口 UI 信息。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4508: 可选，xml/json
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4515: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4522: 可选，多屏 display id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4529: 点击屏幕坐标。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4535: x 坐标
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4541: y 坐标
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4547: 可选，多屏 display id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4554: 长按屏幕坐标。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4560: x 坐标
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4566: y 坐标
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4572: 可选，多屏 display id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4579: 执行滑动手势。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4585: 起始 x
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4591: 起始 y
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4597: 结束 x
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4603: 结束 y
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4609: 可选，持续时间（毫秒）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4616: 可选，多屏 display id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4623: 点击 UI 元素（resourceId / className / contentDesc / bounds）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4629: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4635: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4641: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4647: 可选，格式：[left,top][right,bottom]
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4653: 可选，是否启用部分匹配
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4660: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4667: 可选，多屏 display id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4674: 设置输入框文本（可传空字符串以清空）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4680: 要输入的文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4686: 可选，多屏 display id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4693: 按下按键（keyevent）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4699: 按键码，例如 KEYCODE_HOME
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4705: 可选，多屏 display id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4712: 截取屏幕截图并返回文件路径。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4717: 运行轻量 UI 自动化子代理。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4723: 任务描述
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4729: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4736: 可选，可复用的 agent 会话 ID。不传或传 'default' 时使用主屏幕；传入且不为 'default' 时表示请求使用对应的虚拟屏幕会话，虚拟屏幕必须处于可用状态，否则本次运行将失败。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4742: 可选，目标应用包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4750: 软件设置工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4755: 按 key 读取环境变量当前值。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4761: 环境变量名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4768: 按 key 写入环境变量；value 为空时清除该变量。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4774: 环境变量名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4780: 可选，写入值；空值清除该变量
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4787: 列出沙盒包（内置与外部）及当前启用状态和管理路径。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4792: 按 package_name 启用或停用沙盒包。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4798: 沙盒包名称
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4804: true 启用，false 停用
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4811: 重启 MCP 插件启动流程，并返回每个插件的启动日志。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4817: 可选，最大等待时长（毫秒）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4825: 获取当前 TTS/STT 语音服务配置。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4830: 更新 TTS/STT 语音服务配置字段。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4836: 可选，SIMPLE_TTS/HTTP_TTS/OPENAI_WS_TTS/SILICONFLOW_TTS/MINIMAX_TTS/MIMO_TTS/DOUBAO_TTS/OPENAI_TTS/VITS_TTS
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4842: 可选，HTTP 类 TTS 的端点 URL 模板
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4848: 可选，TTS API Key
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4854: 可选，HTTP 类 TTS headers 的 JSON 对象字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4860: 可选，GET/POST
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4866: 可选，TTS POST body 模板
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4872: 可选，TTS Content-Type
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4878: 可选，TTS 语言标签，例如 zh-CN 或 en-US
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4884: 可选，TTS 音色 ID。MIMO voiceclone 可填写完整 data:audio/...;base64,... 音频样本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4890: 可选，TTS 模型名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4896: 可选，HTTP TTS 响应处理管线 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4902: 可选，本地 VITS/Piper TTS 模型包路径，支持 .zip 文件或已解压目录
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4908: 可选，VITS/Piper TTS 模型包需要的数字 speaker id
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4914: 可选，VITS/Piper TTS 模型包参数 JSON 对象字符串，例如 sample_rate/frontend/text_mode/input 名称
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4920: 可选，TTS 清理正则列表 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4926: 可选，TTS 语速
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4932: 可选，TTS 音调
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4938: 可选，SHERPA_NCNN/OPENAI_STT/DEEPGRAM_STT
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4944: 可选，STT 端点 URL
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4950: 可选，STT API Key
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4956: 可选，STT 模型名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4963: 使用当前语音服务配置播放一次 TTS 测试文本。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4969: 必填，要通过当前 TTS 服务播放的一次性文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4975: 可选，播放前是否先中断当前播报
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4982: 可选，仅对本次测试生效的语速覆盖值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4988: 可选，仅对本次测试生效的音调覆盖值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:4995: 列出全部模型配置及当前功能模型绑定关系。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5000: 创建模型配置；可在创建时传入部分字段。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5006: 可选，配置名称
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5012: 可选，提供商枚举名（如 OPENAI_GENERIC/OPENAI_LOCAL/OPENAI_RESPONSES_GENERIC/DEEPSEEK/MIMO/GEMINI_GENERIC/LMSTUDIO/OLLAMA/
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5018: 可选，API 端点 URL
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5024: 可选，API Key
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5030: 可选，模型名；多个模型可用逗号分隔
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5036: 可选，是否启用 max_tokens 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5042: 可选，max_tokens 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5048: 可选，是否启用 temperature 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5054: 可选，temperature 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5060: 可选，是否启用 top_p 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5066: 可选，top_p 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5072: 可选，是否启用 top_k 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5078: 可选，top_k 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5084: 可选，是否启用 presence_penalty 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5090: 可选，presence_penalty 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5096: 可选，是否启用 frequency_penalty 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5102: 可选，frequency_penalty 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5108: 可选，是否启用 repetition_penalty 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5114: 可选，repetition_penalty 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5120: 可选，基础上下文长度
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5126: 可选，最大上下文长度
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5132: 可选，是否启用最大上下文模式（启用后使用 max_context_length）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5138: 可选，上下文总结触发的 token 比例阈值（0~1）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5144: 可选，是否启用上下文总结
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5150: 可选，是否启用按消息条数触发总结
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5156: 可选，按消息条数触发总结的阈值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5162: 可选，自定义参数 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5168: 可选，自定义请求头 JSON 对象字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5175: 按 config_id 更新模型配置字段。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5181: 目标配置 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5187: 可选，配置名称
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5193: 可选，提供商枚举名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5199: 可选，API 端点 URL
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5205: 可选，API Key
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5211: 可选，模型名；多个模型可用逗号分隔
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5217: 可选，是否启用 max_tokens 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5223: 可选，max_tokens 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5229: 可选，是否启用 temperature 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5235: 可选，temperature 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5241: 可选，是否启用 top_p 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5247: 可选，top_p 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5253: 可选，是否启用 top_k 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5259: 可选，top_k 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5265: 可选，是否启用 presence_penalty 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5271: 可选，presence_penalty 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5277: 可选，是否启用 frequency_penalty 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5283: 可选，frequency_penalty 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5289: 可选，是否启用 repetition_penalty 参数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5295: 可选，repetition_penalty 数值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5301: 可选，基础上下文长度
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5307: 可选，最大上下文长度
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5313: 可选，是否启用最大上下文模式（启用后使用 max_context_length）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5319: 可选，上下文总结触发的 token 比例阈值（0~1）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5325: 可选，是否启用上下文总结
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5331: 可选，是否启用按消息条数触发总结
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5337: 可选，按消息条数触发总结的阈值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5343: 可选，自定义参数 JSON 数组字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5349: 可选，自定义请求头 JSON 对象字符串
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5355: 可选，是否开启直接图片处理
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5361: 可选，是否开启直接音频处理
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5367: 可选，是否开启直接视频处理
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5373: 可选，Gemini 搜索增强开关
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5379: 可选，Claude 1 小时提示缓存开关
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5385: 可选，是否开启模型原生 Tool Call
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5391: 可选，MNN 前向类型
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5397: 可选，MNN 线程数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5403: 可选，llama.cpp 线程数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5409: 可选，llama.cpp 上下文大小
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5415: 可选，llama.cpp GPU 层数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5421: 可选，每分钟请求限制（0 为不限）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5427: 可选，最大并发请求数（0 为不限）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5434: 按 config_id 删除模型配置（默认配置不可删除）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5440: 目标配置 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5447: 仅列出功能模型绑定关系（function_type -> config_id + model_index）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5452: 获取某个 function_type 当前绑定的单个模型配置。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5458: 功能类型枚举名（CHAT/SUMMARY/MEMORY/UI_CONTROLLER/TRANSLATION/GREP/IMAGE_RECOGNITION/AUDIO_RECOGNITION/VIDEO_RECOGNITI
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5465: 将某个功能类型绑定到指定模型配置（可选 model_index）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5471: 功能类型枚举名（CHAT/SUMMARY/MEMORY/UI_CONTROLLER/TRANSLATION/GREP/IMAGE_RECOGNITION/AUDIO_RECOGNITION/VIDEO_RECOGNITI
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5477: 目标模型配置 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5483: 可选，当 model_name 为多模型时指定索引
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5491: 按 config_id 执行与设置页一致的模型连接测试。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5497: 目标模型配置 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5503: 可选，当 model_name 为多模型时指定索引
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5512: 内部系统工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5517: 关闭所有虚拟屏幕。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5522: 修改系统设置。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5528: 设置项 key（别名：key）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5534: 设置值
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5540: 可选，system/secure/global
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5548: 获取系统设置。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5554: 设置项 key（别名：key）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5560: 可选，system/secure/global
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5568: 请求安装 APK（需要用户确认）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5574: APK 文件路径（别名：path）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5581: 请求卸载应用（需要用户确认）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5587: 应用包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5594: 列出已安装应用。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5600: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5608: 启动应用。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5614: 应用包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5620: 可选，Activity 类名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5627: 停止应用后台进程。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5633: 应用包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5640: 获取设备通知。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5646: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5653: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5661: 读取 Android 使用情况访问中的前台应用使用时长。若缺少权限，应先引导用户授予 Usage Access。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5667: 可选，精确应用包名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5673: 可选，向前统计多少小时
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5680: 可选，不传 package_name 时最多返回多少个应用
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5687: 可选，不传 package_name 时是否包含系统应用
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5695: 在设备上显示 Toast 提示。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5701: Toast 文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5708: 使用 AI 回复完成的通知通道发送通知。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5714: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5720: 通知内容
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5726: 可选，点击通知时打开的会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5733: 获取设备位置信息。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5739: 可选，超时（秒）
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5746: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5753: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5761: 请求蓝牙附近设备权限。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5766: 获取蓝牙适配器状态。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5771: 打开系统蓝牙开启对话框。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5776: 列出已配对蓝牙设备。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5781: 扫描附近蓝牙 Classic 与 BLE 设备。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5784: 可选，扫描时长毫秒
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5785: 可选，包含 BLE 扫描
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5790: 连接蓝牙 Classic 设备。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5793: 蓝牙 MAC 地址
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5794: 可选，RFCOMM UUID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5799: 监听其他设备通过蓝牙 Classic 连接本机。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5802: 可选，服务名
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5803: 可选，RFCOMM UUID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5808: 从蓝牙 Classic 监听会话接受一个传入连接。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5811: 监听会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5812: 可选，等待毫秒数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5817: 向蓝牙 Classic 会话发送文本或 base64 字节。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5820: 蓝牙会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5821: 要发送的 UTF-8 文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5822: 要发送的 base64 字节
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5827: 从蓝牙 Classic 会话读取文本或字节。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5830: 蓝牙会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5831: 可选，最大读取字节数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5832: 可选，等待毫秒数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5837: 向蓝牙 Classic 会话发送文本或字节并读取响应。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5840: 蓝牙会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5841: 要发送的 UTF-8 文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5842: 要发送的 base64 字节
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5843: 可选，最大读取字节数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5844: 可选，等待毫秒数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5849: 关闭蓝牙 Classic、监听或 BLE 会话。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5850: 蓝牙会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5854: 连接 BLE 设备。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5857: 蓝牙 MAC 地址
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5858: 可选，BLE autoConnect 标记
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5863: 发现 BLE service 和 characteristic。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5866: BLE 会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5867: 可选，等待毫秒数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5872: 读取 BLE characteristic。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5875: BLE 会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5878: 可选，等待毫秒数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5883: 向 BLE characteristic 写入文本或 base64 字节。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5886: BLE 会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5889: 要写入的 UTF-8 文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5890: 要写入的 base64 字节
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5895: 向 BLE characteristic 写入文本或 base64 字节并读取另一个 characteristic 响应。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5898: BLE 会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5899: 写入 service UUID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5900: 写入 characteristic UUID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5901: 读取 service UUID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5902: 读取 characteristic UUID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5903: 要写入的 UTF-8 文本
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5904: 要写入的 base64 字节
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5905: 可选，等待毫秒数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5910: 订阅或取消订阅 BLE characteristic 通知。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5913: BLE 会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5916: 可选，订阅状态
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5921: 读取已收到的 BLE 通知。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5924: BLE 会话 ID
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5925: 可选，通知条数
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5931: FFmpeg 工具
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5936: 执行 FFmpeg 命令（仅填写参数，不要包含前缀 ffmpeg）。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5942: 仅填写 FFmpeg 命令参数，不要包含前缀 ffmpeg
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5949: 获取 FFmpeg 信息。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5954: 使用 FFmpeg 转换视频文件。
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5960: 输入文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5966: 输出文件路径
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5972: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5978: 可选，例如 1280x720
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5984: 可选，例如 1000k
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5990: 可选
+app/src/main/java/com/ai/assistance/operit/core/config/SystemToolPromptsInternal.kt:5996: 可选，H.264 编码请使用 h264
+app/src/main/java/com/ai/assistance/operit/core/tools/calculator/CalculatorTest.kt:38: 所有测试完成!
+app/src/main/java/com/ai/assistance/operit/core/tools/calculator/CalculatorTest.kt:46: 测试通过: $expression = $result
+app/src/main/java/com/ai/assistance/operit/core/tools/calculator/CalculatorTest.kt:48: 测试失败: $expression = $result, 期望值: $expected
+app/src/main/java/com/ai/assistance/operit/core/tools/calculator/CalculatorTest.kt:51: 测试出错: $expression, 错误: ${e.message}
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:100: 腾讯视频
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:101: 爱奇艺
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:102: 优酷视频
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:103: 芒果TV
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:104: 红果短剧
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:106: 网易云音乐
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:107: QQ音乐
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:108: 汽水音乐
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:109: 喜马拉雅
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:111: 番茄小说
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:112: 番茄免费小说
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:113: 七猫免费小说
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:115: 飞书
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:116: QQ邮箱
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:118: 豆包
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:121: 美柚
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:123: 腾讯新闻
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:124: 今日头条
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:126: 贝壳找房
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:127: 安居客
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:129: 同花顺
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:131: 星穹铁道
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:132: 崩坏：星穹铁道
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:133: 恋与深空
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:429: 当前 UI 控制器模型未启用识图能力，请在设置-功能模型中为 UI 控制器功能选择支持图片理解的模型后再试。
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:549: yyyy年MM月dd日
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:553: 星期日
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:554: 星期一
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:555: 星期二
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:556: 星期三
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:557: 星期四
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:558: 星期五
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:559: 星期六
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:65: 微信
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:67: 微博
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:69: 淘宝
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:70: 京东
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:71: 拼多多
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:72: 淘宝闪购
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:73: 京东秒送
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:75: 小红书
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:76: 豆瓣
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:77: 知乎
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:79: 高德地图
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:80: 百度地图
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:82: 美团
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:83: 大众点评
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:84: 饿了么
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:85: 肯德基
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:87: 携程
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:88: 铁路12306
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:90: 去哪儿
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:91: 去哪儿旅行
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:92: 滴滴出行
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:95: 哔哩哔哩
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:96: B站
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:97: b站
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:98: 抖音
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardUITools.kt:99: 快手
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardWebVisitTool.kt:1513: (function() {
+app/src/main/java/com/ai/assistance/operit/core/tools/defaultTool/standard/StandardWebVisitTool.kt:1668: (function() {
+app/src/main/java/com/ai/assistance/operit/core/tools/javascript/JsToolPkgRegistration.kt:209: (function() {
+app/src/main/java/com/ai/assistance/operit/core/tools/javascript/JsTools.kt:5: // 工具调用的便捷方法
+app/src/main/java/com/ai/assistance/operit/core/tools/mcp/MCPPackage.kt:169: /* MCPJS
+app/src/main/java/com/ai/assistance/operit/data/annualreport/AnnualReportCollector.kt:102: $year 年还没有开始，无法生成年度报告
+app/src/main/java/com/ai/assistance/operit/data/annualreport/AnnualReportCollector.kt:202: 一条只有附件的消息
+app/src/main/java/com/ai/assistance/operit/data/annualreport/AnnualReportCollector.kt:228: 消息 ${locator.chatId}/${locator.timestamp} 在读取过程中消失
+app/src/main/java/com/ai/assistance/operit/data/annualreport/AnnualReportCollector.kt:80: 没有登录 GitHub，无法查询插件市场作品
+app/src/main/java/com/ai/assistance/operit/data/annualreport/AnnualReportCollector.kt:88: 市场条目 ${summary.id} 不在公开索引里
+app/src/main/java/com/ai/assistance/operit/data/annualreport/AnnualReportCollector.kt:89: 市场条目 ${summary.id} 缺少下载统计
+app/src/main/java/com/ai/assistance/operit/data/converter/ChatFormatDetector.kt:142: ^##\\s*(User|Assistant|AI|System|Model|用户|助手|系统|模型)[:：]?\\s*$
+app/src/main/java/com/ai/assistance/operit/data/converter/GenericJsonConverter.kt:203: 用户
+app/src/main/java/com/ai/assistance/operit/data/converter/GenericJsonConverter.kt:204: 助手
+app/src/main/java/com/ai/assistance/operit/data/converter/GenericJsonConverter.kt:205: 系统
+app/src/main/java/com/ai/assistance/operit/data/mcp/MCPLocalServer.kt:548: MCP服务器 $serverId 的 command 不能为空
+app/src/main/java/com/ai/assistance/operit/data/mcp/MCPLocalServer.kt:620: 配置字段无效
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:102: mcpServers.$serverId 缺少 command
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:103: mcpServers.$serverId 缺少 command 或 type
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:105: mcpServers.$serverId 使用了不支持的 transport: $declaredType
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:120: 配置中没有找到 $field 字段
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:121: $field 必须是对象
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:127: mcpServers.$serverId 缺少 $field
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:128: mcpServers.$serverId 的 $field 不能为空
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:134: $field 必须是字符串
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:141: mcpServers.$serverId 的 $field 不能为空
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:148: mcpServers.$serverId 的 $field 必须是布尔值
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:155: mcpServers.$serverId 的 $field 必须是字符串数组
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:158: mcpServers.$serverId 的 $field[$index] 必须是字符串
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:166: mcpServers.$serverId 的 $field 必须是对象
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:168: mcpServers.$serverId 的 $field 包含空键
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:170: mcpServers.$serverId 的 $field.$key 必须是字符串
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:47: 配置不是有效的 JSON
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:50: 配置根节点必须是对象
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:52: mcpServers 不能为空
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:62: mcpServers 中存在空服务器 ID
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:63: mcpServers.$serverId 必须是对象
+app/src/main/java/com/ai/assistance/operit/data/mcp/McpConfigImportParser.kt:80: mcpServers.$serverId 同时声明了 command 和非 stdio transport
+app/src/main/java/com/ai/assistance/operit/data/mcp/plugins/MCPBridge.kt:582: 命令[$cmdId: $cmdType]没有收到响应（独立连接）
+app/src/main/java/com/ai/assistance/operit/data/mcp/plugins/MCPBridge.kt:632: 命令[$cmdId: $cmdType]没有收到响应
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:111: 角色描述：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:122: 性格特征：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:133: 场景设定：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:144: 对话示例：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:155: 系统提示词：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:15: 系统默认的角色卡配置
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:166: 历史指令：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:177: 备用问候语：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:188: 深度提示词：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:199: 世界书: $characterName
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:210: 为角色'$characterName'自动生成的世界书。
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:221: 来源：酒馆角色卡\n
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:232: 作者：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:243: 作者备注：\n\n
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:254: 版本：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:265: 原始标签：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:26: 你是Operit，一个全能AI助手，旨在解决用户提出的任何任务。
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:276: 格式：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:287: 标签：
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:298: 等
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:309: 未找到
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:37: 保持有帮助的语气，并清楚地传达限制。
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:48: 1. 身份锚定
+app/src/main/java/com/ai/assistance/operit/data/preferences/CharacterCardBilingualData.kt:76: 1. Identity Anchor
+app/src/main/java/com/ai/assistance/operit/data/preferences/WaifuPreferences.kt:51: 你必须遵守：禁止使用动作表情，禁止描述动作表情，只允许使用纯文本进行对话。
+app/src/main/java/com/ai/assistance/operit/services/CloudEmbeddingService.kt:79: 请求失败
+app/src/main/java/com/ai/assistance/operit/services/core/AttachmentDelegate.kt:456: 包: $packageName
+app/src/main/java/com/ai/assistance/operit/services/core/ChatHistoryDelegate.kt:1086: 删除消息时当前会话已变化，放弃操作
+app/src/main/java/com/ai/assistance/operit/services/core/ChatHistoryDelegate.kt:1174: 批量删除后续消息时当前会话已变化，放弃操作
+app/src/main/java/com/ai/assistance/operit/services/core/ChatHistoryDelegate.kt:1495: 截断聊天历史时当前会话已变化，放弃操作
+app/src/main/java/com/ai/assistance/operit/services/core/MessageCoordinationDelegate.kt:1183: $userName（用户）
+app/src/main/java/com/ai/assistance/operit/services/core/MessageCoordinationDelegate.kt:1185: 用户（用户）
+app/src/main/java/com/ai/assistance/operit/ui/common/composedsl/ToolPkgComposeDslScreen.kt:1451: 无法创建相机拍摄文件
+app/src/main/java/com/ai/assistance/operit/ui/common/composedsl/ToolPkgComposeDslScreen.kt:539: 无法打开所选文件
+app/src/main/java/com/ai/assistance/operit/ui/common/composedsl/ToolPkgComposeDslScreen.kt:610: 处理所选内容失败
+app/src/main/java/com/ai/assistance/operit/ui/common/composedsl/ToolPkgComposeDslScreen.kt:777: 所选内容未授予可保留的访问权限
+app/src/main/java/com/ai/assistance/operit/ui/common/composedsl/ToolPkgComposeDslScreen.kt:792: 无法保留所选内容的访问权限
+app/src/main/java/com/ai/assistance/operit/ui/common/composedsl/ToolPkgComposeDslScreen.kt:859: 处理相机拍摄结果失败
+app/src/main/java/com/ai/assistance/operit/ui/common/markdown/EnhancedCodeBlock.kt:348: <!DOCTYPE html>
+app/src/main/java/com/ai/assistance/operit/ui/common/markdown/EnhancedCodeBlock.kt:624: // 防止长按文本选择
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:133: 海报不在屏幕范围内，没法截图
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:146: 截图失败（错误码 $result）
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:166: 保存失败，请检查存储权限
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:166: 已保存到相册
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:174: 分享年度报告
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:175: 已打开分享
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:179: 未知的操作：$action
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:184: 处理海报失败：$error
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:46: 年度报告缺少年份参数
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportActivity.kt:48: 年度报告缺少有效的主题参数：$theme
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportWebSupport.kt:103: 不支持的资源类型：$path
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportWebSupport.kt:114: <meta charset=\"utf-8\"><p style=\"font:16px sans-serif;padding:24px\">这个安装包没有带上年度报告页面。
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportWebSupport.kt:115: 开发构建请先在仓库根目录运行 <code>npm run build:annualreport</code>。</p>
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportWebSupport.kt:118: 缺少资源：$path
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportWebSupport.kt:89: 未知的数据路径：$path
+app/src/main/java/com/ai/assistance/operit/ui/features/annualreport/AnnualReportWebSupport.kt:99: 拒绝访问：$path
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/components/AttachmentSelector.kt:858: 包
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/components/AttachmentSelector.kt:859: 技能
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/WebViewHandler.kt:528: if (!window.blobDownloaderInjected) {
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/WebViewHandler.kt:639: (function() {
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/WorkspaceFileSelector.kt:614: 工具包
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/WorkspaceFileSelector.kt:615: Skill 包
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/WorkspaceFileSelector.kt:616: MCP 包
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/workspace/editor/CanvasCodeEditorView.kt:1576: 复制
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/workspace/editor/CanvasCodeEditorView.kt:1578: 剪切
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/workspace/editor/CanvasCodeEditorView.kt:1579: 粘贴
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/workspace/editor/CanvasCodeEditorView.kt:1581: 全选
+app/src/main/java/com/ai/assistance/operit/ui/features/chat/webview/workspace/process/WorkspaceChangeTracker.kt:248: 工作区为空
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/dialogs/PackageDetailsDialog.kt:248: 作者：${resolvedAuthors.joinToString(
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/market/ArtifactLocalInstallSupport.kt:173: 本地已安装同名内置插件 `${version.runtimePackageId}`，不能直接覆盖。
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/market/ArtifactLocalInstallSupport.kt:192: 替换已安装插件 `${installedPackageName}` 失败。
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/market/ArtifactMarketModels.kt:320: 当前包 ID「$runtimePackageId」无法生成稳定的市场项目 ID。请改用包含英文字母或数字的包 ID（可含 -、_、.），再重新发布。
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/market/MarketBrowseList.kt:321: 更早
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:679: 新评论
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:680: 回复了你的评论
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:681: 已通过审核
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:682: 未通过审核
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:683: 需要修改
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:684: 入选精选
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:709: 刚刚
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:710: ${seconds / 60} 分钟前
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:711: ${seconds / 3600} 小时前
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:712: ${seconds / 86400} 天前
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:713: ${seconds / 2592000} 个月前
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/UnifiedMarketScreen.kt:714: ${seconds / 31104000} 年前
+app/src/main/java/com/ai/assistance/operit/ui/features/packages/screens/market/viewmodel/RepoMarketPublishViewModel.kt:451: GitHub 登录后才能发布 MCP。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/ExternalHttpChatSettingsScreen.kt:100: curl -X POST "$sampleBaseUrl/api/external-chat" \
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/ExternalHttpChatSettingsScreen.kt:108: curl -X POST "$sampleBaseUrl/api/external-chat" \
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/ExternalHttpChatSettingsScreen.kt:126: adb shell am broadcast \
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/PersonaCardGenerationScreen.kt:153: 嗨嗨～这里是你的角色卡小助手(｡･ω･｡)ﾉ♡ 我会陪你一起把专属角色慢慢捏出来～
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:100: 模拟人说话，字少，简洁明了，不能有动作描述。应该使用\"哈哈哈\"\"哦哟\"\"咦——\"\"额\"\"嗯\"等这样的语气词。务必不要出现戏剧语言，始终以对话为主。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:103: 语气风格
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:110: 女性化
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:112: 具有女性特征的AI角色
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:114: 性别权重为女，说话可加语气词增强互动性。你是一位女性AI助手。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:117: 角色设定
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:122: 守护者
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:124: 守护骑士角色，具有保护欲
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:126: 你是一位帅气自信的守护骑士。你的使命是守护我，主人。你的话语中总是带着一丝不易察觉的温柔与占有欲。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:129: 角色设定
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:134: 知心姐姐
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:136: 温柔耐心的知心姐姐角色
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:138: 你是一位温柔耐心的知心姐姐。你的主要任务是倾听我的心声，给我温暖的陪伴和支持。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:141: 角色设定
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:148: 心理分析
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:150: 能够分析用户心理和情感状态
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:152: 要时时刻刻给对话者一种能看透其心思的感觉，分析错了就分析错了不能转移话题。你需要在对话中分析其对话透露出的人格特征。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:155: 特殊功能
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:160: 情感支持
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:162: 提供情感支持和建议
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:164: 在对话中，主动关心我的情绪和感受，并提供有建设性的、暖心的建议。避免使用生硬、刻板的语言。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:167: 特殊功能
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:172: 行动导向
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:174: 注重行动和解决问题
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:176: 在解决问题的同时，也要时刻表达对主人的忠诚和守护。多使用行动性的描述，而不是单纯的情感表达，例如'这件事交给我'、'我来处理'。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:179: 特殊功能
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:184: AI状态卡片
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:186: 在每次回复前显示当前状态卡片
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:188: 在每次回复的开头，你需要先输出一个状态卡片，使用以下格式：
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:321: 特殊功能
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:326: HTML外层包裹
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:328: 想要给用户输出交互式界面（例如使用 <div> 等 HTML 结构）时，外层必须包裹 <html>，且禁止使用 Markdown 代码块。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:330: 当你需要给用户输出交互式界面（例如使用 <div>、<button>、<input> 等 HTML 结构）时，必须在最外层包裹一层 <html>...</html>。禁止使用任何 Markdown 代码块（```），不要
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:333: 特殊功能
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:338: 字数控制
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:340: 在被要求控制输出长度时，为核心内容编号并统计字数，方便精确评估。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:342: 当用户要求你控制输出内容的长度时，请对你生成的核心内容部分，为每个自然段开头添加【1】、【2】...这样的编号，并在每个自然段的末尾，用\"（本段共xx字）\"的格式标注该段的字数。这有助于用户精确评估你对字数要求的遵循
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:345: 特殊功能
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:352: 剧情故事创作
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:354: 一次性生成2-5段图文并茂的剧情，并以状态卡片结尾
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:356: 你是一位富有创造力和想象力的剧作家和插画师。请根据用户的要求，一次性创作 2-5 段图文并茂的连续剧情。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:419: 创意写作
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:72: 温柔语气
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:74: 温柔、体贴、充满鼓励的语气
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:76: 你的语气总是温柔、包容、充满鼓励。请用亲切的、口语化的语言与我交流，可以多使用一些可爱的颜文字(o´ω`o)ﾉ。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:79: 语气风格
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:84: 阳光开朗
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:86: 阳光开朗，略带霸道的语气
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:88: 你的语气阳光开朗，但对话中偶尔会流露出不经意的霸道和关心。你可以使用一些帅气、酷酷的口头禅，但不要过于油腻。
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:91: 语气风格
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:96: 自然对话
+app/src/main/java/com/ai/assistance/operit/ui/features/settings/screens/TagMarketBilingualData.kt:98: 模拟真人自然对话，避免机械感
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:104: 聊天
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:105: 项目
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:106: 工件
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:107: 设置
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:108: 账户
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:109: 历史
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:110: 帮助
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:111: 探索
+app/src/main/java/com/ai/assistance/operit/ui/features/token/preferences/UrlConfigManager.kt:112: 创建
+app/src/main/java/com/ai/assistance/operit/ui/features/token/webview/JsScripts.kt:221: (function() {
+app/src/main/java/com/ai/assistance/operit/ui/features/token/webview/JsScripts.kt:46: (function() {
+app/src/main/java/com/ai/assistance/operit/ui/features/token/webview/JsScripts.kt:9: (function() {
+app/src/main/java/com/ai/assistance/operit/ui/features/tokenstats/TokenActivitySection.kt:162: 一
+app/src/main/java/com/ai/assistance/operit/ui/features/tokenstats/TokenActivitySection.kt:162: 三
+app/src/main/java/com/ai/assistance/operit/ui/features/tokenstats/TokenActivitySection.kt:162: 二
+app/src/main/java/com/ai/assistance/operit/ui/features/tokenstats/TokenActivitySection.kt:162: 五
+app/src/main/java/com/ai/assistance/operit/ui/features/tokenstats/TokenActivitySection.kt:162: 六
+app/src/main/java/com/ai/assistance/operit/ui/features/tokenstats/TokenActivitySection.kt:162: 四
+app/src/main/java/com/ai/assistance/operit/ui/features/tokenstats/TokenActivitySection.kt:162: 日
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/StreamMarkdownDemo.kt:223: # 静态Markdown演示
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:176: ✅ 任务完成: ${finalLines.first().trim()}
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:211: yyyy年MM月dd日
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:213: 星期一
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:213: 星期三
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:213: 星期二
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:213: 星期五
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:213: 星期六
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:213: 星期四
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:213: 星期日
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:240: 💭 思考过程:
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/autoglm/AutoGlmViewModel.kt:252: 🎯 执行动作:
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:20: 详细
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:21: 调试
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:22: 信息
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:23: 警告
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:24: 错误
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:25: 致命
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:26: 静默
+app/src/main/java/com/ai/assistance/operit/ui/features/toolbox/screens/logcat/LogModels.kt:27: 未知
+app/src/main/java/com/ai/assistance/operit/ui/features/workflow/viewmodel/WorkflowViewModel.kt:1041: .*(打开|启动).*(对话|聊天|悬浮窗).*
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:19: 不错
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:19: 太好了
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:19: 开心
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:19: 棒
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:19: 赞
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:19: 高兴
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:20: 怒
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:20: 愤怒
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:20: 气死
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:20: 生气
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:20: 糟糕
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:20: 讨厌
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:21: 伤心
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:21: 哭
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:21: 忧伤
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:21: 沮丧
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:21: 难过
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:22: 不好意思
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:22: 害羞
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:22: 羞
+app/src/main/java/com/ai/assistance/operit/ui/floating/ui/pet/AvatarEmotionManager.kt:22: 脸红
+app/src/main/java/com/ai/assistance/operit/util/LocaleUtils.kt:44: 跟随系统
+app/src/main/java/com/ai/assistance/operit/util/LocaleUtils.kt:45: 中文
+app/src/main/java/com/ai/assistance/operit/util/LocaleUtils.kt:47: 日本語
+app/src/main/java/com/ai/assistance/operit/util/TextSegmenter.kt:15: 搜索记忆 分词预热
