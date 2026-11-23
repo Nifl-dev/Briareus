@@ -554,7 +554,7 @@
     <string name="danger_zone">Zonă periculoasă</string>
     <string name="chat_statistics">Statistici privind istoricul conversațiilor</string>
     <string name="current_chats">În prezent, există în total %1$d Istoric de conversație</string>
-    <string name="backup_location">Fișierele de rezervă sunt salvate în folderul „Descărcări”/Operit/backupîn folderul „”</string>
+    <string name="backup_location">Fișierele de rezervă sunt salvate în folderul „Descărcări”/Briareus/backupîn folderul „”</string>
     <string name="faq_backup">Întrebări frecvente</string>
     <string name="history_filter_role_card">Clasificare după cărțile de personaj</string>
     <string name="history_filter_role_card_desc">Carte de personaj-Dosar-Clasificarea pe trei niveluri a dialogurilor</string>
@@ -584,9 +584,9 @@
     <string name="termux_setup_guide">Termux Ghidul de configurare</string>
 
     <!-- About Screen -->
-    <string name="about_title">Despre Operit AI</string>
+    <string name="about_title">Despre Briareus AI</string>
     <string name="about_version">Versiune: %1$s</string>
-    <string name="about_description">Operit AIEste o aplicație de asistență inteligentă, care ajută utilizatorii să-și folosească dispozitivele mai eficient, oferind funcții precum analiza interfeței și conversații prin chat.</string>
+    <string name="about_description">Briareus AIEste o aplicație de asistență inteligentă, care ajută utilizatorii să-și folosească dispozitivele mai eficient, oferind funcții precum analiza interfeței și conversații prin chat.</string>
     <string name="about_developer">Dezvoltator: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">Contactați-ne: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
@@ -609,7 +609,7 @@
     <string name="network_status_label">Starea rețelei</string>
 
     <!-- Configuration Screen -->
-    <string name="config_title">Operit AI asistent</string>
+    <string name="config_title">Briareus AI asistent</string>
     <string name="config_description">Utilizare DeepSeek API Key, sau să configurați alte servicii de modelare</string>
     <string name="config_api_key_label">APICheie</string>
     <string name="config_api_key_placeholder">DeepSeek APICheie</string>
@@ -1053,7 +1053,7 @@
     <string name="copy_path">Copiază calea</string>
     <string name="path_copied_to_clipboard">Calea a fost copiată în clipboard</string>
     <string name="open_file_manager">Deschideți managerul de fișiere</string>
-    <string name="navigate_to_external_files">Vă rugăm să accesațiAndroid/data/com.ai.assistance.operit/files/packagesCuprins</string>
+    <string name="navigate_to_external_files">Vă rugăm să accesațiAndroid/data/dev.nifl.briareus/files/packagesCuprins</string>
     <string name="package_js_only">Se acceptă doar JavaScript(.js) și ToolPkg(.toolpkg) Document</string>
     <string name="package_script_only">Se acceptă doar HJSON(.hjson),JavaScript(.js) și TypeScript(.ts) Document</string>
     <string name="plugin_toolpkg_only">Se acceptă doar ToolPkg(.toolpkg) Document</string>
@@ -4676,7 +4676,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="min_supported_app_version">Versiunea minimă acceptată a software-ului</string>
     <string name="max_supported_app_version">Versiunea maximă acceptată a software-ului</string>
     <string name="min_supported_version_input_hint">Câmp obligatoriu. Vă rugăm să introduceți `1.10.0` sau `1.10.0+5` Un astfel de număr de versiune</string>
-    <string name="max_supported_version_input_hint">Opțional, dacă se lasă necompletat, se utilizează valoarea implicită 1.99.99. Completați 2.0.0 Și cele de mai sus vor fi permise Operit 2 Utilizare</string>
+    <string name="max_supported_version_input_hint">Opțional, dacă se lasă necompletat, se utilizează valoarea implicită 1.99.99. Completați 2.0.0 Și cele de mai sus vor fi permise Briareus 2 Utilizare</string>
     <string name="operit2_version_warning_title">Confirmare acceptare Operit 2?</string>
     <string name="operit2_version_warning_message">Acest lucru va permite Operit 2 Utilizați acest plugin. Asigurați-vă că pluginul este compatibil cu Operit 2 Funcționează normal.</string>
     <string name="publish_failed_title">Eșec la publicare</string>
@@ -5060,7 +5060,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="custom">Personalizare</string>
 
     <!-- Voice Assistant Widget -->
-    <string name="voice_assistant_widget_description">Pornire rapidă Operit Asistent vocal</string>
+    <string name="voice_assistant_widget_description">Pornire rapidă Briareus Asistent vocal</string>
     <string name="voice_assistant_widget_title">Asistent vocal</string>
     <string name="toolpkg_widget_host_label">Widgeturi personalizate</string>
     <string name="toolpkg_widget_host_description">După adăugare, poate fi asociat cu pagina unui widget înregistrat de un anumit plugin</string>
@@ -5236,22 +5236,22 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <!-- 步骤4: 测试语音助手 -->
     <string name="default_assistant_guide_step4_title">Testarea asistentului vocal</string>
     <string name="default_assistant_guide_step4_desc">După finalizarea configurării, verificați dacă sistemul pornește corect</string>
-    <string name="default_assistant_guide_step4_detail1">• Apăsați și țineți apăsatHomeTasta (butonul de pe ecranul principal) ar trebui să activeze Operit Asistent vocal</string>
-    <string name="default_assistant_guide_step4_detail2">• Dacă dispozitivul acceptă activarea prin comandă vocală, spuneți „Hey Google„Este posibil ca și cuvintele de activare specificate de dispozitiv să declanșeze această funcție” Operit</string>
+    <string name="default_assistant_guide_step4_detail1">• Apăsați și țineți apăsatHomeTasta (butonul de pe ecranul principal) ar trebui să activeze Briareus Asistent vocal</string>
+    <string name="default_assistant_guide_step4_detail2">• Dacă dispozitivul acceptă activarea prin comandă vocală, spuneți „Hey Google„Este posibil ca și cuvintele de activare specificate de dispozitiv să declanșeze această funcție” Briareus</string>
 
     <!-- 步骤3: 测试助手功能 -->
     <string name="default_assistant_guide_step3_title">Funcția Asistent de testare</string>
-    <string name="default_assistant_guide_step3_desc">După finalizarea configurării, efectuați un test Operit Se poate activa în mod normal?</string>
+    <string name="default_assistant_guide_step3_desc">După finalizarea configurării, efectuați un test Briareus Se poate activa în mod normal?</string>
     <string name="default_assistant_guide_step3_detail1">• Folosiți gesturile pe care le-ați configurat (de exemplu, apăsarea îndelungatăHome(Tastă) Activare asistent</string>
-    <string name="default_assistant_guide_step3_detail2">• Dacă operațiunea are succes, ar trebui să vedeți Operit Interfața asistentului vocal</string>
+    <string name="default_assistant_guide_step3_detail2">• Dacă operațiunea are succes, ar trebui să vedeți Briareus Interfața asistentului vocal</string>
     <string name="default_assistant_guide_step3_detail3">• Puteți încerca să interacționați cu asistentul vorbind sau introducând text</string>
 
     <!-- 疑难解答 -->
     <string name="default_assistant_guide_troubleshooting_title">Ai vreo problemă?</string>
-    <string name="default_assistant_guide_troubleshooting_content">Dacă nu îl găsiți în listăOperit, vă rugăm să vă asigurați că:\n\n• Aplicația a fost instalată corect și nu a fost dezactivată\n• Au fost acordate permisiunile necesare (microfon, fereastră flotantă etc.)\n• Încercați să reconfigurați dispozitivul după ce îl reporniți\n\nAnumite sisteme personalizate pot restricționa utilizarea aplicațiilor terțe ca asistenți impliciți; în acest caz, puteți utiliza în continuare aplicația prin intermediul funcției de fereastră plutitoare din cadrul acesteiaOperit.</string>
+    <string name="default_assistant_guide_troubleshooting_content">Dacă nu îl găsiți în listăBriareus, vă rugăm să vă asigurați că:\n\n• Aplicația a fost instalată corect și nu a fost dezactivată\n• Au fost acordate permisiunile necesare (microfon, fereastră flotantă etc.)\n• Încercați să reconfigurați dispozitivul după ce îl reporniți\n\nAnumite sisteme personalizate pot restricționa utilizarea aplicațiilor terțe ca asistenți impliciți; în acest caz, puteți utiliza în continuare aplicația prin intermediul funcției de fereastră plutitoare din cadrul acesteiaOperit.</string>
 
     <!-- Voice Interaction Service -->
-    <string name="voice_interaction_service_name">Operit AI asistent</string>
+    <string name="voice_interaction_service_name">Briareus AI asistent</string>
     <string name="voice_interaction_service_summary">Servicii de asistență vocală inteligentă</string>
 
     <!-- Tool Permission Settings -->
@@ -5631,7 +5631,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_memory_count">Intrări de memorie</string>
     <string name="backup_memory_link_count">Asocieri de memorie</string>
     <string name="backup_files_statistics">Statistici privind fișierele de rezervă</string>
-    <string name="backup_files_statistics_subtitle">Operit Exportarea fișierelor de rezervă din director</string>
+    <string name="backup_files_statistics_subtitle">Briareus Exportarea fișierelor de rezervă din director</string>
     <string name="backup_refresh">Reîmprospătare</string>
     <string name="backup_scanning">Se scanează</string>
     <string name="backup_chat_files">Istoric de conversații</string>
@@ -5727,7 +5727,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_faq_why">De ce este necesar să se facă o copie de rezervă a datelor?</string>
     <string name="backup_faq_why_answer">Realizarea unei copii de siguranță a istoricului conversațiilor vă poate proteja conținutul important în cazul dezinstalării aplicației sau al pierderii datelor. Este o idee bună să faceți copii de siguranță în mod regulat!</string>
     <string name="backup_faq_where">Unde sunt salvate fișierele exportate?</string>
-    <string name="backup_faq_where_answer">Fișierul de rezervă exportat va fi salvat în folderul „Descărcări” de pe telefonul dumneavoastră/OperitÎn folderul „”, numele fișierelor conțin tipul datelor exportate, data și ora.</string>
+    <string name="backup_faq_where_answer">Fișierul de rezervă exportat va fi salvat în folderul „Descărcări” de pe telefonul dumneavoastră/BriareusÎn folderul „”, numele fișierelor conțin tipul datelor exportate, data și ora.</string>
     <string name="backup_faq_duplicate">După import, vor apărea date duplicate?</string>
     <string name="backup_faq_duplicate_answer">Sistemul va lua în considerare înregistrărileIDConcluzie: identicIDÎnregistrările vor fi actualizate, nu importate din nou. DiferitIDÎnregistrarea respectivă va fi adăugată ca o înregistrare nouă.</string>
 
@@ -5735,7 +5735,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_select_export_format">Alegeți formatul de export</string>
     <string name="backup_select_format_hint">Vă rugăm să selectați formatul în care doriți să exportați istoricul conversațiilor:</string>
     <string name="backup_format_json">JSON(Recomandat)</string>
-    <string name="backup_format_json_desc">Operit Format nativ, care păstrează integral toate datele, inclusiv comutarea mesajelor</string>
+    <string name="backup_format_json_desc">Briareus Format nativ, care păstrează integral toate datele, inclusiv comutarea mesajelor</string>
     <string name="backup_format_markdown">Markdown</string>
     <string name="backup_format_markdown_desc">Un format de marcare ușor, ușor de citit și de editat</string>
     <string name="backup_format_html">HTML</string>
@@ -5762,7 +5762,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
 
     <string name="backup_character_cards_title">Carte de personaj</string>
     <string name="backup_character_cards_subtitle">Configurarea rolurilor pentru copierea de rezervă și restaurare</string>
-    <string name="backup_character_cards_current_count">În prezent, există în total %1$d Carte de personaj. Fișierul exportat va fi salvat în „Descărcări”/Operit» din folder.</string>
+    <string name="backup_character_cards_current_count">În prezent, există în total %1$d Carte de personaj. Fișierul exportat va fi salvat în „Descărcări”/Briareus» din folder.</string>
     <string name="backup_character_card_count">Carte de personaj</string>
     <string name="backup_character_card_files">Carte de personaj</string>
 
@@ -7383,15 +7383,15 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="chat_summarize_generation_failed">Eșecul generării rezumatului: %1$s</string>
 
     <!-- AIForegroundService (新增) -->
-    <string name="service_operit_running">Operit În curs de execuție</string>
+    <string name="service_operit_running">Briareus În curs de execuție</string>
     <string name="service_chat_complete_reminder">Notificare privind finalizarea conversației</string>
     <string name="service_chat_complete_reminder_sound">Notificare privind finalizarea conversației (semnal sonor)</string>
     <string name="service_chat_complete_reminder_vibration">Notificare privind finalizarea conversației (vibrație)</string>
     <string name="service_chat_complete_reminder_sound_vibration">Notificare la finalizarea conversației (sunet și vibrație)</string>
-    <string name="service_keep_background">Menținere Operit Se execută în fundal.</string>
+    <string name="service_keep_background">Menținere Briareus Se execută în fundal.</string>
     <string name="service_notify_when_complete">Te va avertiza după finalizarea conversației.</string>
-    <string name="service_running_wake_pause">Operit În curs de execuție (în așteptare)</string>
-    <string name="service_running_wake_listening">Operit În execuție (în așteptare de activare)</string>
+    <string name="service_running_wake_pause">Briareus În curs de execuție (în așteptare)</string>
+    <string name="service_running_wake_listening">Briareus În execuție (în așteptare de activare)</string>
     <string name="service_running_stats">Fereastra de dialog de execuție %1$d · Instrumente de apelare %2$d</string>
     <string name="service_running_http_listening">Extern HTTP Se monitorizează portul %1$d</string>
     <string name="service_running_with_http">%1$s · Extern HTTP %2$d</string>

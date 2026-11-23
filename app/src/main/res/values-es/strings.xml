@@ -59,7 +59,7 @@
     <string name="danger_zone">Zona peligrosa</string>
     <string name="chat_statistics">Estadísticas del historial de chat</string>
     <string name="current_chats">Actualmente hay %1$d registros de chat</string>
-    <string name="backup_location">Los archivos de copia de seguridad se guardan en la carpeta "Descargas/Operit"</string>
+    <string name="backup_location">Los archivos de copia de seguridad se guardan en la carpeta "Descargas/Briareus"</string>
     <string name="faq_backup">Preguntas frecuentes</string>
 
     <string name="lock_chat">Bloquear chat</string>
@@ -83,9 +83,9 @@
     <string name="termux_wizard_title">Asistente de configuración de Termux</string>
 
     <!-- About Screen -->
-    <string name="about_title">Acerca de Operit AI</string>
+    <string name="about_title">Acerca de Briareus AI</string>
     <string name="about_version">Versión: %1$s</string>
-    <string name="about_description">Operit AI es una aplicación de asistente inteligente que ayuda a los usuarios a utilizar sus dispositivos de manera más eficiente, proporcionando funciones como análisis de interfaz y chat.</string>
+    <string name="about_description">Briareus AI es una aplicación de asistente inteligente que ayuda a los usuarios a utilizar sus dispositivos de manera más eficiente, proporcionando funciones como análisis de interfaz y chat.</string>
     <string name="about_developer">Desarrollador: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">Contáctenos: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
@@ -238,7 +238,7 @@
     <string name="copy_path">Copiar ruta</string>
     <string name="path_copied_to_clipboard">Ruta copiada al portapapeles</string>
     <string name="open_file_manager">Abrir gestor de archivos</string>
-    <string name="navigate_to_external_files">Navegue a Android/data/com.ai.assistance.operit/files/packages</string>
+    <string name="navigate_to_external_files">Navegue a Android/data/dev.nifl.briareus/files/packages</string>
 
     <!-- OperScript Execution -->
     <string name="run_script">Ejecutar script</string>
@@ -1851,7 +1851,7 @@
     <string name="app_logo_description">Icono de la aplicación</string>
     <string name="github_star_description">Estrella de GitHub</string>
     <string name="network_status_label">Estado de red</string>
-    <string name="config_title">Asistente Operit AI</string>
+    <string name="config_title">Asistente Briareus AI</string>
     <string name="config_description">Usa una clave API de DeepSeek o configura otro servicio de modelos</string>
     <string name="config_api_key_label">Clave API</string>
     <string name="config_api_key_placeholder">Clave API de DeepSeek</string>
@@ -2045,7 +2045,7 @@
     <string name="permission_guide_intro_2_title">Potente caja de herramientas para geeks y desarrolladores</string>
     <string name="permission_guide_intro_2_desc">Incluye más de 40 herramientas profesionales que abarcan gestión de archivos, solicitudes de red, ejecución de scripts y control del sistema. Combinado con un potente sistema de complementos, puede automatizar tareas y tener un control profundo de su dispositivo.</string>
     <string name="permission_guide_intro_3_title">Libere su creatividad, siempre disponible</string>
-    <string name="permission_guide_intro_3_desc">Ya sea diseñando páginas web, procesando archivos multimedia o despertando a la IA en cualquier momento a través de una ventana flotante, Operit le ofrece un entorno de creación y asistencia potente, flexible y seguro. Sus datos, bajo su control.</string>
+    <string name="permission_guide_intro_3_desc">Ya sea diseñando páginas web, procesando archivos multimedia o despertando a la IA en cualquier momento a través de una ventana flotante, Briareus le ofrece un entorno de creación y asistencia potente, flexible y seguro. Sus datos, bajo su control.</string>
     <string name="permission_guide_intro_page_indicator">Introducción de funciones %1$d/%2$d</string>
     <string name="debugger_accessibility_fallback_title">Plan de aceleración de accesibilidad (alto riesgo)</string>
     <string name="debugger_accessibility_fallback_description">El modo de depuración ejecuta operaciones de UI a través de Shell de forma predeterminada. Habilitar el servicio de accesibilidad puede acelerar significativamente la automatización de la UI, pero aumenta considerablemente el riesgo de ser detectado por algunas aplicaciones y de que la cuenta sea suspendida. A menos que busque la máxima velocidad de operación, no se recomienda activarlo.</string>
@@ -2692,7 +2692,7 @@
     <string name="tts_debug_params_with_service">Parámetros de solicitud: texto=\'%1$s\', velocidad=%2$sx, tono=%3$sx\nTipo de servicio: %4$s</string>
     <string name="tts_usage_instructions_content">1. Ingrese el texto a convertir en voz en el cuadro de entrada\n2. Ajuste la velocidad y el tono\n3. Haga clic en «Reproducir voz» para iniciar la reproducción\n4. Haga clic en «Detener reproducción» para detener\n5. Si ocurre un error, consulte los detalles del error y la información de depuración\n6. Use el botón «Limpiar mensaje de error» para borrar la visualización de errores</string>
     <string name="tool_default_assistant_guide">Configuración del asistente predeterminado</string>
-    <string name="tool_default_assistant_guide_desc">Establecer el flotante de voz de Operit como asistente predeterminado del sistema</string>
+    <string name="tool_default_assistant_guide_desc">Establecer el flotante de voz de Briareus como asistente predeterminado del sistema</string>
     <string name="tool_terminal_auto_config_under_construction">La función de configuración automática del terminal está siendo reestructurada...</string>
     <string name="ui_debugger_title">Herramienta de depuración de UI</string>
     <string name="ui_debugger_description">Haga clic en el botón en la esquina inferior derecha para iniciar la ventana flotante y depurar la UI</string>
@@ -4239,7 +4239,7 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="emoji_preview">Vista previa del emoji</string>
     <string name="create_group">Crear grupo</string>
     <string name="custom">Personalizado</string>
-    <string name="voice_assistant_widget_description">Inicio rápido del asistente de voz Operit</string>
+    <string name="voice_assistant_widget_description">Inicio rápido del asistente de voz Briareus</string>
     <string name="voice_assistant_widget_title">Asistente de voz</string>
     <string name="screen_title_mnn_model_download">Descarga de modelo MNN</string>
     <string name="mnn_model_download">Descargar modelo MNN</string>
@@ -4546,16 +4546,16 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="default_assistant_guide_step2_note">Nota: los gestos pueden variar según la marca del teléfono. Consulte las opciones disponibles en la configuración del sistema.</string>
     <string name="default_assistant_guide_step4_title">Probar el asistente de voz</string>
     <string name="default_assistant_guide_step4_desc">Una vez configurado, compruebe si se inicia correctamente.</string>
-    <string name="default_assistant_guide_step4_detail1">• Mantener presionado el botón de inicio debería abrir el asistente de voz Operit.</string>
-    <string name="default_assistant_guide_step4_detail2">• Si el dispositivo admite activación por voz, decir "Hey Google" o la palabra de activación especificada también puede activar Operit.</string>
+    <string name="default_assistant_guide_step4_detail1">• Mantener presionado el botón de inicio debería abrir el asistente de voz Briareus.</string>
+    <string name="default_assistant_guide_step4_detail2">• Si el dispositivo admite activación por voz, decir "Hey Google" o la palabra de activación especificada también puede activar Briareus.</string>
     <string name="default_assistant_guide_step3_title">Probar la función del asistente</string>
-    <string name="default_assistant_guide_step3_desc">Una vez configurado, compruebe si Operit se activa correctamente.</string>
+    <string name="default_assistant_guide_step3_desc">Una vez configurado, compruebe si Briareus se activa correctamente.</string>
     <string name="default_assistant_guide_step3_detail1">• Use el gesto configurado (como mantener presionado el botón de inicio) para activar el asistente.</string>
-    <string name="default_assistant_guide_step3_detail2">• Si tiene éxito, debería ver la interfaz del asistente de voz de Operit.</string>
+    <string name="default_assistant_guide_step3_detail2">• Si tiene éxito, debería ver la interfaz del asistente de voz de Briareus.</string>
     <string name="default_assistant_guide_step3_detail3">• Puede intentar hablar o escribir texto para interactuar con el asistente.</string>
     <string name="default_assistant_guide_troubleshooting_title">¿Problemas?</string>
-    <string name="default_assistant_guide_troubleshooting_content">Si no encuentra Operit en la lista, asegúrese de que:\n\n• La aplicación esté instalada correctamente y no esté deshabilitada.\n• Se hayan concedido los permisos necesarios (micrófono, ventana flotante, etc.).\n• Intente reiniciar el dispositivo y configurarlo de nuevo.\n\nAlgunos sistemas personalizados pueden restringir aplicaciones de terceros como asistente predeterminado. En ese caso, aún puede usar Operit mediante la función de ventana flotante dentro de la aplicación.</string>
-    <string name="voice_interaction_service_name">Asistente Operit AI</string>
+    <string name="default_assistant_guide_troubleshooting_content">Si no encuentra Briareus en la lista, asegúrese de que:\n\n• La aplicación esté instalada correctamente y no esté deshabilitada.\n• Se hayan concedido los permisos necesarios (micrófono, ventana flotante, etc.).\n• Intente reiniciar el dispositivo y configurarlo de nuevo.\n\nAlgunos sistemas personalizados pueden restringir aplicaciones de terceros como asistente predeterminado. En ese caso, aún puede usar Briareus mediante la función de ventana flotante dentro de la aplicación.</string>
+    <string name="voice_interaction_service_name">Asistente Briareus AI</string>
     <string name="voice_interaction_service_summary">Servicio de asistente de voz inteligente</string>
     <string name="tool_permissions_title">Permisos de herramientas</string>
     <string name="tool_permissions_description">De forma predeterminada, todas las herramientas requieren su "consulta". Puede agregar excepciones a continuación.</string>
@@ -4768,13 +4768,13 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="time_hours_ago">Hace %1$d horas</string>
     <string name="time_days_ago">Hace %1$d días</string>
     <string name="default_assistant_guide_title">Configurar asistente de voz predeterminado</string>
-    <string name="default_assistant_guide_subtitle">Haz de Operit tu asistente inteligente</string>
-    <string name="default_assistant_guide_intro">Al configurar Operit como asistente predeterminado del sistema, puedes iniciar rápidamente el asistente de voz de Operit manteniendo presionado el botón de inicio o usando activación por voz, obteniendo una experiencia de interacción con IA más conveniente.</string>
+    <string name="default_assistant_guide_subtitle">Haz de Briareus tu asistente inteligente</string>
+    <string name="default_assistant_guide_intro">Al configurar Briareus como asistente predeterminado del sistema, puedes iniciar rápidamente el asistente de voz de Briareus manteniendo presionado el botón de inicio o usando activación por voz, obteniendo una experiencia de interacción con IA más conveniente.</string>
     <string name="default_assistant_guide_steps_title">Pasos de configuración</string>
     <string name="default_assistant_guide_step1_title">Configurar como asistente predeterminado</string>
     <string name="default_assistant_guide_step1_desc">Configurar Operit como la aplicación de asistente digital predeterminada del sistema</string>
     <string name="default_assistant_guide_step1_detail1">• Abre Configuración del sistema → Aplicaciones → Aplicaciones predeterminadas → Aplicación de asistente digital</string>
-    <string name="default_assistant_guide_step1_detail2">• En la lista de aplicaciones de asistente, busca y selecciona "Operit AI"</string>
+    <string name="default_assistant_guide_step1_detail2">• En la lista de aplicaciones de asistente, busca y selecciona "Briareus AI"</string>
     <string name="default_assistant_guide_step1_detail_android12">Android 12+: Configuración → Aplicaciones → Aplicaciones predeterminadas → Aplicación de asistente digital → Aplicación de asistente digital predeterminada</string>
     <string name="default_assistant_guide_open_settings">Abrir configuración del asistente</string>
     <string name="default_assistant_guide_open_gesture_settings">Abrir configuración de gestos</string>
@@ -4949,7 +4949,7 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="backup_memory_count">Entradas de memoria</string>
     <string name="backup_memory_link_count">Vínculos de memoria</string>
     <string name="backup_files_statistics">Estadísticas de archivos de respaldo</string>
-    <string name="backup_files_statistics_subtitle">Archivos de respaldo en el directorio de exportación de Operit</string>
+    <string name="backup_files_statistics_subtitle">Archivos de respaldo en el directorio de exportación de Briareus</string>
     <string name="backup_refresh">Actualizar</string>
     <string name="backup_scanning">Escaneando</string>
     <string name="backup_chat_files">Registros de chat</string>
@@ -5038,13 +5038,13 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="backup_faq_why">¿Por qué hacer una copia de seguridad de los datos?</string>
     <string name="backup_faq_why_answer">Hacer una copia de seguridad del historial de chat evita que pierda contenido importante al desinstalar la aplicación o en caso de pérdida de datos. ¡Hacer copias de seguridad periódicas es un buen hábito!</string>
     <string name="backup_faq_where">¿Dónde se guardan los archivos exportados?</string>
-    <string name="backup_faq_where_answer">Los archivos de copia de seguridad exportados se guardan en la carpeta «Descargas/Operit» de su teléfono. El nombre del archivo incluye el tipo de datos exportados, la fecha y la hora.</string>
+    <string name="backup_faq_where_answer">Los archivos de copia de seguridad exportados se guardan en la carpeta «Descargas/Briareus» de su teléfono. El nombre del archivo incluye el tipo de datos exportados, la fecha y la hora.</string>
     <string name="backup_faq_duplicate">¿Aparecerán datos duplicados después de la importación?</string>
     <string name="backup_faq_duplicate_answer">El sistema juzga según el ID del registro. Los registros con el mismo ID se actualizarán en lugar de importarse duplicados. Los registros con ID diferente se agregarán como nuevos registros.</string>
     <string name="backup_select_export_format">Seleccionar formato de exportación</string>
     <string name="backup_select_format_hint">Seleccione el formato del historial de chat a exportar:</string>
     <string name="backup_format_json">JSON (recomendado)</string>
-    <string name="backup_format_json_desc">Formato nativo de Operit, conserva todos los datos como el cambio de mensajes.</string>
+    <string name="backup_format_json_desc">Formato nativo de Briareus, conserva todos los datos como el cambio de mensajes.</string>
     <string name="backup_format_markdown">Markdown</string>
     <string name="backup_format_markdown_desc">Formato de marcado ligero, fácil de leer y editar.</string>
     <string name="backup_format_html">HTML</string>
@@ -5067,7 +5067,7 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="backup_export_result_success">Exportación exitosa a: %1$s</string>
     <string name="backup_character_cards_title">Tarjetas de personaje</string>
     <string name="backup_character_cards_subtitle">Copia de seguridad y restauración de la configuración de tarjetas de personaje.</string>
-    <string name="backup_character_cards_current_count">Actualmente hay %1$d tarjetas de personaje. Los archivos exportados se guardarán en la carpeta «Descargas/Operit».</string>
+    <string name="backup_character_cards_current_count">Actualmente hay %1$d tarjetas de personaje. Los archivos exportados se guardarán en la carpeta «Descargas/Briareus».</string>
     <string name="backup_character_card_count">Tarjetas de personaje</string>
     <string name="backup_character_card_files">Tarjetas de personaje</string>
     <string name="backup_character_cards_export_result_success">Exportación exitosa de %1$d tarjetas de personaje a:\n%2$s</string>
@@ -6202,15 +6202,15 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="chat_ai_service_unavailable_summarize">El servicio de IA no está disponible, no se puede resumir</string>
     <string name="chat_summarize_failed_no_valid_summary">Error al resumir: no se pudo generar un resumen válido</string>
     <string name="chat_summarize_generation_failed">Error al generar el resumen: %1$s</string>
-    <string name="service_operit_running">Operit está en ejecución</string>
+    <string name="service_operit_running">Briareus está en ejecución</string>
     <string name="service_chat_complete_reminder">Recordatorio de conversación completada</string>
     <string name="service_chat_complete_reminder_sound">Recordatorio de conversación completada (sonido)</string>
     <string name="service_chat_complete_reminder_vibration">Recordatorio de conversación completada (vibración)</string>
     <string name="service_chat_complete_reminder_sound_vibration">Recordatorio de conversación completada (sonido y vibración)</string>
-    <string name="service_keep_background">Mantener Operit ejecutándose en segundo plano.</string>
+    <string name="service_keep_background">Mantener Briareus ejecutándose en segundo plano.</string>
     <string name="service_notify_when_complete">Notificarle cuando la conversación esté completa.</string>
-    <string name="service_running_wake_pause">Operit está en ejecución (pausa de activación)</string>
-    <string name="service_running_wake_listening">Operit está en ejecución (escuchando activación)</string>
+    <string name="service_running_wake_pause">Briareus está en ejecución (pausa de activación)</string>
+    <string name="service_running_wake_listening">Briareus está en ejecución (escuchando activación)</string>
     <string name="service_running_stats">Ejecutando conversaciones %1$d · herramientas invocadas %2$d</string>
     <string name="service_running_http_listening">HTTP externo escuchando en el puerto %1$d</string>
     <string name="service_running_with_http">%1$s · HTTP externo %2$d</string>

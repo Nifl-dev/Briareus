@@ -553,7 +553,7 @@
     <string name="danger_zone">危险区域</string>
     <string name="chat_statistics">聊天记录统计</string>
     <string name="current_chats">当前共有 %1$d 条聊天记录</string>
-    <string name="backup_location">备份文件保存在「下载/Operit/backup」文件夹中</string>
+    <string name="backup_location">备份文件保存在「下载/Briareus/backup」文件夹中</string>
     <string name="faq_backup">常见问题</string>
     <string name="history_filter_role_card">按角色卡分类</string>
     <string name="history_filter_role_card_desc">角色卡-文件夹-对话三级分类</string>
@@ -583,9 +583,9 @@
     <string name="termux_setup_guide">Termux 设置向导</string>
     
     <!-- About Screen -->
-    <string name="about_title">关于 Operit AI</string>
+    <string name="about_title">关于 Briareus AI</string>
     <string name="about_version">版本: %1$s</string>
-    <string name="about_description">Operit AI是一个智能助手应用，能够帮助用户更高效地使用设备，提供界面分析、聊天对话等功能。</string>
+    <string name="about_description">Briareus AI是一个智能助手应用，能够帮助用户更高效地使用设备，提供界面分析、聊天对话等功能。</string>
     <string name="about_developer">开发者: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">联系我们: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
@@ -608,7 +608,7 @@
     <string name="network_status_label">网络状态</string>
 
     <!-- Configuration Screen -->
-    <string name="config_title">Operit AI 助手</string>
+    <string name="config_title">Briareus AI 助手</string>
     <string name="config_description">使用 DeepSeek API Key，或配置其他模型服务</string>
     <string name="config_api_key_label">API密钥</string>
     <string name="config_api_key_placeholder">DeepSeek API密钥</string>
@@ -1074,7 +1074,7 @@
     <string name="copy_path">复制路径</string>
     <string name="path_copied_to_clipboard">路径已复制到剪贴板</string>
     <string name="open_file_manager">打开文件管理器</string>
-    <string name="navigate_to_external_files">请导航到Android/data/com.ai.assistance.operit/files/packages目录</string>
+    <string name="navigate_to_external_files">请导航到Android/data/dev.nifl.briareus/files/packages目录</string>
     <string name="package_js_only">仅支持 JavaScript(.js) 和 ToolPkg(.toolpkg) 文件</string>
     <string name="package_script_only">仅支持 HJSON(.hjson)、JavaScript(.js) 和 TypeScript(.ts) 文件</string>
     <string name="plugin_toolpkg_only">仅支持 ToolPkg(.toolpkg) 文件</string>
@@ -1869,7 +1869,7 @@
     <string name="permission_guide_intro_2_title">为极客与开发者打造的强大工具箱</string>
     <string name="permission_guide_intro_2_desc">内置超过40种专业工具，涵盖文件管理、网络请求、脚本执行和系统控制。结合强大的插件系统，您可以自动化任务，深度掌控您的设备。</string>
     <string name="permission_guide_intro_3_title">释放创造力，随时待命</string>
-    <string name="permission_guide_intro_3_desc">无论是设计网页、处理媒体文件，还是通过悬浮窗随时唤醒AI，Operit都为您提供强大、灵活且安全的创作与辅助环境。您的数据，由您掌控。</string>
+    <string name="permission_guide_intro_3_desc">无论是设计网页、处理媒体文件，还是通过悬浮窗随时唤醒AI，Briareus都为您提供强大、灵活且安全的创作与辅助环境。您的数据，由您掌控。</string>
     <string name="permission_guide_intro_page_indicator">功能介绍 %1$d/%2$d</string>
 
     <!-- 调试模式 -->
@@ -2266,7 +2266,7 @@
     <string name="tool_user_agreement">用户协议</string>
     <string name="tool_user_agreement_desc">查看应用的用户协议与隐私政策</string>
     <string name="tool_default_assistant_guide">默认助手设置</string>
-    <string name="tool_default_assistant_guide_desc">设置Operit语音悬浮为系统默认助手</string>
+    <string name="tool_default_assistant_guide_desc">设置Briareus语音悬浮为系统默认助手</string>
     <string name="tool_terminal">命令终端</string>
     <string name="tool_terminal_desc">功能强大的命令行终端，执行系统指令</string>
     <string name="tool_terminal_auto_config">终端自动配置</string>
@@ -4974,7 +4974,7 @@
     <string name="min_supported_app_version">支持的最低软件版本</string>
     <string name="max_supported_app_version">支持的最高软件版本</string>
     <string name="min_supported_version_input_hint">必填。请输入 `1.10.0` 或 `1.10.0+5` 这样的版本号</string>
-    <string name="max_supported_version_input_hint">选填，留空默认 1.99.99。填 2.0.0 及以上会允许 Operit 2 使用</string>
+    <string name="max_supported_version_input_hint">选填，留空默认 1.99.99。填 2.0.0 及以上会允许 Briareus 2 使用</string>
     <string name="operit2_version_warning_title">确认支持 Operit 2？</string>
     <string name="operit2_version_warning_message">这会允许 Operit 2 使用该插件。请确保插件支持在 Operit 2 上正常运行。</string>
     <string name="publish_failed_title">发布失败</string>
@@ -5367,7 +5367,7 @@
     <string name="custom">自定义</string>
 
     <!-- Voice Assistant Widget -->
-    <string name="voice_assistant_widget_description">快速启动 Operit 语音助手</string>
+    <string name="voice_assistant_widget_description">快速启动 Briareus 语音助手</string>
     <string name="voice_assistant_widget_title">语音助手</string>
     <string name="toolpkg_widget_host_label">自定义小部件</string>
     <string name="toolpkg_widget_host_description">添加后可绑定到某个插件注册的小组件页面</string>
@@ -5518,15 +5518,15 @@
 
     <!-- 默认助手设置引导 -->
     <string name="default_assistant_guide_title">设置默认语音助手</string>
-    <string name="default_assistant_guide_subtitle">让Operit成为您的智能助手</string>
-    <string name="default_assistant_guide_intro">将Operit设置为系统默认助手后，您可以通过长按Home键或使用语音唤醒快速启动Operit语音助手，获得更便捷的AI交互体验。</string>
+    <string name="default_assistant_guide_subtitle">让Briareus成为您的智能助手</string>
+    <string name="default_assistant_guide_intro">将Briareus设置为系统默认助手后，您可以通过长按Home键或使用语音唤醒快速启动Briareus语音助手，获得更便捷的AI交互体验。</string>
     <string name="default_assistant_guide_steps_title">设置步骤</string>
     
     <!-- 步骤1: 设置为默认助理 -->
     <string name="default_assistant_guide_step1_title">设置为默认助理</string>
     <string name="default_assistant_guide_step1_desc">将 Operit 设置为系统的默认数字助理应用</string>
     <string name="default_assistant_guide_step1_detail1">• 打开系统设置 → 应用 → 默认应用 → 数字助理应用</string>
-    <string name="default_assistant_guide_step1_detail2">• 在助手应用列表中找到并选择"Operit AI"</string>
+    <string name="default_assistant_guide_step1_detail2">• 在助手应用列表中找到并选择"Briareus AI"</string>
     <string name="default_assistant_guide_step1_detail_android12">Android 12+: 设置 → 应用 → 默认应用 → 数字助理应用 → 默认数字助理应用</string>
     <string name="default_assistant_guide_open_settings">打开助理设置</string>
     
@@ -5543,22 +5543,22 @@
     <!-- 步骤4: 测试语音助手 -->
     <string name="default_assistant_guide_step4_title">测试语音助手</string>
     <string name="default_assistant_guide_step4_desc">设置完成后，测试是否能正常启动</string>
-    <string name="default_assistant_guide_step4_detail1">• 长按Home键（主屏幕按钮）应该会调起 Operit 语音助手</string>
-    <string name="default_assistant_guide_step4_detail2">• 如果设备支持语音唤醒，说"Hey Google"或设备指定的唤醒词也可能触发 Operit</string>
+    <string name="default_assistant_guide_step4_detail1">• 长按Home键（主屏幕按钮）应该会调起 Briareus 语音助手</string>
+    <string name="default_assistant_guide_step4_detail2">• 如果设备支持语音唤醒，说"Hey Google"或设备指定的唤醒词也可能触发 Briareus</string>
     
     <!-- 步骤3: 测试助手功能 -->
     <string name="default_assistant_guide_step3_title">测试助手功能</string>
-    <string name="default_assistant_guide_step3_desc">完成设置后，测试 Operit 是否能正常唤起</string>
+    <string name="default_assistant_guide_step3_desc">完成设置后，测试 Briareus 是否能正常唤起</string>
     <string name="default_assistant_guide_step3_detail1">• 使用您设置的手势（如长按Home键）唤起助手</string>
-    <string name="default_assistant_guide_step3_detail2">• 如果成功，应该会看到 Operit 的语音助手界面</string>
+    <string name="default_assistant_guide_step3_detail2">• 如果成功，应该会看到 Briareus 的语音助手界面</string>
     <string name="default_assistant_guide_step3_detail3">• 可以尝试说话或输入文字与助手交互</string>
     
     <!-- 疑难解答 -->
     <string name="default_assistant_guide_troubleshooting_title">遇到问题？</string>
-    <string name="default_assistant_guide_troubleshooting_content">如果在列表中找不到Operit，请确保：\n\n• 应用已正确安装且未被禁用\n• 已授予必要的权限（麦克风、悬浮窗等）\n• 尝试重启设备后再次设置\n\n部分定制系统可能限制第三方应用作为默认助手，如遇此情况，您仍可通过应用内的悬浮窗功能使用Operit。</string>
+    <string name="default_assistant_guide_troubleshooting_content">如果在列表中找不到Briareus，请确保：\n\n• 应用已正确安装且未被禁用\n• 已授予必要的权限（麦克风、悬浮窗等）\n• 尝试重启设备后再次设置\n\n部分定制系统可能限制第三方应用作为默认助手，如遇此情况，您仍可通过应用内的悬浮窗功能使用Briareus。</string>
     
     <!-- Voice Interaction Service -->
-    <string name="voice_interaction_service_name">Operit AI 助手</string>
+    <string name="voice_interaction_service_name">Briareus AI 助手</string>
     <string name="voice_interaction_service_summary">智能语音助手服务</string>
 
     <!-- Tool Permission Settings -->
@@ -5941,7 +5941,7 @@
     <string name="backup_memory_count">记忆条目</string>
     <string name="backup_memory_link_count">记忆关联</string>
     <string name="backup_files_statistics">备份文件统计</string>
-    <string name="backup_files_statistics_subtitle">Operit 导出目录中的备份文件</string>
+    <string name="backup_files_statistics_subtitle">Briareus 导出目录中的备份文件</string>
     <string name="backup_refresh">刷新</string>
     <string name="backup_scanning">扫描中</string>
     <string name="backup_chat_files">聊天记录</string>
@@ -6036,7 +6036,7 @@
     <string name="backup_faq_why">为什么要备份数据？</string>
     <string name="backup_faq_why_answer">备份聊天记录可以防止应用卸载或数据丢失时，您的重要内容丢失。定期备份是个好习惯！</string>
     <string name="backup_faq_where">导出的文件保存在哪里？</string>
-    <string name="backup_faq_where_answer">导出的备份文件会保存在您手机的「下载/Operit」文件夹中，文件名包含导出的数据类型、日期和时间。</string>
+    <string name="backup_faq_where_answer">导出的备份文件会保存在您手机的「下载/Briareus」文件夹中，文件名包含导出的数据类型、日期和时间。</string>
     <string name="backup_faq_duplicate">导入后会出现重复的数据吗？</string>
     <string name="backup_faq_duplicate_answer">系统会根据记录ID判断，相同ID的记录会被更新而不是重复导入。不同ID的记录会作为新记录添加。</string>
     
@@ -6044,7 +6044,7 @@
     <string name="backup_select_export_format">选择导出格式</string>
     <string name="backup_select_format_hint">请选择要导出的聊天记录格式：</string>
     <string name="backup_format_json">JSON（推荐）</string>
-    <string name="backup_format_json_desc">Operit 原生格式，完整保留消息切换等所有数据</string>
+    <string name="backup_format_json_desc">Briareus 原生格式，完整保留消息切换等所有数据</string>
     <string name="backup_format_markdown">Markdown</string>
     <string name="backup_format_markdown_desc">轻量级标记格式，便于阅读和编辑</string>
     <string name="backup_format_html">HTML</string>
@@ -6073,7 +6073,7 @@
 
     <string name="backup_character_cards_title">角色卡</string>
     <string name="backup_character_cards_subtitle">备份与恢复角色卡配置</string>
-    <string name="backup_character_cards_current_count">当前共有 %1$d 个角色卡。导出的文件会保存在「下载/Operit」文件夹中。</string>
+    <string name="backup_character_cards_current_count">当前共有 %1$d 个角色卡。导出的文件会保存在「下载/Briareus」文件夹中。</string>
     <string name="backup_character_card_count">角色卡</string>
     <string name="backup_character_card_files">角色卡</string>
 
@@ -7703,15 +7703,15 @@
     <string name="chat_summarize_generation_failed">总结生成失败: %1$s</string>
 
     <!-- AIForegroundService (新增) -->
-    <string name="service_operit_running">Operit 正在运行</string>
+    <string name="service_operit_running">Briareus 正在运行</string>
     <string name="service_chat_complete_reminder">对话完成提醒</string>
     <string name="service_chat_complete_reminder_sound">对话完成提醒（提示音）</string>
     <string name="service_chat_complete_reminder_vibration">对话完成提醒（震动）</string>
     <string name="service_chat_complete_reminder_sound_vibration">对话完成提醒（提示音和震动）</string>
-    <string name="service_keep_background">保持 Operit 在后台运行。</string>
+    <string name="service_keep_background">保持 Briareus 在后台运行。</string>
     <string name="service_notify_when_complete">对话完成后提醒你。</string>
-    <string name="service_running_wake_pause">Operit 正在运行（唤醒暂停）</string>
-    <string name="service_running_wake_listening">Operit 正在运行（唤醒监听中）</string>
+    <string name="service_running_wake_pause">Briareus 正在运行（唤醒暂停）</string>
+    <string name="service_running_wake_listening">Briareus 正在运行（唤醒监听中）</string>
     <string name="service_running_stats">运行对话 %1$d · 调用工具 %2$d</string>
     <string name="service_running_http_listening">外部 HTTP 正在监听端口 %1$d</string>
     <string name="service_running_with_http">%1$s · 外部 HTTP %2$d</string>

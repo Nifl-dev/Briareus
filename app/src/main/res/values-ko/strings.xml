@@ -536,9 +536,9 @@
     <string name="install_termux_failed">Termux 설치 실패</string>
     <string name="open_termux">Termux 열기</string>
     <string name="termux_setup_guide">Termux 설정 가이드</string>
-    <string name="about_title">Operit AI 소개</string>
+    <string name="about_title">Briareus AI 소개</string>
     <string name="about_version">버전: %1$s</string>
-    <string name="about_description">Operit AI는 인터페이스 분석, 채팅 대화 등을 제공하여 사용자가 장치를 보다 효율적으로 사용할 수 있도록 돕는 지능형 보조 애플리케이션입니다.</string>
+    <string name="about_description">Briareus AI는 인터페이스 분석, 채팅 대화 등을 제공하여 사용자가 장치를 보다 효율적으로 사용할 수 있도록 돕는 지능형 보조 애플리케이션입니다.</string>
     <string name="about_developer">개발자: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">연락처: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
@@ -557,7 +557,7 @@
     <string name="network_unavailable">네트워크 연결이 불가능합니다. 네트워크 설정을 확인하세요.</string>
     <string name="network_status">네트워크 상태: %1$s</string>
     <string name="network_status_label">네트워크 상태</string>
-    <string name="config_title">Operit AI 도우미</string>
+    <string name="config_title">Briareus AI 도우미</string>
     <string name="config_description">DeepSeek API 키를 사용하거나 다른 모델 서비스를 구성하세요</string>
     <string name="config_api_key_label">API 키</string>
     <string name="config_api_key_placeholder">DeepSeek API 키</string>
@@ -950,7 +950,7 @@
     <string name="copy_path">경로 복사</string>
     <string name="path_copied_to_clipboard">경로가 클립보드에 복사되었습니다.</string>
     <string name="open_file_manager">파일 관리자 열기</string>
-    <string name="navigate_to_external_files">Android/data/com.ai.assistance.operit/files/packages 디렉터리로 이동하세요.</string>
+    <string name="navigate_to_external_files">Android/data/dev.nifl.briareus/files/packages 디렉터리로 이동하세요.</string>
     <string name="package_js_only">JavaScript(.js) 및 ToolPkg(.toolpkg) 파일만 지원됩니다.</string>
     <string name="package_script_only">HJSON(.hjson), JavaScript(.js), TypeScript(.ts) 파일만 지원합니다</string>
     <string name="plugin_toolpkg_only">ToolPkg(.toolpkg) 파일만 지원합니다</string>
@@ -1437,7 +1437,7 @@
     <string name="accessibility_wizard_install_provider">공급자 앱 설치</string>
     <string name="accessibility_wizard_enable_message">이제 기기 설정에서 접근성 서비스를 활성화하세요. 이를 통해 제공자 앱이 화면 콘텐츠를 분석할 수 있습니다.</string>
     <string name="accessibility_wizard_enable_note">중요 사항:</string>
-    <string name="accessibility_wizard_enable_note_details">서비스 목록에서 \"Operit Accessibility Provider\"를 선택하고 활성화해야 합니다.</string>
+    <string name="accessibility_wizard_enable_note_details">서비스 목록에서 \"Briareus Accessibility Provider\"를 선택하고 활성화해야 합니다.</string>
     <string name="accessibility_wizard_open_settings">접근성 설정 열기</string>
     <string name="accessibility_wizard_success_message">접근성 서비스가 올바르게 구성되었으며 사용할 준비가 되었습니다!</string>
     <string name="copy_message">메시지 복사</string>
@@ -1512,7 +1512,7 @@
     <string name="permission_guide_intro_2_title">괴짜와 개발자를 위한 강력한 도구 상자</string>
     <string name="permission_guide_intro_2_desc">파일 관리, 웹 요청, 스크립트 실행 및 시스템 제어를 위한 40개 이상의 전문 도구가 내장되어 있습니다. 강력한 플러그인 시스템과 결합하면 작업을 자동화하고 장치를 심층적으로 제어할 수 있습니다.</string>
     <string name="permission_guide_intro_3_title">창의력 발휘, 상시 대기</string>
-    <string name="permission_guide_intro_3_desc">웹 페이지 디자인, 미디어 파일 처리 또는 플로팅 창을 통한 AI 액세스 등 Operit은 생성 및 지원을 위한 강력하고 유연하며 안전한 환경을 제공합니다. 귀하의 데이터, 귀하의 통제.</string>
+    <string name="permission_guide_intro_3_desc">웹 페이지 디자인, 미디어 파일 처리 또는 플로팅 창을 통한 AI 액세스 등 Briareus은 생성 및 지원을 위한 강력하고 유연하며 안전한 환경을 제공합니다. 귀하의 데이터, 귀하의 통제.</string>
     <string name="permission_guide_intro_page_indicator">기능 둘러보기 %1$d/%2$d</string>
     <string name="debugger_accessibility_fallback_title">접근성 가속화(고위험)</string>
     <string name="debugger_accessibility_fallback_description">디버거 모드는 기본적으로 Shell을 통해 UI 작업을 수행합니다. 접근성 서비스를 활성화하면 UI 자동화 속도가 크게 빨라질 수 있지만, 일부 애플리케이션에서 감지되어 금지될 위험도 크게 높아집니다. 최대 작동 속도가 필요한 경우가 아니면 권장되지 않습니다.</string>
@@ -1877,7 +1877,7 @@
     <string name="tool_user_agreement">사용자 계약</string>
     <string name="tool_user_agreement_desc">애플리케이션의 사용자 계약 및 개인정보 보호정책 보기</string>
     <string name="tool_default_assistant_guide">기본 어시스턴트 설정</string>
-    <string name="tool_default_assistant_guide_desc">Operit 음성 플로팅 창을 시스템 기본 어시스턴트로 설정</string>
+    <string name="tool_default_assistant_guide_desc">Briareus 음성 플로팅 창을 시스템 기본 어시스턴트로 설정</string>
     <string name="tool_terminal">명령 터미널</string>
     <string name="tool_terminal_desc">시스템 명령 실행을 위한 강력한 명령줄 터미널</string>
     <string name="tool_terminal_auto_config">터미널 자동 구성</string>
@@ -4359,7 +4359,7 @@
 
 공통 extras: message, request_id, group, create_new_chat, chat_id, create_if_none, show_floating, return_tool_status, initial_mode, auto_exit_after_ms, stop_after, reply_action, reply_package
 
-완료 후 Operit는 success, chat_id, ai_response, error를 브로드캐스트로 반환합니다. 결과를 하나의 앱에만 전달해야 한다면 reply_package를 설정하세요.</string>
+완료 후 Briareus는 success, chat_id, ai_response, error를 브로드캐스트로 반환합니다. 결과를 하나의 앱에만 전달해야 한다면 reply_package를 설정하세요.</string>
     <string name="external_http_chat_copy_example">예제 복사</string>
     <string name="external_http_chat_example_copied">예제 명령 복사됨</string>
     <string name="external_http_chat_service_enabled">서비스 활성화됨</string>
@@ -4396,7 +4396,7 @@
     <string name="emoji_preview">이모지 미리보기</string>
     <string name="create_group">그룹 만들기</string>
     <string name="custom">맞춤형</string>
-    <string name="voice_assistant_widget_description">Operit 음성 도우미 빠른 실행</string>
+    <string name="voice_assistant_widget_description">Briareus 음성 도우미 빠른 실행</string>
     <string name="voice_assistant_widget_title">음성 도우미</string>
     <string name="toolpkg_widget_host_label">사용자 정의 위젯</string>
     <string name="toolpkg_widget_host_description">추가 후 플러그인에 등록된 위젯 페이지에 바인딩합니다.</string>
@@ -4535,13 +4535,13 @@
     <string name="time_hours_ago">%1$d시간 전</string>
     <string name="time_days_ago">%1$d일 전</string>
     <string name="default_assistant_guide_title">기본 음성 도우미 설정</string>
-    <string name="default_assistant_guide_subtitle">Operit를 스마트 어시스턴트로 만들어보세요</string>
-    <string name="default_assistant_guide_intro">Operit를 기본 시스템 도우미로 설정한 후 홈 버튼을 길게 누르거나 음성 깨우기를 사용하여 Operit 음성 도우미를 빠르게 시작할 수 있어 보다 편리한 AI 상호 작용 경험을 제공합니다.</string>
+    <string name="default_assistant_guide_subtitle">Briareus를 스마트 어시스턴트로 만들어보세요</string>
+    <string name="default_assistant_guide_intro">Briareus를 기본 시스템 도우미로 설정한 후 홈 버튼을 길게 누르거나 음성 깨우기를 사용하여 Briareus 음성 도우미를 빠르게 시작할 수 있어 보다 편리한 AI 상호 작용 경험을 제공합니다.</string>
     <string name="default_assistant_guide_steps_title">설정 단계</string>
     <string name="default_assistant_guide_step1_title">시스템 설정 열기</string>
     <string name="default_assistant_guide_step1_desc">먼저 Android 시스템 설정 인터페이스로 들어가야 합니다.</string>
     <string name="default_assistant_guide_step1_detail1">• 시스템 설정 → 앱 → 기본 앱 → 디지털 보조 앱 열기</string>
-    <string name="default_assistant_guide_step1_detail2">• 보조 앱 목록에서 "Operit AI"를 찾아 선택하세요.</string>
+    <string name="default_assistant_guide_step1_detail2">• 보조 앱 목록에서 "Briareus AI"를 찾아 선택하세요.</string>
     <string name="default_assistant_guide_step1_detail_android12">Android 12+: 설정 → 앱 → 기본 앱 → 디지털 보조 앱 → 기본 디지털 보조 앱</string>
     <string name="default_assistant_guide_open_settings">설정 열기</string>
     <string name="default_assistant_guide_open_gesture_settings">제스처 설정 열기</string>
@@ -4554,16 +4554,16 @@
     <string name="default_assistant_guide_step2_note">참고: 제스처 설정은 휴대폰 브랜드에 따라 다를 수 있습니다. 시스템 설정에서 사용 가능한 옵션을 확인하세요.</string>
     <string name="default_assistant_guide_step4_title">음성 도우미 테스트</string>
     <string name="default_assistant_guide_step4_desc">설정 후 정상적으로 실행되는지 테스트해 보세요.</string>
-    <string name="default_assistant_guide_step4_detail1">• 홈 버튼(홈 화면 버튼)을 길게 누르면 Operit 음성 지원이 호출됩니다.</string>
-    <string name="default_assistant_guide_step4_detail2">• 음성 깨우기가 지원되는 경우 \"Hey Google\" 또는 기기에 지정된 깨우기 단어를 말하면 Operit가 실행될 수도 있습니다.</string>
-    <string name="default_assistant_guide_step3_title">Operit 선택</string>
-    <string name="default_assistant_guide_step3_desc">보조 앱 목록에서 Operit AI를 선택하세요.</string>
-    <string name="default_assistant_guide_step3_detail1">• 사용 가능한 보조 앱 목록에서 \"Operit AI\"를 찾으세요.</string>
-    <string name="default_assistant_guide_step3_detail2">• 탭하여 선택하면 시스템이 Operit를 기본 보조자로 설정합니다.</string>
+    <string name="default_assistant_guide_step4_detail1">• 홈 버튼(홈 화면 버튼)을 길게 누르면 Briareus 음성 지원이 호출됩니다.</string>
+    <string name="default_assistant_guide_step4_detail2">• 음성 깨우기가 지원되는 경우 \"Hey Google\" 또는 기기에 지정된 깨우기 단어를 말하면 Briareus가 실행될 수도 있습니다.</string>
+    <string name="default_assistant_guide_step3_title">Briareus 선택</string>
+    <string name="default_assistant_guide_step3_desc">보조 앱 목록에서 Briareus AI를 선택하세요.</string>
+    <string name="default_assistant_guide_step3_detail1">• 사용 가능한 보조 앱 목록에서 \"Briareus AI\"를 찾으세요.</string>
+    <string name="default_assistant_guide_step3_detail2">• 탭하여 선택하면 시스템이 Briareus를 기본 보조자로 설정합니다.</string>
     <string name="default_assistant_guide_step3_detail3">• 말하거나 입력하여 어시스턴트와 상호작용할 수 있습니다.</string>
     <string name="default_assistant_guide_troubleshooting_title">문제가 있나요?</string>
-    <string name="default_assistant_guide_troubleshooting_content">목록에서 Operit을 찾을 수 없는 경우 다음을 확인하세요. \n\n• 앱이 제대로 설치되었으며 비활성화되지 않았는지 \n• 필요한 권한이 부여되었습니다(마이크, 오버레이 등)\n• 장치를 다시 시작하고 다시 설정해 보세요\n\n일부 맞춤 시스템 타사 앱이 기본 도우미로 설정되는 것을 제한할 수 있습니다. 이러한 상황이 발생하더라도 앱 내 플로팅 창 기능을 통해 Operit를 계속 사용할 수 있습니다.</string>
-    <string name="voice_interaction_service_name">Operit AI 도우미</string>
+    <string name="default_assistant_guide_troubleshooting_content">목록에서 Briareus을 찾을 수 없는 경우 다음을 확인하세요. \n\n• 앱이 제대로 설치되었으며 비활성화되지 않았는지 \n• 필요한 권한이 부여되었습니다(마이크, 오버레이 등)\n• 장치를 다시 시작하고 다시 설정해 보세요\n\n일부 맞춤 시스템 타사 앱이 기본 도우미로 설정되는 것을 제한할 수 있습니다. 이러한 상황이 발생하더라도 앱 내 플로팅 창 기능을 통해 Briareus를 계속 사용할 수 있습니다.</string>
+    <string name="voice_interaction_service_name">Briareus AI 도우미</string>
     <string name="voice_interaction_service_summary">지능형 음성비서 서비스</string>
     <string name="tool_permissions_title">도구 권한</string>
     <string name="tool_permissions_description">기본적으로 모든 도구는 \'요청\' 권한이 필요합니다. 아래에서 예외를 추가할 수 있습니다.</string>
@@ -4908,7 +4908,7 @@
     <string name="backup_memory_count">메모리 항목</string>
     <string name="backup_memory_link_count">메모리 링크</string>
     <string name="backup_files_statistics">백업 파일 통계</string>
-    <string name="backup_files_statistics_subtitle">Operit 내보내기 디렉터리의 백업 파일</string>
+    <string name="backup_files_statistics_subtitle">Briareus 내보내기 디렉터리의 백업 파일</string>
     <string name="backup_refresh">새로 고침</string>
     <string name="backup_scanning">스캔 중</string>
     <string name="backup_chat_files">채팅 기록</string>
@@ -5004,7 +5004,7 @@
     <string name="backup_select_export_format">내보내기 형식 선택</string>
     <string name="backup_select_format_hint">내보낼 채팅 기록 형식을 선택하세요:</string>
     <string name="backup_format_json">JSON(권장)</string>
-    <string name="backup_format_json_desc">Operit 기본 형식이며 변형과 기타 모든 데이터를 보존합니다.</string>
+    <string name="backup_format_json_desc">Briareus 기본 형식이며 변형과 기타 모든 데이터를 보존합니다.</string>
     <string name="backup_format_markdown">마크다운</string>
     <string name="backup_format_markdown_desc">읽고 편집하기 쉬운 가벼운 마크업 형식</string>
     <string name="backup_format_html">HTML</string>
@@ -6474,15 +6474,15 @@
     <string name="chat_ai_service_unavailable_summarize">AI 서비스 이용 불가, 요약 불가</string>
     <string name="chat_summarize_failed_no_valid_summary">요약 실패: 유효한 요약을 생성할 수 없습니다.</string>
     <string name="chat_summarize_generation_failed">요약 생성 실패: %1$s</string>
-    <string name="service_operit_running">Operit가 실행 중입니다.</string>
+    <string name="service_operit_running">Briareus가 실행 중입니다.</string>
     <string name="service_chat_complete_reminder">채팅 완료 알림</string>
     <string name="service_chat_complete_reminder_sound">채팅 완료 알림(소리)</string>
     <string name="service_chat_complete_reminder_vibration">채팅 완료 알림(진동)</string>
     <string name="service_chat_complete_reminder_sound_vibration">채팅 완료 알림(소리 및 진동)</string>
-    <string name="service_keep_background">Operit를 백그라운드에서 계속 실행하세요.</string>
+    <string name="service_keep_background">Briareus를 백그라운드에서 계속 실행하세요.</string>
     <string name="service_notify_when_complete">대화가 완료되면 알려드립니다.</string>
-    <string name="service_running_wake_pause">Operit 실행 중(깨우기 일시 중지됨)</string>
-    <string name="service_running_wake_listening">Operit 실행 중(깨우기 청취)</string>
+    <string name="service_running_wake_pause">Briareus 실행 중(깨우기 일시 중지됨)</string>
+    <string name="service_running_wake_listening">Briareus 실행 중(깨우기 청취)</string>
     <string name="service_running_stats">대화 %1$d · 도구 %2$d</string>
     <string name="service_running_http_listening">포트 %1$d에서 수신 대기 중인 외부 HTTP</string>
     <string name="service_running_with_http">%1$s · HTTP %2$d</string>

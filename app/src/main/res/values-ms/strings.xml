@@ -514,7 +514,7 @@
     <string name="danger_zone">Zon Bahaya</string>
     <string name="chat_statistics">Statistik Rekod Perbualan</string>
     <string name="current_chats">Kini terdapat %1$d rekod perbualan</string>
-    <string name="backup_location">Fail sandaran disimpan dalam folder "Muat turun/Operit/backup"</string>
+    <string name="backup_location">Fail sandaran disimpan dalam folder "Muat turun/Briareus/backup"</string>
     <string name="faq_backup">Soalan Lazim</string>
     <string name="history_filter_role_card">Klasifikasi Mengikut Kad Watak</string>
     <string name="history_filter_role_card_desc">Klasifikasi tiga peringkat: Kad Watak - Folder - Perbualan</string>
@@ -539,9 +539,9 @@
     <string name="install_termux_failed">Pemasangan Termux gagal</string>
     <string name="open_termux">Buka Termux</string>
     <string name="termux_setup_guide">Panduan penyediaan Termux</string>
-    <string name="about_title">Perihal Operit AI</string>
+    <string name="about_title">Perihal Briareus AI</string>
     <string name="about_version">Versi: %1$s</string>
-    <string name="about_description">Operit AI ialah aplikasi pembantu pintar yang membantu pengguna menggunakan peranti dengan lebih cekap, menyediakan analisis antara muka, perbualan sembang dan fungsi lain.</string>
+    <string name="about_description">Briareus AI ialah aplikasi pembantu pintar yang membantu pengguna menggunakan peranti dengan lebih cekap, menyediakan analisis antara muka, perbualan sembang dan fungsi lain.</string>
     <string name="about_developer">Pembangun: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">Hubungi kami: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
@@ -560,7 +560,7 @@
     <string name="network_unavailable">Sambungan rangkaian tidak tersedia, sila semak tetapan rangkaian anda</string>
     <string name="network_status">Status rangkaian: %1$s</string>
     <string name="network_status_label">Status rangkaian</string>
-    <string name="config_title">Pembantu Operit AI</string>
+    <string name="config_title">Pembantu Briareus AI</string>
     <string name="config_description">Gunakan Kunci API DeepSeek atau konfigurasikan perkhidmatan model lain</string>
     <string name="config_api_key_label">Kunci API</string>
     <string name="config_api_key_placeholder">Kunci API DeepSeek</string>
@@ -731,7 +731,7 @@
     <string name="copy_path">Salin laluan</string>
     <string name="path_copied_to_clipboard">Laluan telah disalin ke papan keratan</string>
     <string name="open_file_manager">Buka pengurus fail</string>
-    <string name="navigate_to_external_files">Sila navigasi ke direktori Android/data/com.ai.assistance.operit/files/packages</string>
+    <string name="navigate_to_external_files">Sila navigasi ke direktori Android/data/dev.nifl.briareus/files/packages</string>
     <string name="package_js_only">Hanya fail JavaScript(.js) dan ToolPkg(.toolpkg) disokong</string>
     <string name="pkg_toolpkg_subpackages">Subpakej ToolPkg</string>
     <string name="pkg_toolpkg_version">Versi: %1$s</string>
@@ -1242,7 +1242,7 @@
     <string name="permission_guide_intro_2_title">Kotak alat berkuasa untuk geek dan pembangun</string>
     <string name="permission_guide_intro_2_desc">Dilengkapi lebih 40 alat profesional merangkumi pengurusan fail, permintaan rangkaian, pelaksanaan skrip dan kawalan sistem. Digabungkan dengan sistem pemalam berkuasa, anda boleh mengautomasikan tugas, mengawal peranti anda secara mendalam.</string>
     <string name="permission_guide_intro_3_title">Lepaskan kreativiti, sentiasa bersedia</string>
-    <string name="permission_guide_intro_3_desc">Sama ada mereka bentuk laman web, memproses fail media, atau membangunkan AI melalui tetingkap terapung bila-bila masa, Operit menyediakan persekitaran penciptaan dan bantuan yang berkuasa, fleksibel dan selamat. Data anda, di bawah kawalan anda.</string>
+    <string name="permission_guide_intro_3_desc">Sama ada mereka bentuk laman web, memproses fail media, atau membangunkan AI melalui tetingkap terapung bila-bila masa, Briareus menyediakan persekitaran penciptaan dan bantuan yang berkuasa, fleksibel dan selamat. Data anda, di bawah kawalan anda.</string>
     <string name="permission_guide_intro_page_indicator">Pengenalan fungsi %1$d/%2$d</string>
 
     <string name="no_mirrors_found">Tiada sumber cermin tersedia</string>
@@ -1955,7 +1955,7 @@
     <string name="tool_user_agreement">Perjanjian Pengguna</string>
     <string name="tool_user_agreement_desc">Lihat perjanjian pengguna dan dasar privasi aplikasi</string>
     <string name="tool_default_assistant_guide">Tetapan Pembantu Lalai</string>
-    <string name="tool_default_assistant_guide_desc">Tetapkan Operit Voice Float sebagai pembantu sistem lalai</string>
+    <string name="tool_default_assistant_guide_desc">Tetapkan Briareus Voice Float sebagai pembantu sistem lalai</string>
 
     <string name="host_address">Alamat Hos</string>
     <string name="port">Port</string>
@@ -4184,7 +4184,7 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="emoji_preview">Pratonton emoji</string>
     <string name="create_group">Buat kumpulan</string>
     <string name="custom">Tersuai</string>
-    <string name="voice_assistant_widget_description">Lancarkan pembantu suara Operit dengan pantas</string>
+    <string name="voice_assistant_widget_description">Lancarkan pembantu suara Briareus dengan pantas</string>
     <string name="voice_assistant_widget_title">Pembantu Suara</string>
     <string name="screen_title_mnn_model_download">Muat turun model MNN</string>
     <string name="mnn_model_download">Muat turun model MNN</string>
@@ -4463,11 +4463,11 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="exporting">Sedang mengeksport</string>
 
     <string name="default_assistant_guide_step3_detail1">• Gunakan isyarat yang anda tetapkan (seperti menekan lama kekunci Utama) untuk membangkitkan pembantu</string>
-    <string name="default_assistant_guide_step3_detail2">• Jika berjaya, anda sepatutnya melihat antara muka pembantu suara Operit</string>
+    <string name="default_assistant_guide_step3_detail2">• Jika berjaya, anda sepatutnya melihat antara muka pembantu suara Briareus</string>
     <string name="default_assistant_guide_step3_detail3">• Anda boleh cuba bercakap atau menaip teks untuk berinteraksi dengan pembantu</string>
     <string name="default_assistant_guide_troubleshooting_title">Menghadapi masalah?</string>
-    <string name="default_assistant_guide_troubleshooting_content">Jika Operit tidak ditemui dalam senarai, pastikan:\n\n• Aplikasi telah dipasang dengan betul dan tidak dilumpuhkan\n• Keizinan yang diperlukan telah diberikan (mikrofon, tetingkap terapung, dll.)\n• Cuba tetapkan semula selepas menghidupkan semula peranti\n\nSesetengah sistem tersuai mungkin menghadkan aplikasi pihak ketiga sebagai pembantu lalai. Jika berlaku, anda masih boleh menggunakan Operit melalui fungsi tetingkap terapung dalam aplikasi.</string>
-    <string name="voice_interaction_service_name">Pembantu AI Operit</string>
+    <string name="default_assistant_guide_troubleshooting_content">Jika Briareus tidak ditemui dalam senarai, pastikan:\n\n• Aplikasi telah dipasang dengan betul dan tidak dilumpuhkan\n• Keizinan yang diperlukan telah diberikan (mikrofon, tetingkap terapung, dll.)\n• Cuba tetapkan semula selepas menghidupkan semula peranti\n\nSesetengah sistem tersuai mungkin menghadkan aplikasi pihak ketiga sebagai pembantu lalai. Jika berlaku, anda masih boleh menggunakan Briareus melalui fungsi tetingkap terapung dalam aplikasi.</string>
+    <string name="voice_interaction_service_name">Pembantu AI Briareus</string>
     <string name="voice_interaction_service_summary">Perkhidmatan pembantu suara pintar</string>
     <string name="tool_permissions_title">Keizinan Alat</string>
     <string name="tool_permissions_description">Secara lalai, semua alat memerlukan anda "bertanya". Anda boleh menambah pengecualian di bawah.</string>
@@ -4525,13 +4525,13 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="time_hours_ago">%1$d jam yang lalu</string>
     <string name="time_days_ago">%1$d hari yang lalu</string>
     <string name="default_assistant_guide_title">Tetapkan Pembantu Suara Lalai</string>
-    <string name="default_assistant_guide_subtitle">Jadikan Operit sebagai pembantu pintar anda</string>
-    <string name="default_assistant_guide_intro">Selepas menetapkan Operit sebagai pembantu lalai sistem, anda boleh melancarkan pembantu suara Operit dengan cepat melalui menekan lama kekunci Home atau menggunakan bangunkan suara, untuk mendapatkan pengalaman interaksi AI yang lebih mudah.</string>
+    <string name="default_assistant_guide_subtitle">Jadikan Briareus sebagai pembantu pintar anda</string>
+    <string name="default_assistant_guide_intro">Selepas menetapkan Briareus sebagai pembantu lalai sistem, anda boleh melancarkan pembantu suara Briareus dengan cepat melalui menekan lama kekunci Home atau menggunakan bangunkan suara, untuk mendapatkan pengalaman interaksi AI yang lebih mudah.</string>
     <string name="default_assistant_guide_steps_title">Langkah-langkah Penetapan</string>
     <string name="default_assistant_guide_step1_title">Tetapkan sebagai Pembantu Lalai</string>
     <string name="default_assistant_guide_step1_desc">Tetapkan Operit sebagai aplikasi pembantu digital lalai sistem</string>
     <string name="default_assistant_guide_step1_detail1">• Buka Tetapan Sistem → Aplikasi → Aplikasi Lalai → Aplikasi Pembantu Digital</string>
-    <string name="default_assistant_guide_step1_detail2">• Cari dan pilih "Operit AI" dalam senarai aplikasi pembantu</string>
+    <string name="default_assistant_guide_step1_detail2">• Cari dan pilih "Briareus AI" dalam senarai aplikasi pembantu</string>
     <string name="default_assistant_guide_step1_detail_android12">Android 12+: Tetapan → Aplikasi → Aplikasi Lalai → Aplikasi Pembantu Digital → Aplikasi Pembantu Digital Lalai</string>
     <string name="default_assistant_guide_open_settings">Buka Tetapan Pembantu</string>
     <string name="default_assistant_guide_open_gesture_settings">Buka Tetapan Isyarat</string>
@@ -4544,10 +4544,10 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="default_assistant_guide_step2_note">Perhatian: Tetapan isyarat mungkin berbeza mengikut jenama telefon, sila semak pilihan yang tersedia dalam tetapan sistem</string>
     <string name="default_assistant_guide_step4_title">Uji Pembantu Suara</string>
     <string name="default_assistant_guide_step4_desc">Selepas selesai penetapan, uji sama ada boleh dilancarkan dengan normal</string>
-    <string name="default_assistant_guide_step4_detail1">• Menekan lama kekunci Home (butang skrin utama) sepatutnya melancarkan pembantu suara Operit</string>
-    <string name="default_assistant_guide_step4_detail2">• Jika peranti menyokong bangunkan suara, menyebut "Hey Google" atau kata bangunkan yang ditetapkan peranti juga mungkin mencetuskan Operit</string>
+    <string name="default_assistant_guide_step4_detail1">• Menekan lama kekunci Home (butang skrin utama) sepatutnya melancarkan pembantu suara Briareus</string>
+    <string name="default_assistant_guide_step4_detail2">• Jika peranti menyokong bangunkan suara, menyebut "Hey Google" atau kata bangunkan yang ditetapkan peranti juga mungkin mencetuskan Briareus</string>
     <string name="default_assistant_guide_step3_title">Uji Fungsi Pembantu</string>
-    <string name="default_assistant_guide_step3_desc">Selepas selesai penetapan, uji sama ada Operit boleh dibangkitkan dengan normal</string>
+    <string name="default_assistant_guide_step3_desc">Selepas selesai penetapan, uji sama ada Briareus boleh dibangkitkan dengan normal</string>
 
     <string name="export_failed">Eksport gagal</string>
     <string name="file_saved_to">Fail telah disimpan ke:</string>
@@ -4748,7 +4748,7 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
 
     <string name="backup_character_cards_title">Kad Karakter</string>
     <string name="backup_character_cards_subtitle">Sandarkan dan pulihkan konfigurasi kad karakter</string>
-    <string name="backup_character_cards_current_count">Kini terdapat %1$d kad karakter. Fail yang dieksport akan disimpan dalam folder "Muat turun/Operit".</string>
+    <string name="backup_character_cards_current_count">Kini terdapat %1$d kad karakter. Fail yang dieksport akan disimpan dalam folder "Muat turun/Briareus".</string>
     <string name="backup_character_card_count">Kad Karakter</string>
     <string name="backup_character_card_files">Kad Karakter</string>
     <string name="backup_character_cards_export_result_success">Berjaya mengeksport %1$d kad karakter ke:\n%2$s</string>
@@ -4879,13 +4879,13 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="backup_faq_why">Mengapa perlu menyandarkan data?</string>
     <string name="backup_faq_why_answer">Menyandarkan rekod sembang boleh mencegah kehilangan kandungan penting anda apabila aplikasi dipasang semula atau data hilang. Menyandarkan secara berkala adalah amalan yang baik!</string>
     <string name="backup_faq_where">Di manakah fail yang dieksport disimpan?</string>
-    <string name="backup_faq_where_answer">Fail sandaran yang dieksport akan disimpan dalam folder "Muat Turun/Operit" telefon anda, nama fail mengandungi jenis data, tarikh dan masa eksport.</string>
+    <string name="backup_faq_where_answer">Fail sandaran yang dieksport akan disimpan dalam folder "Muat Turun/Briareus" telefon anda, nama fail mengandungi jenis data, tarikh dan masa eksport.</string>
     <string name="backup_faq_duplicate">Adakah data akan berulang selepas import?</string>
     <string name="backup_faq_duplicate_answer">Sistem akan menilai berdasarkan ID rekod, rekod dengan ID yang sama akan dikemas kini dan bukannya diimport semula. Rekod dengan ID berbeza akan ditambah sebagai rekod baharu.</string>
     <string name="backup_select_export_format">Pilih format eksport</string>
     <string name="backup_select_format_hint">Sila pilih format rekod sembang yang ingin dieksport:</string>
     <string name="backup_format_json">JSON (disyorkan)</string>
-    <string name="backup_format_json_desc">Format asli Operit, mengekalkan semua data dengan lengkap</string>
+    <string name="backup_format_json_desc">Format asli Briareus, mengekalkan semua data dengan lengkap</string>
     <string name="backup_format_markdown">Markdown</string>
     <string name="backup_format_markdown_desc">Format penanda ringan, mudah dibaca dan disunting</string>
     <string name="backup_format_html">HTML</string>
@@ -4912,7 +4912,7 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="backup_memory_count">Entri ingatan</string>
     <string name="backup_memory_link_count">Pautan ingatan</string>
     <string name="backup_files_statistics">Statistik fail sandaran</string>
-    <string name="backup_files_statistics_subtitle">Fail sandaran dalam direktori eksport Operit</string>
+    <string name="backup_files_statistics_subtitle">Fail sandaran dalam direktori eksport Briareus</string>
     <string name="backup_refresh">Segar semula</string>
     <string name="backup_scanning">Sedang mengimbas</string>
     <string name="backup_chat_files">Rekod sembang</string>
@@ -6277,15 +6277,15 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="chat_ai_service_unavailable_summarize">Perkhidmatan AI tidak tersedia, tidak dapat membuat ringkasan</string>
     <string name="chat_summarize_failed_no_valid_summary">Gagal membuat ringkasan: Tidak dapat menghasilkan ringkasan yang sah</string>
     <string name="chat_summarize_generation_failed">Gagal menghasilkan ringkasan: %1$s</string>
-    <string name="service_operit_running">Operit sedang berjalan</string>
+    <string name="service_operit_running">Briareus sedang berjalan</string>
     <string name="service_chat_complete_reminder">Peringatan selesai perbualan</string>
     <string name="service_chat_complete_reminder_sound">Peringatan selesai perbualan (bunyi)</string>
     <string name="service_chat_complete_reminder_vibration">Peringatan selesai perbualan (getaran)</string>
     <string name="service_chat_complete_reminder_sound_vibration">Peringatan selesai perbualan (bunyi dan getaran)</string>
-    <string name="service_keep_background">Kekalkan Operit berjalan di latar belakang.</string>
+    <string name="service_keep_background">Kekalkan Briareus berjalan di latar belakang.</string>
     <string name="service_notify_when_complete">Beritahu anda apabila perbualan selesai.</string>
-    <string name="service_running_wake_pause">Operit sedang berjalan (bangun dijeda)</string>
-    <string name="service_running_wake_listening">Operit sedang berjalan (bangun sedang mendengar)</string>
+    <string name="service_running_wake_pause">Briareus sedang berjalan (bangun dijeda)</string>
+    <string name="service_running_wake_listening">Briareus sedang berjalan (bangun sedang mendengar)</string>
     <string name="service_running_stats">Berjalan perbualan %1$d · Panggilan alat %2$d</string>
     <string name="service_running_http_listening">HTTP luaran sedang mendengar port %1$d</string>
     <string name="service_running_with_http">%1$s · HTTP luaran %2$d</string>

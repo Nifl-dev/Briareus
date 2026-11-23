@@ -500,9 +500,9 @@
 
     <string name="open_termux">Buka Termux</string>
     <string name="termux_setup_guide">Panduan Pengaturan Termux</string>
-    <string name="about_title">Tentang Operit AI</string>
+    <string name="about_title">Tentang Briareus AI</string>
     <string name="about_version">Versi: %1$s</string>
-    <string name="about_description">Operit AI adalah aplikasi asisten cerdas yang membantu pengguna menggunakan perangkat dengan lebih efisien, menyediakan analisis antarmuka, percakapan obrolan, dan fungsi lainnya.</string>
+    <string name="about_description">Briareus AI adalah aplikasi asisten cerdas yang membantu pengguna menggunakan perangkat dengan lebih efisien, menyediakan analisis antarmuka, percakapan obrolan, dan fungsi lainnya.</string>
     <string name="about_developer">Pengembang: &lt;a href="https://github.com/AAswordman"&gt;AAswordman&lt;/a&gt;</string>
     <string name="about_contact">Hubungi kami: aaswordsman@foxmail.com</string>
     <string name="about_website">&lt;a href="https://github.com/AAswordman/Operit"&gt;GitHub: https://github.com/AAswordman/Operit&lt;/a&gt;</string>
@@ -521,7 +521,7 @@
     <string name="network_unavailable">Koneksi jaringan tidak tersedia, periksa pengaturan jaringan Anda</string>
     <string name="network_status">Status jaringan: %1$s</string>
     <string name="network_status_label">Status Jaringan</string>
-    <string name="config_title">Asisten Operit AI</string>
+    <string name="config_title">Asisten Briareus AI</string>
     <string name="config_description">Gunakan Kunci API DeepSeek atau konfigurasikan layanan model lain</string>
     <string name="config_api_key_label">Kunci API</string>
     <string name="config_api_key_placeholder">Kunci API DeepSeek</string>
@@ -865,7 +865,7 @@
     <string name="copy_path">Salin Jalur</string>
     <string name="path_copied_to_clipboard">Jalur telah disalin ke papan klip</string>
     <string name="open_file_manager">Buka Pengelola File</string>
-    <string name="navigate_to_external_files">Silakan navigasi ke direktori Android/data/com.ai.assistance.operit/files/packages</string>
+    <string name="navigate_to_external_files">Silakan navigasi ke direktori Android/data/dev.nifl.briareus/files/packages</string>
     <string name="package_js_only">Hanya mendukung file JavaScript (.js) dan ToolPkg (.toolpkg)</string>
     <string name="pkg_toolpkg_subpackages">Subpaket ToolPkg</string>
     <string name="pkg_toolpkg_version">Versi: %1$s</string>
@@ -1832,7 +1832,7 @@
     <string name="permission_guide_intro_2_title">Kotak Peralatan Kuat untuk Geek dan Pengembang</string>
     <string name="permission_guide_intro_2_desc">Dilengkapi lebih dari 40 alat profesional, mencakup manajemen file, permintaan jaringan, eksekusi skrip, dan kontrol sistem. Dikombinasikan dengan sistem plugin yang kuat, Anda dapat mengotomatisasi tugas dan mengendalikan perangkat Anda secara mendalam.</string>
     <string name="permission_guide_intro_3_title">Lepaskan Kreativitas, Siap Kapan Saja</string>
-    <string name="permission_guide_intro_3_desc">Baik merancang halaman web, memproses file media, atau membangunkan AI kapan saja melalui jendela mengambang, Operit menyediakan lingkungan kreasi dan bantuan yang kuat, fleksibel, dan aman. Data Anda, di bawah kendali Anda.</string>
+    <string name="permission_guide_intro_3_desc">Baik merancang halaman web, memproses file media, atau membangunkan AI kapan saja melalui jendela mengambang, Briareus menyediakan lingkungan kreasi dan bantuan yang kuat, fleksibel, dan aman. Data Anda, di bawah kendali Anda.</string>
     <string name="permission_guide_intro_page_indicator">Fitur %1$d/%2$d</string>
     <string name="debugger_accessibility_fallback_title">Skema Akselerasi Aksesibilitas (Risiko Tinggi)</string>
     <string name="debugger_accessibility_fallback_description">Mode debug secara default menjalankan operasi UI melalui Shell. Mengaktifkan layanan aksesibilitas dapat mempercepat otomatisasi UI secara signifikan, tetapi akan meningkatkan risiko terdeteksi oleh beberapa aplikasi dan menyebabkan pemblokiran akun. Kecuali Anda mengejar kecepatan operasi tertinggi, tidak disarankan untuk mengaktifkannya.</string>
@@ -1915,7 +1915,7 @@
     <string name="tool_user_agreement">Perjanjian Pengguna</string>
     <string name="tool_user_agreement_desc">Lihat perjanjian pengguna dan kebijakan privasi aplikasi</string>
     <string name="tool_default_assistant_guide">Pengaturan Asisten Bawaan</string>
-    <string name="tool_default_assistant_guide_desc">Atur Operit Voice Floating sebagai asisten bawaan sistem</string>
+    <string name="tool_default_assistant_guide_desc">Atur Briareus Voice Floating sebagai asisten bawaan sistem</string>
     <string name="tool_terminal">Terminal Perintah</string>
     <string name="tool_terminal_desc">Terminal baris perintah yang kuat, jalankan instruksi sistem</string>
     <string name="tool_terminal_auto_config">Konfigurasi Otomatis Terminal</string>
@@ -4307,7 +4307,7 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="emoji_preview">Pratinjau Emoji</string>
     <string name="create_group">Buat Grup</string>
     <string name="custom">Kustom</string>
-    <string name="voice_assistant_widget_description">Luncurkan cepat asisten suara Operit</string>
+    <string name="voice_assistant_widget_description">Luncurkan cepat asisten suara Briareus</string>
 
     <string name="global_permission_switch_description">Pengaturan ini berfungsi sebagai kontrol utama dan dapat menggantikan izin alat individual.</string>
     <string name="permission_level_allow">Izinkan</string>
@@ -4607,13 +4607,13 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="time_hours_ago">%1$d jam yang lalu</string>
     <string name="time_days_ago">%1$d hari yang lalu</string>
     <string name="default_assistant_guide_title">Atur Asisten Suara Default</string>
-    <string name="default_assistant_guide_subtitle">Jadikan Operit sebagai asisten pintar Anda</string>
-    <string name="default_assistant_guide_intro">Setelah mengatur Operit sebagai asisten default sistem, Anda dapat meluncurkan asisten suara Operit dengan cepat dengan menekan lama tombol Home atau menggunakan pemicu suara, untuk mendapatkan pengalaman interaksi AI yang lebih nyaman.</string>
+    <string name="default_assistant_guide_subtitle">Jadikan Briareus sebagai asisten pintar Anda</string>
+    <string name="default_assistant_guide_intro">Setelah mengatur Briareus sebagai asisten default sistem, Anda dapat meluncurkan asisten suara Briareus dengan cepat dengan menekan lama tombol Home atau menggunakan pemicu suara, untuk mendapatkan pengalaman interaksi AI yang lebih nyaman.</string>
     <string name="default_assistant_guide_steps_title">Langkah Pengaturan</string>
     <string name="default_assistant_guide_step1_title">Atur sebagai Asisten Default</string>
     <string name="default_assistant_guide_step1_desc">Atur Operit sebagai aplikasi asisten digital default sistem</string>
     <string name="default_assistant_guide_step1_detail1">• Buka Pengaturan sistem → Aplikasi → Aplikasi default → Aplikasi asisten digital</string>
-    <string name="default_assistant_guide_step1_detail2">• Temukan dan pilih "Operit AI" dalam daftar aplikasi asisten</string>
+    <string name="default_assistant_guide_step1_detail2">• Temukan dan pilih "Briareus AI" dalam daftar aplikasi asisten</string>
     <string name="default_assistant_guide_step1_detail_android12">Android 12+: Pengaturan → Aplikasi → Aplikasi default → Aplikasi asisten digital → Aplikasi asisten digital default</string>
     <string name="default_assistant_guide_open_settings">Buka pengaturan asisten</string>
     <string name="default_assistant_guide_open_gesture_settings">Buka pengaturan gestur</string>
@@ -4626,16 +4626,16 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="default_assistant_guide_step2_note">Catatan: Pengaturan gestur dapat berbeda di ponsel merek yang berbeda, periksa opsi yang tersedia di pengaturan sistem</string>
     <string name="default_assistant_guide_step4_title">Uji Asisten Suara</string>
     <string name="default_assistant_guide_step4_desc">Setelah pengaturan selesai, uji apakah dapat diluncurkan dengan normal</string>
-    <string name="default_assistant_guide_step4_detail1">• Menekan lama tombol Home (tombol layar utama) seharusnya memunculkan asisten suara Operit</string>
-    <string name="default_assistant_guide_step4_detail2">• Jika perangkat mendukung pemicu suara, mengucapkan "Hey Google" atau kata pemicu yang ditentukan perangkat juga dapat memicu Operit</string>
+    <string name="default_assistant_guide_step4_detail1">• Menekan lama tombol Home (tombol layar utama) seharusnya memunculkan asisten suara Briareus</string>
+    <string name="default_assistant_guide_step4_detail2">• Jika perangkat mendukung pemicu suara, mengucapkan "Hey Google" atau kata pemicu yang ditentukan perangkat juga dapat memicu Briareus</string>
     <string name="default_assistant_guide_step3_title">Uji Fungsi Asisten</string>
-    <string name="default_assistant_guide_step3_desc">Setelah pengaturan selesai, uji apakah Operit dapat dipanggil dengan normal</string>
+    <string name="default_assistant_guide_step3_desc">Setelah pengaturan selesai, uji apakah Briareus dapat dipanggil dengan normal</string>
     <string name="default_assistant_guide_step3_detail1">• Gunakan gestur yang Anda atur (seperti menekan lama tombol Home) untuk memanggil asisten</string>
-    <string name="default_assistant_guide_step3_detail2">• Jika berhasil, Anda akan melihat antarmuka asisten suara Operit</string>
+    <string name="default_assistant_guide_step3_detail2">• Jika berhasil, Anda akan melihat antarmuka asisten suara Briareus</string>
     <string name="default_assistant_guide_step3_detail3">• Anda dapat mencoba berbicara atau mengetik teks untuk berinteraksi dengan asisten</string>
     <string name="default_assistant_guide_troubleshooting_title">Mengalami masalah?</string>
-    <string name="default_assistant_guide_troubleshooting_content">Jika tidak dapat menemukan Operit dalam daftar, pastikan:\n\n• Aplikasi telah diinstal dengan benar dan tidak dinonaktifkan\n• Izin yang diperlukan telah diberikan (mikrofon, jendela mengambang, dll.)\n• Coba restart perangkat dan atur ulang\n\nBeberapa sistem kustom mungkin membatasi aplikasi pihak ketiga sebagai asisten default. Jika mengalami hal ini, Anda masih dapat menggunakan Operit melalui fungsi jendela mengambang dalam aplikasi.</string>
-    <string name="voice_interaction_service_name">Asisten Operit AI</string>
+    <string name="default_assistant_guide_troubleshooting_content">Jika tidak dapat menemukan Briareus dalam daftar, pastikan:\n\n• Aplikasi telah diinstal dengan benar dan tidak dinonaktifkan\n• Izin yang diperlukan telah diberikan (mikrofon, jendela mengambang, dll.)\n• Coba restart perangkat dan atur ulang\n\nBeberapa sistem kustom mungkin membatasi aplikasi pihak ketiga sebagai asisten default. Jika mengalami hal ini, Anda masih dapat menggunakan Briareus melalui fungsi jendela mengambang dalam aplikasi.</string>
+    <string name="voice_interaction_service_name">Asisten Briareus AI</string>
     <string name="voice_interaction_service_summary">Layanan asisten suara pintar</string>
     <string name="tool_permissions_title">Izin Alat</string>
     <string name="tool_permissions_description">Secara default, semua alat memerlukan "permintaan" dari Anda. Anda dapat menambahkan pengecualian di bawah ini.</string>
@@ -4748,7 +4748,7 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="backup_memory_count">Entri Memori</string>
     <string name="backup_memory_link_count">Asosiasi Memori</string>
     <string name="backup_files_statistics">Statistik File Cadangan</string>
-    <string name="backup_files_statistics_subtitle">File cadangan di direktori ekspor Operit</string>
+    <string name="backup_files_statistics_subtitle">File cadangan di direktori ekspor Briareus</string>
     <string name="backup_refresh">Segarkan</string>
     <string name="backup_scanning">Memindai</string>
     <string name="backup_chat_files">Catatan Percakapan</string>
@@ -4921,13 +4921,13 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="backup_faq_why">Mengapa perlu mencadangkan data?</string>
     <string name="backup_faq_why_answer">Mencadangkan riwayat percakapan dapat mencegah hilangnya konten penting Anda saat aplikasi dihapus atau data hilang. Mencadangkan secara berkala adalah kebiasaan yang baik!</string>
     <string name="backup_faq_where">Di mana file ekspor disimpan?</string>
-    <string name="backup_faq_where_answer">File cadangan yang diekspor akan disimpan di folder "Unduhan/Operit" di ponsel Anda. Nama file mencakup jenis data yang diekspor, tanggal, dan waktu.</string>
+    <string name="backup_faq_where_answer">File cadangan yang diekspor akan disimpan di folder "Unduhan/Briareus" di ponsel Anda. Nama file mencakup jenis data yang diekspor, tanggal, dan waktu.</string>
     <string name="backup_faq_duplicate">Apakah akan ada data duplikat setelah diimpor?</string>
     <string name="backup_faq_duplicate_answer">Sistem akan menilai berdasarkan ID catatan. Catatan dengan ID yang sama akan diperbarui, bukan diimpor ulang. Catatan dengan ID berbeda akan ditambahkan sebagai catatan baru.</string>
     <string name="backup_select_export_format">Pilih format ekspor</string>
     <string name="backup_select_format_hint">Silakan pilih format riwayat percakapan yang akan diekspor:</string>
     <string name="backup_format_json">JSON (Direkomendasikan)</string>
-    <string name="backup_format_json_desc">Format asli Operit, mempertahankan semua data secara lengkap</string>
+    <string name="backup_format_json_desc">Format asli Briareus, mempertahankan semua data secara lengkap</string>
     <string name="backup_format_markdown">Markdown</string>
     <string name="backup_format_markdown_desc">Format markup ringan, mudah dibaca dan diedit</string>
     <string name="backup_format_html">HTML</string>
@@ -4950,7 +4950,7 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="backup_export_result_success">Berhasil mengekspor ke: %1$s</string>
     <string name="backup_character_cards_title">Kartu Karakter</string>
     <string name="backup_character_cards_subtitle">Cadangkan dan pulihkan konfigurasi kartu karakter</string>
-    <string name="backup_character_cards_current_count">Saat ini ada %1$d kartu karakter. File yang diekspor akan disimpan di folder "Unduhan/Operit".</string>
+    <string name="backup_character_cards_current_count">Saat ini ada %1$d kartu karakter. File yang diekspor akan disimpan di folder "Unduhan/Briareus".</string>
     <string name="backup_character_card_count">Kartu Karakter</string>
     <string name="backup_character_card_files">Kartu Karakter</string>
     <string name="backup_character_cards_export_result_success">Berhasil mengekspor %1$d kartu karakter ke:\n%2$s</string>
@@ -6366,15 +6366,15 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
 
     <string name="chat_summarize_failed_no_valid_summary">Ringkasan gagal: Tidak dapat menghasilkan ringkasan yang valid</string>
     <string name="chat_summarize_generation_failed">Pembuatan ringkasan gagal: %1$s</string>
-    <string name="service_operit_running">Operit sedang berjalan</string>
+    <string name="service_operit_running">Briareus sedang berjalan</string>
     <string name="service_chat_complete_reminder">Pengingat percakapan selesai</string>
     <string name="service_chat_complete_reminder_sound">Pengingat percakapan selesai (suara)</string>
     <string name="service_chat_complete_reminder_vibration">Pengingat percakapan selesai (getaran)</string>
     <string name="service_chat_complete_reminder_sound_vibration">Pengingat percakapan selesai (suara dan getaran)</string>
-    <string name="service_keep_background">Jaga Operit tetap berjalan di latar belakang.</string>
+    <string name="service_keep_background">Jaga Briareus tetap berjalan di latar belakang.</string>
     <string name="service_notify_when_complete">Ingatkan Anda setelah percakapan selesai.</string>
-    <string name="service_running_wake_pause">Operit sedang berjalan (bangun dijeda)</string>
-    <string name="service_running_wake_listening">Operit sedang berjalan (bangun sedang mendengarkan)</string>
+    <string name="service_running_wake_pause">Briareus sedang berjalan (bangun dijeda)</string>
+    <string name="service_running_wake_listening">Briareus sedang berjalan (bangun sedang mendengarkan)</string>
     <string name="service_running_stats">Percakapan berjalan %1$d · Alat dipanggil %2$d</string>
     <string name="service_running_http_listening">HTTP eksternal sedang mendengarkan port %1$d</string>
     <string name="service_running_with_http">%1$s · HTTP eksternal %2$d</string>
