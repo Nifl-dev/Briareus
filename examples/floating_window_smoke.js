@@ -20,42 +20,32 @@
     "parameters": []
   }]
  } */
-
 /**
  * ToolPkg.ui.floatingWindows 冒烟示例（@since ToolPkg API 1.1.0）。
+ *
+ * 窗口内容来自本包 registerUiRoute 注册的 Compose DSL 路由；
+ * state 变化经 update 浅合并后驱动重渲染。
  */
-
 async function floating_window_smoke() {
-    var windows = ToolPkg.ui.floatingWindows;
-
-    var caps = await windows.capabilities();
+    const windows = ToolPkg.ui.floatingWindows;
+    const caps = await windows.capabilities();
     if (!caps.permissionGranted) {
         await windows.requestPermission();
         return 'overlay permission requested; re-run after granting to continue the smoke test';
     }
-
-    var opened = await windows.open({
+    const opened = await windows.open({
         id: 'smoke',
         route: 'screens/smoke',
         state: { count: 0 },
         options: { width: 320, height: 240, draggable: true },
     });
-
-    var updated = await windows.update('smoke', { x: 100 }, { count: 1 });
-
+    const updated = await windows.update('smoke', { x: 100 }, { count: 1 });
     await windows.hide('smoke');
-    var hidden = (await windows.list()).filter(function (window) {
-        return window.id === 'smoke';
-    })[0];
-
+    const hidden = (await windows.list()).find((window) => window.id === 'smoke');
     await windows.show('smoke');
-    var shown = (await windows.list()).filter(function (window) {
-        return window.id === 'smoke';
-    })[0];
-
+    const shown = (await windows.list()).find((window) => window.id === 'smoke');
     await windows.close('smoke');
-    var remaining = await windows.list();
-
+    const remaining = await windows.list();
     return JSON.stringify({
         capabilities: caps,
         opened: { id: opened.id, visible: opened.visible },

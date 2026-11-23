@@ -1,4 +1,3 @@
-"use strict";
 /* METADATA
 {
   "name": "openai_draw",
@@ -359,8 +358,10 @@ const openaiDraw = (function () {
                     ...imageFields
                 };
                 // multipart 字段必须是文本；JSON 生成请求中的帧参数则保持数字类型。
-                if (params.frame_count !== undefined) formData.frame_count = params.frame_count.toString();
-                if (params.frame_duration_ms !== undefined) formData.frame_duration_ms = params.frame_duration_ms.toString();
+                if (params.frame_count !== undefined)
+                    formData.frame_count = params.frame_count.toString();
+                if (params.frame_duration_ms !== undefined)
+                    formData.frame_duration_ms = params.frame_duration_ms.toString();
                 const response = await Tools.Net.uploadFile({
                     url: endpoint,
                     method: "POST",
