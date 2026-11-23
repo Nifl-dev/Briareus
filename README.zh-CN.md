@@ -1,3 +1,19 @@
+> [!WARNING]
+> # 🚧 开发中 — 尚不可用
+>
+> **Briareus 是 Operit AI 的实验性重制版本，目前无法正常工作。**
+>
+> 请勿安装、依赖或将任何构建产物视为可用。功能预计存在缺陷、缺失或不完整，
+> 项目结构可能随时调整。本项目不提供支持，也未发布任何正式版本。
+>
+> - **请改用上游应用：** [AAswordman/Operit](https://github.com/AAswordman/Operit)
+> - 本项目为 Operit AI 的衍生项目，遵循 **LGPL-3.0** 许可。许可条款请参见 [LICENSE](LICENSE)
+>   及上游仓库。
+> - 应用包名：`dev.nifl.briareus`（可与上游版本共存安装）。
+> - 项目进展将在此处更新。本横幅以下的内容描述的是**上游 Operit**，并非本分支的当前状态。
+
+---
+
 <h1 align="center">
   <img src="app/src/main/assets/logo.svg" width="48" height="48" align="absmiddle" alt=""> Operit AI
 </h1>

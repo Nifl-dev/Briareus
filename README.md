@@ -1,3 +1,21 @@
+> [!WARNING]
+> # 🚧 Work in progress — not functional yet
+>
+> **Briareus is an experimental, in-progress rebrand of Operit AI. It does not work yet.**
+>
+> Please do not install it, depend on it, or treat any build as usable. Things are
+> expected to be broken, incomplete, or missing, and the project may be
+> restructured without notice. No support is offered and no release is endorsed.
+>
+> - **Use the upstream app instead:** [AAswordman/Operit](https://github.com/AAswordman/Operit)
+> - This is a derivative of Operit AI, which is licensed **LGPL-3.0**. See [LICENSE](LICENSE)
+>   and the upstream repository for the terms that apply to this fork.
+> - Application ID: `dev.nifl.briareus` (so it can coexist with upstream installs).
+> - Status is updated here as the project progresses. Everything below this banner
+>   describes **upstream Operit**, not the state of this fork.
+
+---
+
 <h1 align="center">
   <img src="app/src/main/assets/logo.svg" width="48" height="48" align="absmiddle" alt=""> Operit AI
 </h1>

@@ -7,6 +7,7 @@ plugins {
 
 android {
     namespace = "com.ai.assistance.mmd"
+    ndkVersion = "25.1.8937393"
     compileSdk = 36
 
     defaultConfig {
