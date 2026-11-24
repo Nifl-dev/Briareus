@@ -3,7 +3,7 @@
     <string name="app_name">Briareus</string>
     <string name="accessibility_service_description">Utilizat pentru a obțineUIIerarhie, pentruAIAsistentul oferă capacități mai rapide de analiză a interfeței și nu colectează sau stochează nicio informație personală.</string>
 
-    <!-- 模型选择器相关 -->
+    <!-- Model selector -->
     <string name="model_selector_title">Selectarea configurației modelului</string>
     <string name="model_selector_toggle">Afișează selectorul de modele</string>
     <string name="model_selector_toggle_desc">În partea de sus a ferestrei de chat se afișează selectorul de configurații ale modelului, pentru a facilita comutarea rapidă între diferite configurații ale modelului</string>
@@ -128,7 +128,7 @@
     <string name="package_category_plugin">Plugin</string>
     <string name="desktop_pet_start">Pornește animalul de companie de pe birou</string>
 
-    <!-- 工作流相关 -->
+    <!-- Workflows -->
     <string name="workflow_list_title">Lista fluxurilor de lucru</string>
     <string name="workflow_create">Crearea unui flux de lucru</string>
     <string name="workflow_name">Denumirea fluxului de lucru</string>
@@ -333,24 +333,24 @@
 
     <string name="error_title">Eroare</string>
 
-    <!-- 附件面板 -->
+    <!-- Attachment panel -->
     <string name="screen_content">Conținutul ecranului</string>
     <string name="current_notifications">Anunțuri actuale</string>
     <string name="current_location">Poziția curentă</string>
     <string name="screen_ocr_select">Selectare și recunoaștere</string>
 
-    <!-- 模型建议对话框 -->
+    <!-- Model suggestion dialog -->
     <string name="model_suggestion_title">Recomandări privind modelul</string>
     <string name="model_suggestion_message">S-a detectat că modelul pe care îl utilizați în prezent are o capacitate redusă, ceea ce va afecta experiența de utilizare. Vă recomandăm să treceți la un alt model cu performanțe mai bune.</string>
     <string name="change_model">Schimbarea modelului</string>
     <string name="ignore">Ignorare</string>
 
-    <!-- 权限请求 -->
+    <!-- Permission requests -->
     <string name="requested_operation">Operațiunea solicitată</string>
     <string name="used_tool">Instrumentele utilizate</string>
     <string name="tool_category">Categorii de instrumente</string>
 
-    <!-- 助手配置界面 -->
+    <!-- Assistant configuration screen -->
     <string name="assistant_config_title">Configurarea asistentului</string>
     <string name="import_model">Importarea modelului</string>
     <string name="scan_user_models">Modelul utilizatorului scanat</string>
@@ -525,7 +525,7 @@
     <string name="voice_keyword_attachments_add_item_title">Adăugare element atașat</string>
     <string name="voice_keyword_attachments_type_label">Tip</string>
 
-    <!-- 用于NavItem类的标识符 -->
+    <!-- Identifiers for the NavItem class -->
     <string name="shizuku_commands">Acordarea drepturilor</string>
     <string name="tool_permissions">Setări privind permisiunile instrumentelor</string>
     <string name="about">Despre</string>
@@ -538,7 +538,7 @@
     <string name="go_to_chat_management">Accesați gestionarea conversațiilor</string>
     <string name="maybe_later">Nu se procesează momentan</string>
 
-    <!-- 聊天记录管理界面 -->
+    <!-- Chat history management screen -->
     <string name="chat_history_manager">Gestionarea istoricului conversațiilor</string>
     <string name="export_chat_history">Exportarea istoricului conversațiilor</string>
     <string name="import_chat_history">Importarea istoricului conversațiilor</string>
@@ -629,7 +629,7 @@
     <string name="onboarding_config_api_key_invalid">API Key Sau formatul setului de chei este incorect; vă rugăm să verificați și să încercați din nou</string>
     <string name="onboarding_config_apply_failed">Salvarea sau aplicarea configurației modelului a eșuat. Vă rugăm să încercați din nou.</string>
 
-    <!-- 一键配置相关 -->
+    <!-- One-tap setup -->
     <string name="one_click_config_title">Configurare cu un singur clic</string>
     <string name="one_click_config_loading">Se preiau informațiile de configurare...</string>
     <string name="one_click_config_success">Configurarea cu un singur clic a reușit!</string>
@@ -815,7 +815,7 @@
     <string name="overlay_permission_denied">Nu s-a obținut permisiunea pentru fereastra plutitoare, astfel încât aceasta nu poate fi afișată</string>
     <string name="close_floating_window">Închide fereastra plutitoare</string>
 
-    <!-- 麦克风权限 -->
+    <!-- Microphone permission -->
     <string name="microphone_permission">Permisiuni pentru microfon</string>
     <string name="microphone_permission_required">Este necesară autorizarea pentru microfon</string>
     <string name="microphone_permission_desc">Permite aplicației să înregistreze sunet, pentru introducerea vocală și recunoașterea vocală</string>
@@ -971,13 +971,13 @@
     <string name="feature_unavailable">Nu poate fi utilizatADBFuncții de comandă</string>
     <string name="thinking_process">Procesul de gândire</string>
 
-    <!-- 内置Shizuku -->
+    <!-- Built-in Shizuku -->
     <string name="install_from_store">Instalare din magazinul de aplicații Shizuku</string>
     <string name="install_bundled">Instalarea versiunii integrate (v%1$s)</string>
     <string name="installing_bundled">Se instalează funcția integratăShizuku, vă rugăm să acordați permisiunea de instalare</string>
     <string name="install_failed">Instalare integratăShizukuDacă nu funcționează, încercați să instalați aplicația din magazinul de aplicații</string>
 
-    <!-- 用户偏好 -->
+    <!-- User preferences -->
     <string name="user_preferences_guide">Setări personalizate</string>
     <string name="user_preferences">Setări de preferințe ale utilizatorului</string>
     <string name="user_preferences_settings">Date de utilizator (user.md)</string>
@@ -1108,7 +1108,7 @@
     <string name="language_changing">Se efectuează schimbarea limbii...</string>
     <string name="language_changed">Limba a fost modificată; aplicația se repornește</string>
 
-    <!-- 用户协议界面 -->
+    <!-- User agreement screen -->
     <string name="agreement_title">Termenii și condițiile de utilizare și politica de confidențialitate</string>
     <string name="agreement_subtitle">Vă rugăm să citiți cu atenție și să acceptați următoarele condiții înainte de utilizare.</string>
     <string name="agreement_version">Versiunea acordului:%1$s</string>
@@ -1338,7 +1338,7 @@
     <string name="shizuku_demo_termux_download_failed">Nu se poate deschide linkul de descărcare; vă rugăm să descărcați și să instalați manualTermux</string>
     <string name="shizuku_demo_termux_tuna_skipped">Configurarea Tsinghua Yuan a fost omisă; o puteți efectua mai târziu înTermuxConfigurarea surselor în mod independent</string>
 
-    <!-- 权限级别卡片 -->
+    <!-- Permission level cards -->
     <string name="permission_level">Nivelul de acces</string>
     <string name="permission_level_icon">Pictograma nivelului de acces</string>
     <string name="set_as_current_level">Setează ca nivel curent</string>
@@ -1365,7 +1365,7 @@
     <string name="location_permission">Permisiuni de localizare</string>
     <string name="operit_terminal">OperitTerminal</string>
 
-    <!-- 权限级别描述 -->
+    <!-- Permission level descriptions -->
     <string name="permission_level_standard">Drepturi standard</string>
     <string name="permission_level_accessibility">Permisiuni de accesibilitate</string>
     <string name="permission_level_admin">Drepturi de administrator</string>
@@ -1382,12 +1382,12 @@
     <string name="permission_level_debugger_full_desc">Drepturi de depanare: Permite accesulADBPentru a efectua operațiuni avansate folosind funcția de depanare, este necesarShizukuServicii</string>
     <string name="permission_level_root_full_desc">RootPermisiuni: permite aplicației să ruleze cu drepturi de superutilizator; este necesar ca dispozitivul să fieRoot</string>
 
-    <!-- Root 状态信息 -->
+    <!-- Root status information -->
     <string name="root_access_granted">Aplicația a fost descărcatăRootDrepturi, posibilitatea de a executa comenzi privilegiate</string>
     <string name="device_rooted_request_permission">Echipamentul a fostRoot, faceți clic pentru a solicita permisiunile aplicației</string>
     <string name="device_not_rooted">Echipamentul nu esteRoot, nu se poate accesaRootDrepturi</string>
 
-    <!-- Toast 消息 -->
+    <!-- Toast messages -->
     <string name="toast_download_link_failed">Nu se poate deschide linkul de descărcare</string>
     <string name="toast_apk_extract_failed">ExtragereAPKEroare. Vă rugăm să încercați din nou mai târziu.</string>
     <string name="toast_open_termux_first">Vă rugăm să porniți mai întâiTermux</string>
@@ -1395,7 +1395,7 @@
     <string name="toast_skip_tuna_source">Configurarea Tsinghua Yuan a fost omisă; o puteți efectua mai târziu înTermuxConfigurarea surselor în mod independent</string>
     <string name="toast_skip_tuna_source_dialog">Ați ales să omiteți configurarea Tsinghua Yuan. Dacă doriți să efectuați configurarea manuală ulterior, vă rugăm să accesațiTermuxExecutați următoarele comenzi:\n\ntermux-change-repo\n\nApoi selectați sursa Tsinghua sau o altă sursă din listă.</string>
 
-    <!-- 聊天历史选择器 -->
+    <!-- Chat history selector -->
     <string name="chat_history">Istoric conversații</string>
     <string name="search_chat_history_hint">Căutare</string>
     <string name="new_chat">Creează o conversație nouă</string>
@@ -1409,7 +1409,7 @@
     <string name="chat_shared_file_target_current_badge">Dialogul curent</string>
     <string name="chat_shared_file_target_no_recent">Momentan nu există conversații recente disponibile; puteți crea direct o conversație nouă.</string>
 
-    <!-- 聊天屏幕头部 -->
+    <!-- Chat screen header -->
     <string name="exit_edit_mode">Ieșire din modul de editare</string>
     <string name="enter_edit_mode">Intră în modul de editare</string>
     <string name="total">Total</string>
@@ -1424,7 +1424,7 @@
     <string name="ai_planning_mode">Căutare avansată:</string>
     <string name="disabled">Este închis</string>
 
-    <!-- Termux 相关 -->
+    <!-- Termux -->
     <string name="termux_not_installed_message">Vă rugăm să instalați mai întâiTermuxAplicații</string>
     <string name="termux_manual_auth_title">Este necesară autorizarea manuală</string>
     <string name="termux_manual_auth_message">Nu se poate acorda automatTermuxDrepturi de execuție a comenzilor: vă rugăm să efectuați operațiunea manual:\n\n1. DeschideTermux\n2. Țineți apăsat pe ecran, apoi selectați\'Mai multe\'\n3. Alegere\'Setări\'\n4. Activare\'Permite accesul aplicațiilor externe\'</string>
@@ -1457,7 +1457,7 @@
     <string name="crash_report_export_success">Raportul de erori a fost exportat în\n%1$s</string>
     <string name="crash_report_export_failed">Eșec la exportare: %1$s</string>
 
-    <!-- 模型提示词设置屏幕 -->
+    <!-- Model prompt settings screen -->
     <string name="model_prompts_title">Setări pentru cuvintele-cheie</string>
     <string name="select_persona_config">AlegereAIConfigurarea profilului personajului asistentului</string>
     <string name="select_prompt_config">Vă rugăm să selectați configurația mesajelor de sistem</string>
@@ -1484,7 +1484,7 @@
     <string name="unnamed_config">Configurație fără nume</string>
     <string name="delete_config">Ștergere</string>
 
-    <!-- 功能提示词配置屏幕 -->
+    <!-- Function prompt configuration screen -->
     <string name="functional_prompt_title">Setări pentru cuvintele-cheie funcționale</string>
     <string name="functional_prompt_desc">Configurați cuvinte-cheie distincte pentru fiecare funcție, astfel încât fiecare funcție să poată utiliza cuvintele-cheie cele mai potrivite.</string>
     <string name="current_prompt_config">Configurația actuală a cuvintelor-cheie: %1$s</string>
@@ -1499,11 +1499,11 @@
     <string name="desktop_pet_function">Funcția „maskotă de birou”</string>
     <string name="desktop_pet_function_desc">Funcția „Animal de companie pe desktop”, personalizarea personalității și a modului de interacțiune al animalului de companie de pe desktop</string>
 
-    <!-- 桌宠服务通知 -->
+    <!-- Desktop pet service notifications -->
     <string name="pet_service_notification_title">Servicii pentru animale de companie de birou</string>
     <string name="pet_service_notification_text">Animalul de companie virtual este în funcțiune</string>
 
-    <!-- 设置屏幕新增字符串 -->
+    <!-- New strings for the settings screen -->
     <string name="settings_prompt_section">Configurarea cuvintelor-cheie</string>
     <string name="settings_prompt_title">Editarea cărților de personaj</string>
     <string name="settings_prompt_desc">PersonalizareAICuvinte-cheie referitoare la comportamentul și personalitatea asistentului</string>
@@ -1513,7 +1513,7 @@
     <string name="settings_configure_functional_prompt">Configurarea cuvintelor-cheie pentru funcții</string>
     <string name="settings_appearance_section">Setări de aspect</string>
 
-    <!-- 关于屏幕 -->
+    <!-- About screen -->
     <string name="check_for_updates">Verifică actualizările</string>
     <string name="checking_updates">În curs de verificare...</string>
     <string name="new_version_found">Descoperă noua versiune</string>
@@ -1708,7 +1708,7 @@
     <string name="permission_guide_intro_3_desc">Fie că este vorba de proiectarea paginilor web, gestionarea fișierelor media sau activarea oricând prin fereastra flotantăAI,OperitToate acestea vă oferă un mediu de creație și asistență puternic, flexibil și sigur. Datele dvs. sunt sub controlul dvs.</string>
     <string name="permission_guide_intro_page_indicator">Prezentarea funcțiilor %1$d/%2$d</string>
 
-    <!-- 调试模式 -->
+    <!-- Debug mode -->
     <string name="debugger_accessibility_fallback_title">Soluții de accelerare fără obstacole (Risc ridicat)</string>
     <string name="debugger_accessibility_fallback_description">Modul de depanare este activat în mod implicitShellExecutareUIOperațiuni. Activarea serviciilor de accesibilitate poate accelera considerabilUIAutomatizare, dar aceasta va crește semnificativ riscul de a fi detectat de anumite aplicații și de a duce la blocarea contului. Cu excepția cazului în care doriți să obțineți o viteză maximă de operare, nu vă recomandăm să activați această opțiune.</string>
 
@@ -2288,14 +2288,14 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="description">Descriere</string>
     <string name="author">Autorul</string>
 
-    <!-- 缺失的字符串 -->
+    <!-- Missing strings -->
     <string name="configure_speech_services">Configurarea serviciilor vocale</string>
     <string name="microphone_permission_required_title">Este necesară autorizarea accesului la microfon</string>
     <string name="speech_services_settings">Setări servicii vocale</string>
     <string name="speech_services_settings_desc">Configurarea setărilor pentru transformarea textului în vorbire și recunoașterea vocală</string>
     <string name="wifi">WiFi</string>
 
-    <!-- Toast 消息 -->
+    <!-- Toast messages -->
     <string name="confirmation_code_copied">Codul de returnare a fost copiat!</string>
     <string name="message_copied">Mesajul a fost copiat în clipboard</string>
 
@@ -2318,7 +2318,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="root_tutorial_failed">Nu se poate deschideRootLink către tutorial</string>
     <string name="file_open_failed">Nu se poate deschide fișierul: %1$s</string>
 
-    <!-- Snackbar 消息 -->
+    <!-- Snackbar messages -->
     <string name="automation_config_imported">Importul configurației automate s-a realizat cu succes</string>
     <string name="tab_import_not_supported">Fila curentă nu acceptă importul</string>
     <string name="automation_config_deleted">Configurarea automată a fost ștearsă cu succes</string>
@@ -2327,7 +2327,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="plugin_deployed_success">Plugin %1$s A fost implementat cu succes</string>
     <string name="remote_service_updated">Servicii la distanță %1$s A fost actualizat</string>
 
-    <!-- UI 文本 -->
+    <!-- UI text -->
     <string name="plugin_zip_file">Pachetul de fișiere comprimate pentru plugin</string>
     <string name="mcp_plugin">MCP Plugin</string>
 
@@ -3081,7 +3081,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="ffmpeg_video_output_placeholder">Calea către fișierul de ieșire(Opțional)</string>
     <string name="ffmpeg_video_transcode">Transcodarea videoclipurilor</string>
 
-    <!-- ShizukuDemoScreen 字符串 -->
+    <!-- ShizukuDemoScreen strings -->
     <string name="loading_app_state">Se încarcă starea aplicației...</string>
     <string name="setup_wizard">Ghidul de configurare</string>
     <string name="setup_wizard_icon_desc">Pictograma ghidului de configurare</string>
@@ -3187,7 +3187,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="chat_speak_message_failed">Eșec la citirea mesajului: %1$s</string>
     <string name="chat_prefill_check_file">Uită-te puțin la acest document</string>
 
-    <!-- Workspace Attachment Processor (AI工具响应) -->
+    <!-- Workspace Attachment Processor (AI tool responses) -->
     <string name="workspace_unknown_error">Eroare necunoscută</string>
     <string name="workspace_suggestion_search_first">În ceea ce privește intenția utilizatorului, se recomandă să se utilizeze mai întâi grep_context(căutarea documentelor relevante pe baza intenției) și grep_code(Căutarea unor tipare de cod specifice) Folosiți acest instrument pentru a analiza starea actuală a proiectului, înainte de a efectua modificări.</string>
     <string name="workspace_suggestion_separate_files">Vă rugăm săHTML, CSS, și JavaScript Codul este stocat în fișiere separate.</string>
@@ -3227,7 +3227,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="workspace_error_fetch_changes">Nu se pot prelua modificările: %1$s</string>
     <string name="workspace_error_fetch_suggestions">Eroare de sistem. Vă rugăm să verificați configurația spațiului de lucru.</string>
 
-    <!-- Workspace Project Types (项目模板) -->
+    <!-- Workspace Project Types (project templates) -->
     <string name="workspace_project_blank_title">Spațiu de lucru gol</string>
     <string name="workspace_project_blank_description">Acesta este un spațiu de lucru gol, care conține doar structura de directoare de bază. Poți edita .operit/config.json Configurați tipul de proiect, serverul și comenzile, de exemplu:server.enabled,preview.type,commands etc.</string>
     <string name="workspace_project_web_title">Web Proiect</string>
@@ -3272,7 +3272,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="workspace_rename_success">Zona de lucru a fost redenumită %1$s</string>
     <string name="workspace_rename_save_first">Vă rugăm să salvați mai întâi fișierele modificate, apoi să redenumiți spațiul de lucru</string>
 
-    <!-- Workspace Commands (命令标签) -->
+    <!-- Workspace Commands (command tags) -->
     <string name="workspace_preview_button_label_browser">Previzualizare în browser</string>
     <string name="workspace_cmd_python_venv_create">Crearea unui mediu virtual</string>
     <string name="workspace_cmd_python_venv_activate">Activarea mediului virtual</string>
@@ -3457,14 +3457,14 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="settings_summary_threshold">Pragul proporțional de utilizare în context</string>
     <string name="settings_summary_threshold_subtitle">Rezumatul se generează atunci când procentul de utilizare a contextului depășește această valoare(0.1-0.95)</string>
 
-    <!-- 截断设置 -->
+    <!-- Truncation settings -->
     <string name="settings_history_retention_title">Setări de păstrare a conținutului media istoric</string>
     <string name="settings_max_image_history_user_turns">Numărul de runde în care se păstrează imaginile istorice</string>
     <string name="settings_max_image_history_user_turns_subtitle">Se păstrează doar cele mai recente N Imaginile din conversațiile ulterioare ale utilizatorului, pentru a evita trimiterea repetată a imaginilor anterioare</string>
     <string name="settings_max_media_history_user_turns">Numărul de runde de păstrare a înregistrărilor audio și video istorice</string>
     <string name="settings_max_media_history_user_turns_subtitle">Se păstrează doar cele mai recente N Fișierul audio din această conversație cu utilizatorul/Videoclipuri: evitarea trimiterii repetate a fișierelor audio și video din istoric</string>
 
-    <!-- 布局调整设置 -->
+    <!-- Layout adjustment settings -->
     <string name="layout_adjustment_settings_title">Setări de ajustare a dispunerii</string>
     <string name="layout_adjustment_description">Aici puteți regla poziția și marginile elementelor din interfață, personalizându-vă experiența de utilizare</string>
     <string name="chat_settings_bar_section">Bara de setări pentru chat</string>
@@ -3978,7 +3978,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="overseas_provider_warning">S-a detectat că vă aflați în China continentală, dar ați selectat un furnizor de servicii din străinătate. Vă rugăm să verificați dacă ați activat instrumentul de proxy.</string>
     <string name="international_proxy_provider_warning">Acest serviciu direcționează solicitările printr-un proxy internațional terț. Accesul din China continentală necesită un instrument proxy. Datele solicitărilor vor fi retransmise de o terță parte; verificați mediul de rețea, termenii serviciului și cerințele de conformitate a datelor.</string>
 
-    <!-- 自定义参数对话框 -->
+    <!-- Custom parameter dialog -->
     <string name="custom_parameter_added">Au fost adăugate parametri personalizați</string>
     <string name="parameter_name">Denumirea parametrului</string>
     <string name="parameter_name_placeholder">De exemplu: Parametrii mei</string>
@@ -3989,7 +3989,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="parameter_name_required">Numele parametrului nu poate fi gol</string>
     <string name="api_name_required">APICâmpul „Nume” nu poate fi lăsat necompletat</string>
 
-    <!-- 模型參數設置新增字符串 -->
+    <!-- New strings for model parameter settings -->
     <string name="model_parameters_title">Configurarea parametrilor modelului</string>
     <string name="repetition_parameters">Parametri de control repetat</string>
     <string name="api_name_label">APIDenumire: %1$s</string>
@@ -4018,13 +4018,13 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="settings_title">Setări</string>
     <string name="api_settings_title">API Setări</string>
 
-    <!-- 人设卡生成和Waifu模式设置 -->
+    <!-- Persona card generation and Waifu mode settings -->
     <string name="persona_card_generation">Generarea fișei personajului</string>
     <string name="persona_card_generation_desc">Accesați șiAIGenerarea prin dialog a unei fișe de personaj personalizate</string>
     <string name="waifu_mode_settings">WaifuSetări mod</string>
     <string name="waifu_mode_settings_desc">ConfigurațieAIModul de trimitere a propozițiilor de răspuns</string>
 
-    <!-- 酒馆角色卡导入 -->
+    <!-- Tavern character card import -->
     <string name="import_tavern_card">Importarea cărților de personaj din tavernă</string>
     <string name="import_tavern_card_desc">De laJSONsauPNGImportarea fișierelor în formatul „Taverna” pentru fișele personajelor</string>
     <string name="select_tavern_card_file">Selectează fișierul cu cărțile de personaj pentru tavernă</string>
@@ -4185,7 +4185,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="github_account_info_not_available">După autentificare, puteți vizualiza informațiile contului</string>
     <string name="github_account_not_logged_in_desc">Vă rugăm să vă autentificați mai întâi GitHub Cont</string>
 
-    <!-- 角色卡对话框 -->
+    <!-- Character card dialog -->
     <string name="character_card_description">Descriere</string>
     <string name="character_card_character_setting">Caracteristicile personajelor</string>
     <string name="character_card_character_setting_placeholder">Descrierea trăsăturilor de caracter ale personajului...</string>
@@ -4279,7 +4279,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="color_qr_not_recognized">Codul multidimensional color nu poate fi recunoscut</string>
     <string name="file_read_error_message">Nu se poate citi fișierul</string>
 
-    <!-- 权限请求 -->
+    <!-- Permission requests -->
     <string name="delete_character_card_confirm">Ești sigur că vrei să ștergi cartea de personaj „%1$s„? Această acțiune este ireversibilă.”</string>
     <string name="delete_tag">Ștergere etichetă</string>
     <string name="delete_tag_confirm">Sunteți sigur că doriți să ștergeți eticheta „%1$s„? Această acțiune este ireversibilă.”</string>
@@ -4305,7 +4305,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="nodejs_pip_environment_configured">NodeJSșipipMediul a fost configurat și poate fi utilizat în mod normalMCPFuncțiile pluginului.</string>
     <string name="open_terminal">Deschideți terminalul</string>
 
-    <!-- MCP市场界面 -->
+    <!-- MCP marketplace screen -->
     <string name="login_github_to_manage_mcp_plugins">Autentificare GitHub Pentru a publica și a gestiona MCP Plugin</string>
     <string name="login_github_for_skill_market">Autentificare GitHub pentru a obține un rezultat mai bun Skill Experiența pe piață</string>
     <string name="login_github_to_manage_scripts">Autentificare GitHub Pentru publicarea și gestionarea scripturilor dumneavoastră</string>
@@ -4449,7 +4449,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="manage_published_plugins">• Gestionați pluginurile pe care le-ați publicat</string>
     <string name="better_installation_experience">• O experiență de instalare îmbunătățită</string>
 
-    <!-- MCP发布界面 -->
+    <!-- MCP publishing screen -->
     <string name="edit_description">Note editoriale</string>
     <string name="publish_description">Note de lansare</string>
     <string name="only_alphanumeric_underscore_plugin_id">Sunt permise doar litere latine, cifre și linii de subliniere; acest nume va fi folosit ca nume al pluginuluiIDUtilizare</string>
@@ -4466,7 +4466,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="update_success">Actualizarea s-a efectuat cu succes</string>
     <string name="publish_success">Publicarea s-a realizat cu succes</string>
 
-    <!-- MCP配置界面 -->
+    <!-- MCP configuration screen -->
     <string name="mcp_community_resources">MCP Resurse comunitare</string>
     <string name="mcp_official_repo">MCP Depozitul oficial</string>
     <string name="anthropic_official_mcp_servers">AnthropicÎntreținut oficialMCPSetul de servere</string>
@@ -4482,7 +4482,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="more">Mai multe</string>
     <string name="copy_link">Copiază linkul</string>
 
-    <!-- MCP管理界面 -->
+    <!-- MCP management screen -->
     <string name="need_login_github_manage_plugins">Trebuie să vă autentificați GitHub pentru a putea gestiona pluginurile pe care le-ați publicat</string>
     <string name="need_login_github_manage_skills">Trebuie să vă autentificați GitHub pentru a putea gestiona postările dvs. Skill</string>
     <string name="need_login_github_manage_scripts">Trebuie să vă autentificați GitHub pentru a putea gestiona scripturile pe care le-ați publicat</string>
@@ -4520,7 +4520,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="remove">Eliminare</string>
     <string name="republish">Republicare</string>
 
-    <!-- 附加字符串 -->
+    <!-- Additional strings -->
     <string name="author_colon">Autorul:</string>
     <string name="share_colon">Distribuie:</string>
     <string name="downloading_progress">Se descarcă %1$s</string>
@@ -4776,7 +4776,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="confirm_remove_script_from_market">Sunteți sigur că doriți să eliminați scriptul „%1$s”? Această operațiune va dezactiva funcția corespunzătoare Issue, dar nu vă va șterge depozitul de publicare.</string>
     <string name="confirm_remove_package_from_market">Sunteți sigur că doriți să eliminați pachetul de instrumente de pe piață „%1$s”? Această operațiune va dezactiva funcția corespunzătoare Issue, dar nu vă va șterge depozitul de publicare.</string>
 
-    <!-- MCPPublishScreen 额外字符串 -->
+    <!-- MCPPublishScreen extra strings -->
     <string name="edit_plugin_info_description">Editați informațiile unui plugin deja publicat. Informațiile modificate vor fi actualizate în secțiunea corespunzătoare din magazinul de pluginuri. Issue În.</string>
     <string name="publish_plugin_info_description">Informațiile despre pluginul dumneavoastră vor fi utilizate ca GitHub Issue Publicați în magazinul de produse. Asigurați-vă că informațiile furnizate sunt corecte și complete. Conținutul formularului va fi salvat automat ca schiță și va fi șters abia după publicarea cu succes.</string>
     <string name="plugin_name_required">Numele pluginului *</string>
@@ -4973,7 +4973,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="api_key_pool_clear_marks">Șterge marcajul</string>
     <string name="api_key_pool_test_failed">Testul a eșuat: %1$s</string>
 
-    <!-- 手动更新记忆 -->
+    <!-- Manual memory update -->
     <string name="manual_memory_update">Salvarea manuală a setărilor memorate</string>
     <string name="manual_memory_update_desc">Atunci când este necesar să se salveze imediat conținutul valoros al acestei conversații, se poate declanșa manual procesul de memorare, care va fi stocat direct în baza de date a memoriei pe termen lung.</string>
     <string name="manual_conversation_summary">Rezumatul manual al conversației</string>
@@ -5137,14 +5137,14 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="message_limit_reached_message">Numărul actual de conversații a ajuns la %1$d Limita maximă.\nPentru a menține calitatea și performanța conversației, vă rugăm să ștergeți istoricul înainte de a continua.</string>
     <string name="go_clear">A merge la golire</string>
 
-    <!-- MNN 本地推理 -->
+    <!-- MNN local inference -->
     <string name="mnn_local_model_tip">Modelul care rulează local are o capacitate de înțelegere redusă; se recomandă dezactivarea legăturilor de memorie și activarea instrumentului de dezactivare pentru a purta o conversație</string>
     <string name="mnn_model_path">Calea către fișierul modelului</string>
     <string name="mnn_model_path_placeholder">IntroducereMNNCalea completă către fișierul modelului</string>
     <string name="mnn_forward_type">Tip de calcul</string>
     <string name="mnn_thread_count">Numărul de fire de execuție</string>
 
-    <!-- llama.cpp 本地推理 -->
+    <!-- llama.cpp local inference -->
     <string name="llama_local_model_tip">Modelul care rulează local are o capacitate de înțelegere redusă; se recomandă dezactivarea legăturilor de memorie și activarea instrumentului de dezactivare pentru a purta o conversație</string>
     <string name="llama_local_model_download_tip">llama.cpp Modelul trebuie descărcat separat (.gguf). Vă rugăm să plasați fișierul modelului în următorul folder, apoi să completați numele fișierului în câmpul „Numele modelului”:</string>
     <string name="llama_local_model_dir">Directorul implicit al modelelor:%1$s</string>
@@ -5168,7 +5168,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="llama_offload_kqv">Dezinstalare KQV până la GPU</string>
     <string name="llama_offload_kqv_subtitle">Numai în GPU Numărul de etaje este mai mare decât 0 Uneori are sens, alteori nu GPU backend În acest caz, va fi ignorat automat</string>
 
-    <!-- 工作流执行状态 -->
+    <!-- Workflow execution status -->
     <string name="workflow_execution_running">Se execută…</string>
     <string name="workflow_execution_success">Execuție reușită</string>
     <string name="workflow_execution_failed">Execuție eșuată</string>
@@ -5208,13 +5208,13 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="time_hours_ago">%1$d Acum câteva ore</string>
     <string name="time_days_ago">%1$d acum câteva zile</string>
 
-    <!-- 默认助手设置引导 -->
+    <!-- Default assistant setup guide -->
     <string name="default_assistant_guide_title">Setarea asistentului vocal implicit</string>
     <string name="default_assistant_guide_subtitle">SăOperitSă fiu asistentul tău inteligent</string>
     <string name="default_assistant_guide_intro">VaOperitDupă ce l-ați setat ca asistent implicit al sistemului, puteți, prin apăsarea îndelungatăHomeApăsați tasta sau folosiți activarea vocală pentru pornire rapidăOperitAsistentul vocal, pentru o experiență mai comodăAIExperiența interactivă.</string>
     <string name="default_assistant_guide_steps_title">Pași de configurare</string>
 
-    <!-- 步骤1: 设置为默认助理 -->
+    <!-- Step 1: set as default assistant -->
     <string name="default_assistant_guide_step1_title">Setează ca asistent implicit</string>
     <string name="default_assistant_guide_step1_desc">Va Operit Setați ca aplicație implicită de asistență digitală a sistemului</string>
     <string name="default_assistant_guide_step1_detail1">• Deschideți Setări sistem → Aplicații → Aplicații implicite → Aplicația Asistent digital</string>
@@ -5222,7 +5222,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="default_assistant_guide_step1_detail_android12">Android 12+: Setări → Aplicații → Aplicații implicite → Aplicația Asistent digital → Aplicația implicită pentru Asistentul digital</string>
     <string name="default_assistant_guide_open_settings">Deschideți setările Asistentului</string>
 
-    <!-- 步骤2: 配置启动手势 -->
+    <!-- Step 2: configure launch gesture -->
     <string name="default_assistant_guide_open_gesture_settings">Deschide setările pentru gesturi</string>
     <string name="default_assistant_guide_step2_title">Configurarea gesturilor de pornire</string>
     <string name="default_assistant_guide_step2_desc">Setări pentru activare rapidă Operit asistent</string>
@@ -5232,20 +5232,20 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="default_assistant_guide_step2_detail3">• Activare vocală: „Hey Google„sau cuvântul de activare specificat de dispozitiv (dacă dispozitivul acceptă această funcție)</string>
     <string name="default_assistant_guide_step2_note">Atenție: setările gesturilor pot varia în funcție de marca telefonului; vă rugăm să verificați opțiunile disponibile în setările sistemului</string>
 
-    <!-- 步骤4: 测试语音助手 -->
+    <!-- Step 4: test the voice assistant -->
     <string name="default_assistant_guide_step4_title">Testarea asistentului vocal</string>
     <string name="default_assistant_guide_step4_desc">După finalizarea configurării, verificați dacă sistemul pornește corect</string>
     <string name="default_assistant_guide_step4_detail1">• Apăsați și țineți apăsatHomeTasta (butonul de pe ecranul principal) ar trebui să activeze Briareus Asistent vocal</string>
     <string name="default_assistant_guide_step4_detail2">• Dacă dispozitivul acceptă activarea prin comandă vocală, spuneți „Hey Google„Este posibil ca și cuvintele de activare specificate de dispozitiv să declanșeze această funcție” Briareus</string>
 
-    <!-- 步骤3: 测试助手功能 -->
+    <!-- Step 3: test assistant features -->
     <string name="default_assistant_guide_step3_title">Funcția Asistent de testare</string>
     <string name="default_assistant_guide_step3_desc">După finalizarea configurării, efectuați un test Briareus Se poate activa în mod normal?</string>
     <string name="default_assistant_guide_step3_detail1">• Folosiți gesturile pe care le-ați configurat (de exemplu, apăsarea îndelungatăHome(Tastă) Activare asistent</string>
     <string name="default_assistant_guide_step3_detail2">• Dacă operațiunea are succes, ar trebui să vedeți Briareus Interfața asistentului vocal</string>
     <string name="default_assistant_guide_step3_detail3">• Puteți încerca să interacționați cu asistentul vorbind sau introducând text</string>
 
-    <!-- 疑难解答 -->
+    <!-- Troubleshooting -->
     <string name="default_assistant_guide_troubleshooting_title">Ai vreo problemă?</string>
     <string name="default_assistant_guide_troubleshooting_content">Dacă nu îl găsiți în listăBriareus, vă rugăm să vă asigurați că:\n\n• Aplicația a fost instalată corect și nu a fost dezactivată\n• Au fost acordate permisiunile necesare (microfon, fereastră flotantă etc.)\n• Încercați să reconfigurați dispozitivul după ce îl reporniți\n\nAnumite sisteme personalizate pot restricționa utilizarea aplicațiilor terțe ca asistenți impliciți; în acest caz, puteți utiliza în continuare aplicația prin intermediul funcției de fereastră plutitoare din cadrul acesteiaOperit.</string>
 
@@ -5272,7 +5272,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="done">Finalizat</string>
     <string name="forbid">Interzis</string>
 
-    <!-- 屏幕方向改变对话框 -->
+    <!-- Screen orientation change dialog -->
     <string name="dialog_title_orientation_change">Schimbarea orientării ecranului</string>
     <string name="dialog_message_orientation_change">S-a detectat o schimbare a orientării ecranului. Doriți să reîncărcați pagina?</string>
     <string name="dialog_button_confirm">Reîncărcare</string>
@@ -5281,7 +5281,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="settings_context_card_title">Instrucțiuni de configurare:</string>
     <string name="settings_context_card_content">· Lungimea contextului: Vă recomandăm să setați această valoare la maximul pe care îl utilizați în mod obișnuit.\n· Lungimea maximă a contextului: Se recomandă stabilirea ca modelAPIValoarea maximă acceptată.\nProgramul va comprima automat contextul atunci când acesta atinge pragul stabilit, pentru a preveni depășirea limitei. Vă rugăm să rețineți că nu este neapărat mai bine ca contextul să fie cât mai mare; este necesară o colaborare între utilizator și program.</string>
 
-    <!-- 聊天组件硬编码字符串 -->
+    <!-- Chat component hardcoded strings -->
     <string name="reply">Răspuns</string>
     <string name="image">Imagine</string>
     <string name="image_expired">Imagine (A expirat)</string>
@@ -5601,7 +5601,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="delete_workspaces_confirmation">Sunteți sigur că doriți să ștergeți elementele selectate? %1$d Un spațiu de lucru?\n\nDupă ștergere, toate fișierele și datele vor fi irecuperabile.</string>
     <string name="not_used_by_any_chat">Nu este utilizat în niciun dialog</string>
 
-    <!-- 无障碍朗读 - Markdown 块类型 -->
+    <!-- Accessibility reading - Markdown block types -->
     <string name="code_block">Bloc de cod</string>
     <string name="table_block">Tabel</string>
     <string name="plan_execution_graph">Diagrama de execuție a planului</string>
@@ -5623,7 +5623,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="thinking_tools_group_title_with_count">Reflecție și utilizarea instrumentelor (%1$d)</string>
     <string name="tools_group_title_with_count">Apelarea instrumentelor (%1$d)</string>
 
-    <!-- 备份设置界面 -->
+    <!-- Backup settings screen -->
     <string name="backup_data_overview">Prezentare generală a datelor</string>
     <string name="backup_current_profile">Configurația actuală:%1$s</string>
     <string name="backup_chat_count">Istoric de conversații</string>
@@ -5730,7 +5730,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_faq_duplicate">După import, vor apărea date duplicate?</string>
     <string name="backup_faq_duplicate_answer">Sistemul va lua în considerare înregistrărileIDConcluzie: identicIDÎnregistrările vor fi actualizate, nu importate din nou. DiferitIDÎnregistrarea respectivă va fi adăugată ca o înregistrare nouă.</string>
 
-    <!-- 导出格式选择 -->
+    <!-- Export format selection -->
     <string name="backup_select_export_format">Alegeți formatul de export</string>
     <string name="backup_select_format_hint">Vă rugăm să selectați formatul în care doriți să exportați istoricul conversațiilor:</string>
     <string name="backup_format_json">JSON(Recomandat)</string>
@@ -5742,7 +5742,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_format_txt">Text simplu</string>
     <string name="backup_format_txt_desc">Format text simplu, ușor de distribuit</string>
 
-    <!-- 导入格式选择 -->
+    <!-- Import format selection -->
     <string name="backup_select_import_format">Alegeți formatul de import</string>
     <string name="backup_import_format_hint">Vă rugăm să selectați formatul în care doriți să importați istoricul conversațiilor:</string>
     <string name="backup_format_operit">Operit JSON(Recomandat)</string>
@@ -5889,11 +5889,11 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_format_unknown">Format necunoscut</string>
     <string name="backup_format_claude">Claude</string>
 
-    <!-- 删除确认对话框 -->
+    <!-- Delete confirmation dialog -->
     <string name="backup_delete_confirm_title">Confirmă ștergerea</string>
     <string name="backup_delete_confirm_message">Ștergerea tuturor istoricului conversațiilor va face ca acestea să nu mai poată fi recuperate. Vă recomandăm să exportați o copie de rezervă înainte de a efectua această operațiune.\n\nSunteți sigur că doriți să ștergeți?</string>
     <string name="backup_delete_result_success">Ștergere reușită %1$d Istoric de conversație</string>
-    <!-- 模型配置导出安全警告 -->
+    <!-- Model config export security warning -->
     <string name="backup_model_config_warning_title">Sfaturi de siguranță</string>
     <string name="backup_model_config_warning_contains">Acest profil conține următoarele informații sensibile:</string>
     <string name="backup_model_config_warning_api_key">API Cheie</string>
@@ -5905,7 +5905,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_model_config_warning_export_path">Locația de export:</string>
     <string name="backup_model_config_warning_confirm">Am înțeles</string>
 
-    <!-- 记忆库导入策略 -->
+    <!-- Memory library import strategy -->
     <string name="backup_memory_import_strategy_title">Selectarea strategiei de import</string>
     <string name="backup_memory_import_profile_title">Selectați configurația</string>
     <string name="backup_memory_import_strategy_question">Când întâlnești amintiri repetate (UUID(identice) cum se procedează în acest caz?</string>
@@ -7361,10 +7361,10 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="update_version_title">Versiune %1$s</string>
     <string name="avatar_reset">Resetare</string>
 
-    <!-- WorkflowExecutor (新增) -->
+    <!-- WorkflowExecutor (added) -->
     <string name="workflow_node_execution_exception">Anomalii la executarea nodului: %1$s</string>
 
-    <!-- MessageCoordinationDelegate (新增) -->
+    <!-- MessageCoordinationDelegate (added) -->
     <string name="chat_cannot_create_new">Nu se poate crea o conversație nouă. Vă rugăm să încercați din nou.</string>
     <string name="chat_ai_service_unavailable_memory">AIServiciul nu este disponibil, nu se poate actualiza memoria</string>
     <string name="chat_history_empty_no_update">Istoricul conversațiilor este gol, nu este necesară actualizarea memoriei</string>
@@ -7381,7 +7381,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="chat_summarize_failed_no_valid_summary">Analiza eșecurilor: Nu s-a putut genera un rezumat valabil</string>
     <string name="chat_summarize_generation_failed">Eșecul generării rezumatului: %1$s</string>
 
-    <!-- AIForegroundService (新增) -->
+    <!-- AIForegroundService (added) -->
     <string name="service_operit_running">Briareus În curs de execuție</string>
     <string name="service_chat_complete_reminder">Notificare privind finalizarea conversației</string>
     <string name="service_chat_complete_reminder_sound">Notificare privind finalizarea conversației (semnal sonor)</string>
@@ -7400,7 +7400,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="service_exit">Ieșire</string>
     <string name="service_stop">Oprire</string>
 
-    <!-- TextExporter (新增) -->
+    <!-- TextExporter (added) -->
     <string name="export_created_time">Data creării: %1$s</string>
     <string name="export_updated_time">Data actualizării: %1$s</string>
     <string name="export_group">Grupare: %1$s</string>
@@ -7412,7 +7412,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="export_assistant">asistent</string>
     <string name="export_model">(Model: %1$s)</string>
 
-    <!-- ChatBoxConverter (新增) -->
+    <!-- ChatBoxConverter (added) -->
     <string name="chatbox_unsupported_format">Nu este acceptat ChatBox Format</string>
     <string name="chatbox_unsupported_format_detail">Vă rugăm să importați ChatBox Exportat JSON(Setări &gt; Setări generale &gt; Backupul datelor &gt; (Exportați datele selectate)</string>
     <string name="chatbox_parse_error">Analiză ChatBox Eroare de formatare: %1$s</string>
@@ -7428,7 +7428,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="role_system">Sistem</string>
     <string name="role_model">Model</string>
 
-    <!-- HtmlExporter (新增) -->
+    <!-- HtmlExporter (added) -->
     <string name="html_export_title">Exportarea istoricului conversațiilor</string>
     <string name="html_export_time">Ora exportului</string>
     <string name="html_export_conversation_count">Numărul de conversații</string>
@@ -7439,7 +7439,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="html_export_message_count">Numărul de mesaje</string>
     <string name="html_export_footer">Extras din Operit AI Assistant</string>
 
-    <!-- MnnModelDownloadManager (新增) -->
+    <!-- MnnModelDownloadManager (added) -->
     <string name="mnn_no_cache_data">Date fără cache</string>
     <string name="mnn_response_empty">Corpul răspunsului este gol</string>
     <string name="mnn_fetch_repo_files_failed">Eroare la preluarea listei de fișiere din depozit: %1$s</string>
@@ -7449,7 +7449,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="mnn_download_file_failed">Descărcarea fișierului a eșuat: %1$s (HTTP %2$d)</string>
     <string name="mnn_download_paused">Descărcarea a fost suspendată</string>
 
-    <!-- MCPBridge (新增) -->
+    <!-- MCPBridge (added) -->
     <string name="mcp_send_command">Trimiterea comenzii de bridge</string>
     <string name="mcp_service_label">Servicii</string>
     <string name="mcp_other_params">Alți parametri</string>
@@ -7462,7 +7462,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="mcp_result">Rezultate</string>
     <string name="mcp_error">Eroare</string>
 
-    <!-- EnhancedAIService (新增) -->
+    <!-- EnhancedAIService (added) -->
     <string name="enhanced_processing_input">Se procesează datele introduse...</string>
     <string name="enhanced_processing_message">Se procesează mesajul...</string>
     <string name="enhanced_connecting_service">Se conecteazăAIServicii...</string>
@@ -7476,7 +7476,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="enhanced_process_tool_result_failed">Eșecul execuției instrumentului de procesare: %1$s</string>
     <string name="enhanced_memory_tools_category">Instrumente pentru memorie și baze de date</string>
 
-    <!-- OpenAIProvider (新增) -->
+    <!-- OpenAIProvider (added) -->
     <string name="openai_retry_with_count">%1$s, se află la a %2$d A doua încercare...</string>
     <string name="openai_error_timeout">Timpul de așteptare pentru conectare a expirat</string>
     <string name="openai_error_cannot_resolve_host">Nu se poate identifica numele de gazdă</string>
@@ -7484,7 +7484,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="openai_audio_video_omitted">Conținutul audio și video a fost omis; modelul actual nu acceptă procesarea conținutului audio și video</string>
     <string name="openai_image_omitted">Conținutul imaginii a fost omis; modelul actual nu acceptă procesarea imaginilor</string>
 
-    <!-- WorkflowExecutor (新增) -->
+    <!-- WorkflowExecutor (added) -->
     <string name="workflow_non_execute_node">Nod neexecutiv</string>
     <string name="workflow_node_no_action">Nodul nu este configurat actionType</string>
 

@@ -413,7 +413,7 @@
     <string name="avatar_custom_type_edit_title">Edit tipe kustom</string>
     <string name="avatar_custom_type_key">Kunci tipe</string>
     <string name="avatar_custom_type_key_hint">Hanya huruf kecil, angka, _ dan - yang diizinkan. Kunci yang dinormalisasi: %1$s</string>
-    <string name="avatar_empty_value_placeholder">&lt;空&gt;</string>
+    <string name="avatar_empty_value_placeholder">&lt;kosong&gt;</string>
     <string name="avatar_custom_type_prompt_hint_label">Penjelasan petunjuk</string>
 
     <string name="avatar_custom_type_prompt_hint_help">Petunjuk ini akan digabungkan ke dalam aturan mood avatar desktop/suara, untuk memandu model kapan menggunakan tipe ini.</string>

@@ -371,7 +371,7 @@
     <string name="avatar_custom_type_edit_title">Edit jenis tersuai</string>
     <string name="avatar_custom_type_key">Kunci jenis</string>
     <string name="avatar_custom_type_key_hint">Hanya huruf kecil, nombor, _ dan - dibenarkan. Kunci ternormal: %1$s</string>
-    <string name="avatar_empty_value_placeholder">&lt;空&gt;</string>
+    <string name="avatar_empty_value_placeholder">&lt;kosong&gt;</string>
     <string name="avatar_custom_type_prompt_hint_label">Penjelasan petunjuk</string>
     <string name="avatar_custom_type_prompt_hint_help">Petunjuk ini akan disambungkan ke dalam peraturan mood avatar desktop/suara, untuk membimbing model dalam situasi mana jenis ini patut digunakan.</string>
     <string name="avatar_emotion_mapping_title">Pemetaan emosi</string>

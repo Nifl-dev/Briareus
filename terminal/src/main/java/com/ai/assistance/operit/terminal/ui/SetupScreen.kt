@@ -354,14 +354,14 @@ fun SetupScreen(
                     // 系统升级
                     commands.add("apt upgrade -y")
                     
-                    // 为 pip/pipx 设置国内镜像（永久配置）
+                    // Configure pip/pipx to use the official PyPI index (persistent)
                     commands.add("mkdir -p ~/.config/pip")
                     commands.add("echo '[global]' > ~/.config/pip/pip.conf")
-                    commands.add("echo 'index-url = https://pypi.tuna.tsinghua.edu.cn/simple' >> ~/.config/pip/pip.conf")
+                    commands.add("echo 'index-url = https://pypi.org/simple' >> ~/.config/pip/pip.conf")
                     
-                    // 为 uv/uvx 设置国内镜像（永久配置）
+                    // Configure uv/uvx to use the official PyPI index (persistent)
                     commands.add("mkdir -p ~/.config/uv")
-                    commands.add("echo 'index-url = \"https://pypi.tuna.tsinghua.edu.cn/simple\"' > ~/.config/uv/uv.toml")
+                    commands.add("echo 'index-url = \"https://pypi.org/simple\"' > ~/.config/uv/uv.toml")
                     
                     // 收集选中的包
                     val selectedAptPackages = mutableListOf<String>()

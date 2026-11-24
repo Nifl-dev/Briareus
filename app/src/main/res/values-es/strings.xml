@@ -26,7 +26,7 @@
     <string name="write_large_file_test_desc">Escribe un archivo de texto más grande para validar la escritura por bloques.</string>
     <string name="query_memory_test_desc">Probar la consulta de la biblioteca de memorias.</string>
 
-    <!-- 用于NavItem类的标识符 -->
+    <!-- Identifiers for the NavItem class -->
     <string name="shizuku_commands">Concesión de permisos</string>
     <string name="tool_permissions">Configuración de permisos de herramientas</string>
     <string name="about">Acerca de</string>
@@ -46,7 +46,7 @@
     <string name="used_tool">Herramienta utilizada</string>
     <string name="tool_category">Categoría de herramienta</string>
 
-    <!-- 聊天记录管理界面 -->
+    <!-- Chat history management screen -->
     <string name="chat_history_manager">Gestión del historial de chat</string>
     <string name="export_chat_history">Exportar historial de chat</string>
     <string name="import_chat_history">Importar historial de chat</string>
@@ -172,13 +172,13 @@
     <string name="feature_unavailable">No se puede usar la función de comandos ADB</string>
     <string name="thinking_process">Proceso de pensamiento</string>
 
-    <!-- 内置Shizuku -->
+    <!-- Built-in Shizuku -->
     <string name="install_from_store">Instalar Shizuku desde la tienda de aplicaciones</string>
     <string name="install_bundled">Instalar versión integrada (v%1$s)</string>
     <string name="installing_bundled">Instalando Shizuku integrado, por favor conceda permiso de instalación</string>
     <string name="install_failed">Error al instalar Shizuku integrado, intente instalar desde la tienda de aplicaciones</string>
 
-    <!-- 用户偏好 -->
+    <!-- User preferences -->
     <string name="user_preferences_guide">Configuración personalizada</string>
     <string name="user_preferences">Preferencias de usuario</string>
     <string name="user_preferences_settings">Perfil de usuario (user.md)</string>
@@ -1808,7 +1808,7 @@
     <string name="avatar_custom_type_edit_title">Editar tipo personalizado</string>
     <string name="avatar_custom_type_key">Clave de tipo</string>
     <string name="avatar_custom_type_key_hint">Solo se permiten letras minúsculas, números, _ y -. Clave normalizada: %1$s</string>
-    <string name="avatar_empty_value_placeholder">&lt;空&gt;</string>
+    <string name="avatar_empty_value_placeholder">&lt;vacío&gt;</string>
     <string name="avatar_custom_type_prompt_hint_label">Descripción del prompt</string>
     <string name="avatar_custom_type_prompt_hint_help">Este prompt se agregará a la regla de mood de la mascota/avatar de voz, guiando al modelo sobre en qué escenario usar este tipo.</string>
     <string name="avatar_emotion_mapping_title">Mapeo de emociones</string>
@@ -5594,7 +5594,7 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="functional_config_model_count">%1$d modelos</string>
     <string name="functional_config_test_title_generation_user_text">Quiero planear un viaje de tres días a Tokio, incluyendo transporte, hoteles y recomendaciones de comida.</string>
     <string name="functional_config_test_grep_intent">Encuentra fragmentos que contengan saludos.</string>
-    <string name="functional_config_test_grep_display_path">&lt;测试&gt;</string>
+    <string name="functional_config_test_grep_display_path">&lt;prueba&gt;</string>
     <string name="functional_config_test_grep_candidates_digest">#1 [file: example.txt]\nHola mundo\n#2 [file: main.kt]\nfun main() {}</string>
     <string name="functional_config_test_ui_controller_prompt">Estado actual de la UI: [Button(label="Aceptar", bounds="[0,0][100,50]")]\nObjetivo de la tarea: Hacer clic en Aceptar.\nHistorial de ejecución: []</string>
     <string name="functional_config_test_memory_prompt">Contenido del diálogo:\nUsuario: Pregunta de prueba de conexión.\nAsistente: Respuesta de prueba de conexión.</string>

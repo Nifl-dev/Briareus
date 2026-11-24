@@ -2,7 +2,7 @@
     <string name="app_name">Briareus</string>
     <string name="accessibility_service_description">用于获取UI层次结构，为AI助手提供更快速的界面分析能力，不会收集或存储任何个人信息。</string>
     
-    <!-- 模型选择器相关 -->
+    <!-- Model selector -->
     <string name="model_selector_title">选择模型配置</string>
     <string name="model_selector_toggle">显示模型选择器</string>
     <string name="model_selector_toggle_desc">在聊天界面顶部显示模型配置选择器，方便快速切换不同的模型配置</string>
@@ -127,7 +127,7 @@
     <string name="package_category_plugin">插件</string>
     <string name="desktop_pet_start">启动桌宠</string>
     
-    <!-- 工作流相关 -->
+    <!-- Workflows -->
     <string name="workflow_list_title">工作流列表</string>
     <string name="workflow_create">创建工作流</string>
     <string name="workflow_name">工作流名称</string>
@@ -332,24 +332,24 @@
 
     <string name="error_title">错误</string>
 
-    <!-- 附件面板 -->
+    <!-- Attachment panel -->
     <string name="screen_content">屏幕内容</string>
     <string name="current_notifications">当前通知</string>
     <string name="current_location">当前位置</string>
     <string name="screen_ocr_select">圈选识别</string>
     
-    <!-- 模型建议对话框 -->
+    <!-- Model suggestion dialog -->
     <string name="model_suggestion_title">模型建议</string>
     <string name="model_suggestion_message">检测到您当前使用的模型能力较弱，会影响使用体验。建议您前往更换为其他性能更强的模型。</string>
     <string name="change_model">更换模型</string>
     <string name="ignore">忽略</string>
     
-    <!-- 权限请求 -->
+    <!-- Permission requests -->
     <string name="requested_operation">请求的操作</string>
     <string name="used_tool">使用的工具</string>
     <string name="tool_category">工具类别</string>
     
-    <!-- 助手配置界面 -->
+    <!-- Assistant configuration screen -->
     <string name="assistant_config_title">助手配置</string>
     <string name="import_model">导入模型</string>
     <string name="scan_user_models">扫描用户模型</string>
@@ -524,7 +524,7 @@
     <string name="voice_keyword_attachments_add_item_title">添加附件项</string>
     <string name="voice_keyword_attachments_type_label">类型</string>
 
-    <!-- 用于NavItem类的标识符 -->
+    <!-- Identifiers for the NavItem class -->
     <string name="shizuku_commands">权限授予</string>
     <string name="tool_permissions">工具权限设置</string>
     <string name="about">关于</string>
@@ -537,7 +537,7 @@
     <string name="go_to_chat_management">前往对话管理</string>
     <string name="maybe_later">暂不处理</string>
     
-    <!-- 聊天记录管理界面 -->
+    <!-- Chat history management screen -->
     <string name="chat_history_manager">聊天记录管理</string>
     <string name="export_chat_history">导出聊天记录</string>
     <string name="import_chat_history">导入聊天记录</string>
@@ -628,7 +628,7 @@
     <string name="onboarding_config_api_key_invalid">API Key 或密钥池格式不正确，请检查后重试</string>
     <string name="onboarding_config_apply_failed">模型配置保存或应用失败，请重试</string>
     
-    <!-- 一键配置相关 -->
+    <!-- One-tap setup -->
     <string name="one_click_config_title">一键配置</string>
     <string name="one_click_config_loading">正在获取配置信息...</string>
     <string name="one_click_config_success">一键配置成功！</string>
@@ -823,7 +823,7 @@
     <string name="overlay_permission_denied">未获得悬浮窗权限，无法显示悬浮窗</string>
     <string name="close_floating_window">关闭悬浮窗</string>
     
-    <!-- 麦克风权限 -->
+    <!-- Microphone permission -->
     <string name="microphone_permission">麦克风权限</string>
     <string name="microphone_permission_required">需要麦克风权限</string>
     <string name="microphone_permission_desc">允许应用录制音频，用于语音输入和语音识别</string>
@@ -979,13 +979,13 @@
     <string name="feature_unavailable">无法使用ADB命令功能</string>
     <string name="thinking_process">思考过程</string>
     
-    <!-- 内置Shizuku -->
+    <!-- Built-in Shizuku -->
     <string name="install_from_store">从应用商店安装 Shizuku</string>
     <string name="install_bundled">安装内置版本 (v%1$s)</string>
     <string name="installing_bundled">正在安装内置的Shizuku，请授予安装权限</string>
     <string name="install_failed">安装内置Shizuku失败，请尝试从应用商店安装</string>
     
-    <!-- 用户偏好 -->
+    <!-- User preferences -->
     <string name="user_preferences_guide">个性化设置</string>
     <string name="user_preferences">用户偏好设置</string>
     <string name="user_preferences_settings">用户资料设置</string>
@@ -1161,7 +1161,7 @@
     <string name="language_changing">正在切换语言...</string>
     <string name="language_changed">语言已更改，正在重启应用</string>
     
-    <!-- 用户协议界面 -->
+    <!-- User agreement screen -->
     <string name="agreement_title">用户协议与隐私政策</string>
     <string name="agreement_subtitle">请在使用前仔细阅读并同意以下条款。</string>
     <string name="agreement_version">协议版本：%1$s</string>
@@ -1395,7 +1395,7 @@
     <string name="shizuku_demo_termux_download_failed">无法打开下载链接，请手动下载安装Termux</string>
     <string name="shizuku_demo_termux_tuna_skipped">已跳过清华源配置，您可以稍后在Termux中自行配置源</string>
 
-    <!-- 权限级别卡片 -->
+    <!-- Permission level cards -->
     <string name="permission_level">权限级别</string>
     <string name="permission_level_icon">权限级别图标</string>
     <string name="set_as_current_level">设为当前级别</string>
@@ -1422,7 +1422,7 @@
     <string name="location_permission">位置权限</string>
     <string name="operit_terminal">Operit终端</string>
     
-    <!-- 权限级别描述 -->
+    <!-- Permission level descriptions -->
     <string name="permission_level_standard">标准权限</string>
     <string name="permission_level_accessibility">无障碍权限</string>
     <string name="permission_level_admin">管理员权限</string>
@@ -1439,12 +1439,12 @@
     <string name="permission_level_debugger_full_desc">调试权限：允许通过ADB调试功能进行高级操作，需要Shizuku服务</string>
     <string name="permission_level_root_full_desc">Root权限：允许应用以超级用户身份运行，需要设备已Root</string>
     
-    <!-- Root 状态信息 -->
+    <!-- Root status information -->
     <string name="root_access_granted">应用已获取Root权限，可执行特权命令</string>
     <string name="device_rooted_request_permission">设备已Root，点击申请应用权限</string>
     <string name="device_not_rooted">设备未Root，无法获取Root权限</string>
     
-    <!-- Toast 消息 -->
+    <!-- Toast messages -->
     <string name="toast_download_link_failed">无法打开下载链接</string>
     <string name="toast_apk_extract_failed">提取APK失败，请稍后再试</string>
     <string name="toast_open_termux_first">请先启动Termux</string>
@@ -1452,7 +1452,7 @@
     <string name="toast_skip_tuna_source">已跳过清华源配置，您可以稍后在Termux中自行配置源</string>
     <string name="toast_skip_tuna_source_dialog">您已选择跳过清华源配置。如需后续手动配置，请在Termux中执行以下命令：\n\ntermux-change-repo\n\n然后从列表中选择清华源或其他源。</string>
     
-    <!-- 聊天历史选择器 -->
+    <!-- Chat history selector -->
     <string name="chat_history">对话历史</string>
     <string name="search_chat_history_hint">搜索</string>
     <string name="new_chat">新建对话</string>
@@ -1466,7 +1466,7 @@
     <string name="chat_shared_file_target_current_badge">当前对话</string>
     <string name="chat_shared_file_target_no_recent">暂无可选的最近对话，可以直接新建对话。</string>
     
-    <!-- 聊天屏幕头部 -->
+    <!-- Chat screen header -->
     <string name="exit_edit_mode">退出编辑模式</string>
     <string name="enter_edit_mode">进入编辑模式</string>
     <string name="total">总计</string>
@@ -1481,7 +1481,7 @@
     <string name="ai_planning_mode">深度搜索:</string>
     <string name="disabled">已关闭</string>
     
-    <!-- Termux 相关 -->
+    <!-- Termux -->
     <string name="termux_not_installed_message">请先安装Termux应用</string>
     <string name="termux_manual_auth_title">需要手动授权</string>
     <string name="termux_manual_auth_message">无法自动授予Termux运行命令权限，请手动操作:\n\n1. 打开Termux\n2. 长按屏幕，选择\'更多\'\n3. 选择\'设置\'\n4. 启用\'允许外部应用访问\'</string>
@@ -1619,7 +1619,7 @@
     <string name="crash_report_export_success">错误报告已导出到\n%1$s</string>
     <string name="crash_report_export_failed">导出失败: %1$s</string>
     
-    <!-- 模型提示词设置屏幕 -->
+    <!-- Model prompt settings screen -->
     <string name="model_prompts_title">提示词设置</string>
     <string name="select_persona_config">选择AI助手的人设卡配置</string>
     <string name="select_prompt_config">请选择系统提示词配置</string>
@@ -1646,7 +1646,7 @@
     <string name="unnamed_config">未命名配置</string>
     <string name="delete_config">删除</string>
     
-    <!-- 功能提示词配置屏幕 -->
+    <!-- Function prompt configuration screen -->
     <string name="functional_prompt_title">功能提示词配置设置</string>
     <string name="functional_prompt_desc">为不同功能设置单独的提示词配置，使每个功能都能使用最适合的提示词。</string>
     <string name="current_prompt_config">当前提示词配置: %1$s</string>
@@ -1661,11 +1661,11 @@
     <string name="desktop_pet_function">桌宠功能</string>
     <string name="desktop_pet_function_desc">桌面宠物功能，自定义桌宠的性格和互动方式</string>
     
-    <!-- 桌宠服务通知 -->
+    <!-- Desktop pet service notifications -->
     <string name="pet_service_notification_title">桌面宠物服务</string>
     <string name="pet_service_notification_text">桌面宠物正在运行中</string>
     
-    <!-- 设置屏幕新增字符串 -->
+    <!-- New strings for the settings screen -->
     <string name="settings_prompt_section">提示词��置</string>
     <string name="settings_prompt_title">角色卡编辑</string>
     <string name="settings_prompt_desc">自定义AI助手的行为和性格的提示词</string>
@@ -1675,7 +1675,7 @@
     <string name="settings_configure_functional_prompt">配置功能提示词</string>
     <string name="settings_appearance_section">外观设置</string>
     
-    <!-- 关于屏幕 -->
+    <!-- About screen -->
     <string name="check_for_updates">检查更新</string>
     <string name="checking_updates">检查中...</string>
     <string name="new_version_found">发现新版本</string>
@@ -1872,7 +1872,7 @@
     <string name="permission_guide_intro_3_desc">无论是设计网页、处理媒体文件，还是通过悬浮窗随时唤醒AI，Briareus都为您提供强大、灵活且安全的创作与辅助环境。您的数据，由您掌控。</string>
     <string name="permission_guide_intro_page_indicator">功能介绍 %1$d/%2$d</string>
 
-    <!-- 调试模式 -->
+    <!-- Debug mode -->
     <string name="debugger_accessibility_fallback_title">无障碍加速方案 (高风险)</string>
     <string name="debugger_accessibility_fallback_description">调试模式默认通过Shell执行UI操作。启用无障碍服务可大幅加速UI自动化，但会显著增加被部分应用检测并导致封号的风险。除非您追求极致的操作速度，否则不建议开启。</string>
 
@@ -2452,14 +2452,14 @@
     <string name="description">描述</string>
     <string name="author">作者</string>
     
-    <!-- 缺失的字符串 -->
+    <!-- Missing strings -->
     <string name="configure_speech_services">配置语音服务</string>
     <string name="microphone_permission_required_title">需要麦克风权限</string>
     <string name="speech_services_settings">语音服务设置</string>
     <string name="speech_services_settings_desc">配置文本转语音和语音识别设置</string>
     <string name="wifi">WiFi</string>
     
-    <!-- Toast 消息 -->
+    <!-- Toast messages -->
     <string name="confirmation_code_copied">返回码已复制！</string>
     <string name="message_copied">消息已复制到剪贴板</string>
 
@@ -2482,7 +2482,7 @@
     <string name="root_tutorial_failed">无法打开Root教程链接</string>
     <string name="file_open_failed">无法打开文件: %1$s</string>
     
-    <!-- Snackbar 消息 -->
+    <!-- Snackbar messages -->
     <string name="automation_config_imported">自动化配置导入成功</string>
     <string name="tab_import_not_supported">当前标签页不支持导入</string>
     <string name="automation_config_deleted">自动化配置删除成功</string>
@@ -2491,7 +2491,7 @@
     <string name="plugin_deployed_success">插件 %1$s 已成功部署</string>
     <string name="remote_service_updated">远程服务 %1$s 已更新</string>
     
-    <!-- UI 文本 -->
+    <!-- UI text -->
     <string name="plugin_zip_file">插件压缩包</string>
     <string name="mcp_plugin">MCP 插件</string>
     
@@ -3289,7 +3289,7 @@
     <string name="ffmpeg_video_output_placeholder">输出文件路径(可选)</string>
     <string name="ffmpeg_video_transcode">视频转码</string>
     
-    <!-- ShizukuDemoScreen 字符串 -->
+    <!-- ShizukuDemoScreen strings -->
     <string name="loading_app_state">正在加载应用状态...</string>
     <string name="setup_wizard">设置向导</string>
     <string name="setup_wizard_icon_desc">设置向导图标</string>
@@ -3400,7 +3400,7 @@
     <string name="chat_speak_message_failed">朗读消息失败: %1$s</string>
     <string name="chat_prefill_check_file">帮我看看这个文件</string>
 
-    <!-- Workspace Attachment Processor (AI工具响应) -->
+    <!-- Workspace Attachment Processor (AI tool responses) -->
     <string name="workspace_unknown_error">未知错误</string>
     <string name="workspace_suggestion_search_first">对于用户意图，建议先使用 grep_context（基于意图搜索相关文件）和 grep_code（搜索特定代码模式）工具去了解项目当前情况，再进行修改。</string>
     <string name="workspace_suggestion_separate_files">请将HTML, CSS, 和 JavaScript 代码分别存放到独立的文件中。</string>
@@ -3440,7 +3440,7 @@
     <string name="workspace_error_fetch_changes">无法获取改动: %1$s</string>
     <string name="workspace_error_fetch_suggestions">系统错误，请检查工作区配置</string>
 
-    <!-- Workspace Project Types (项目模板) -->
+    <!-- Workspace Project Types (project templates) -->
     <string name="workspace_project_blank_title">空白工作区</string>
     <string name="workspace_project_blank_description">这是一个空白工作区，只包含基础目录结构。你可以编辑 .operit/config.json 来配置项目类型、服务器和命令，例如：server.enabled、preview.type、commands 等。</string>
     <string name="workspace_project_web_title">Web 项目</string>
@@ -3485,7 +3485,7 @@
     <string name="workspace_rename_success">工作区已重命名为 %1$s</string>
     <string name="workspace_rename_save_first">请先保存当前已修改的文件，再重命名工作区</string>
 
-    <!-- Workspace Commands (命令标签) -->
+    <!-- Workspace Commands (command tags) -->
     <string name="workspace_preview_button_label_browser">浏览器预览</string>
     <string name="workspace_cmd_python_venv_create">创建虚拟环境</string>
     <string name="workspace_cmd_python_venv_activate">激活虚拟环境</string>
@@ -3675,14 +3675,14 @@
     <string name="settings_summary_threshold">上下文使用比例阈值</string>
     <string name="settings_summary_threshold_subtitle">当上下文使用超过此比例时触发总结(0.1-0.95)</string>
     
-    <!-- 截断设置 -->
+    <!-- Truncation settings -->
     <string name="settings_history_retention_title">历史媒体保留设置</string>
     <string name="settings_max_image_history_user_turns">历史图片保留回合数</string>
     <string name="settings_max_image_history_user_turns_subtitle">仅保留最近 N 次用户对话中的图片，避免历史图片重复发送</string>
     <string name="settings_max_media_history_user_turns">历史音视频保留回合数</string>
     <string name="settings_max_media_history_user_turns_subtitle">仅保留最近 N 次用户对话中的音频/视频，避免历史音视频重复发送</string>
     
-    <!-- 布局调整设置 -->
+    <!-- Layout adjustment settings -->
     <string name="layout_adjustment_settings_title">布局调整设置</string>
     <string name="layout_adjustment_description">在这里可以调整界面元素的位置和边距，自定义您的使用体验</string>
     <string name="chat_settings_bar_section">聊天设置栏</string>
@@ -4304,7 +4304,7 @@
     <string name="overseas_provider_warning">检测到您在中国大陆，但选择了海外服务商。请确认是否已开启代理工具</string>
     <string name="international_proxy_provider_warning">该服务通过国际第三方代理中转。在中国大陆访问需要代理工具；请求数据将经第三方转发，请留意网络环境、服务条款与数据合规政策。</string>
     
-    <!-- 自定义参数对话框 -->
+    <!-- Custom parameter dialog -->
     <string name="custom_parameter_added">自定义参数已新增</string>
     <string name="parameter_name">参数名称</string>
     <string name="parameter_name_placeholder">例如: 我的参数</string>
@@ -4315,7 +4315,7 @@
     <string name="parameter_name_required">参数名称不能为空</string>
     <string name="api_name_required">API名称不能为空</string>
     
-    <!-- 模型參數設置新增字符串 -->
+    <!-- New strings for model parameter settings -->
     <string name="model_parameters_title">模型参数设置</string>
     <string name="repetition_parameters">重复控制参数</string>
     <string name="api_name_label">API名称: %1$s</string>
@@ -4344,13 +4344,13 @@
     <string name="settings_title">设置</string>
     <string name="api_settings_title">API 设置</string>
 
-    <!-- 人设卡生成和Waifu模式设置 -->
+    <!-- Persona card generation and Waifu mode settings -->
     <string name="persona_card_generation">人设卡生成</string>
     <string name="persona_card_generation_desc">进入与AI对话生成个性人设卡</string>
     <string name="waifu_mode_settings">Waifu模式设置</string>
     <string name="waifu_mode_settings_desc">配置AI回复分句发送模式</string>
     
-    <!-- 酒馆角色卡导入 -->
+    <!-- Tavern character card import -->
     <string name="import_tavern_card">导入酒馆角色卡</string>
     <string name="import_tavern_card_desc">从JSON或PNG文件导入酒馆格式的角色卡</string>
     <string name="select_tavern_card_file">选择酒馆角色卡文件</string>
@@ -4511,7 +4511,7 @@
     <string name="github_account_info_not_available">登录后可查看账号信息</string>
     <string name="github_account_not_logged_in_desc">请先登录 GitHub 账号</string>
     
-    <!-- 角色卡对话框 -->
+    <!-- Character card dialog -->
     <string name="character_card_description">描述</string>
     <string name="character_card_character_setting">角色设定</string>
     <string name="character_card_character_setting_placeholder">描��角色的性格特点...</string>
@@ -4605,7 +4605,7 @@
     <string name="color_qr_not_recognized">无法识别彩色多维码</string>
     <string name="file_read_error_message">无法读取文件</string>
 
-    <!-- 权限请求 -->
+    <!-- Permission requests -->
     <string name="delete_character_card_confirm">确定要删除角色卡「%1$s」吗？此操作不可撤销。</string>
     <string name="delete_tag">删除标签</string>
     <string name="delete_tag_confirm">确定要删除标签「%1$s」吗？此操作不可撤销。</string>
@@ -4631,7 +4631,7 @@
     <string name="nodejs_pip_environment_configured">NodeJS和pip环境已经配置完成，可以正常使用MCP插件功能。</string>
     <string name="open_terminal">打开终端</string>
 
-    <!-- MCP市场界面 -->
+    <!-- MCP marketplace screen -->
     <string name="login_github_to_manage_mcp_plugins">登录 GitHub 以发布和管理您的 MCP 插件</string>
     <string name="login_github_for_skill_market">登录 GitHub 以获得更好的 Skill 市场体验</string>
     <string name="login_github_to_manage_scripts">登录 GitHub 以发布和管理您的脚本</string>
@@ -4780,7 +4780,7 @@
     <string name="manage_published_plugins">• 管理您已发布的插件</string>
     <string name="better_installation_experience">• 获得更好的安装体验</string>
 
-    <!-- MCP发布界面 -->
+    <!-- MCP publishing screen -->
     <string name="edit_description">编辑说明</string>
     <string name="publish_description">发布说明</string>
     <string name="only_alphanumeric_underscore_plugin_id">只允许英文字母、数字和下划线，此名称将作为插件ID使用</string>
@@ -4797,7 +4797,7 @@
     <string name="update_success">更新成功</string>
     <string name="publish_success">发布���功</string>
 
-    <!-- MCP配置界面 -->
+    <!-- MCP configuration screen -->
     <string name="mcp_community_resources">MCP 社区资源</string>
     <string name="mcp_official_repo">MCP 官方仓库</string>
     <string name="anthropic_official_mcp_servers">Anthropic官方维护的MCP服务器集合</string>
@@ -4813,7 +4813,7 @@
     <string name="more">更多</string>
     <string name="copy_link">复制链接</string>
 
-    <!-- MCP管理界面 -->
+    <!-- MCP management screen -->
     <string name="need_login_github_manage_plugins">需要登录 GitHub 才能管理您发布的插件</string>
     <string name="need_login_github_manage_skills">需要登录 GitHub 才能管理您发布的 Skill</string>
     <string name="need_login_github_manage_scripts">需要登录 GitHub 才能管理您发布的脚本</string>
@@ -4851,7 +4851,7 @@
     <string name="remove">移除</string>
     <string name="republish">重新发布</string>
 
-    <!-- 附加字符串 -->
+    <!-- Additional strings -->
     <string name="author_colon">作者:</string>
     <string name="share_colon">分享:</string>
     <string name="downloading_progress">下载中 %1$s</string>
@@ -5107,7 +5107,7 @@
     <string name="confirm_remove_script_from_market">确定要从市场移除脚本「%1$s」吗？此操作会关闭对应的 Issue，但不会删除您的发布仓库。</string>
     <string name="confirm_remove_package_from_market">确定要从市场移除工具包「%1$s」吗？此操作会关闭对应的 Issue，但不会删除您的发布仓库。</string>
 
-    <!-- MCPPublishScreen 额外字符串 -->
+    <!-- MCPPublishScreen extra strings -->
     <string name="edit_plugin_info_description">您正在编辑已发布的插件信息。修改后的信息将更新到市场仓库的对应 Issue 中。</string>
     <string name="publish_plugin_info_description">您的插件信息将作为 GitHub Issue 发布到市场仓库。请确保提供的信息准确完整。表单内容会自动保存为草稿，直到成功发布后才会清空。</string>
     <string name="plugin_name_required">插件名称 *</string>
@@ -5304,7 +5304,7 @@
     <string name="api_key_pool_clear_marks">清除标记</string>
     <string name="api_key_pool_test_failed">测试失败: %1$s</string>
 
-    <!-- 手动更新记忆 -->
+    <!-- Manual memory update -->
     <string name="manual_memory_update">手动触发记忆保存</string>
     <string name="manual_memory_update_desc">需要立即补存本次对话的有价值内容时，可手动触发记忆保存，直接写入长期记忆库。</string>
     <string name="manual_conversation_summary">手动总结对话</string>
@@ -5475,14 +5475,14 @@
     <string name="message_limit_reached_message">当前对话数量已达 %1$d 条上限。\n为了保持对话质量和性能，请清空历史记录后继续。</string>
     <string name="go_clear">去清空</string>
     
-    <!-- MNN 本地推理 -->
+    <!-- MNN local inference -->
     <string name="mnn_local_model_tip">本地运行模型理解能力较差，建议关闭记忆链接、开启禁用工具进行对话</string>
     <string name="mnn_model_path">模型文件路径</string>
     <string name="mnn_model_path_placeholder">输入MNN模型文件的完整路径</string>
     <string name="mnn_forward_type">计算类型</string>
     <string name="mnn_thread_count">线程数</string>
 
-    <!-- llama.cpp 本地推理 -->
+    <!-- llama.cpp local inference -->
     <string name="llama_local_model_tip">本地运行模型理解能力较差，建议关闭记忆链接、开启禁用工具进行对话</string>
     <string name="llama_local_model_download_tip">llama.cpp 模型需要自行下载（.gguf）。请将模型文件放入以下文件夹，然后在“模型名称”中填写文件名：</string>
     <string name="llama_local_model_dir">默认模型目录：%1$s</string>
@@ -5506,7 +5506,7 @@
     <string name="llama_offload_kqv">卸载 KQV 到 GPU</string>
     <string name="llama_offload_kqv_subtitle">仅在 GPU 层数大于 0 时有意义，没有 GPU backend 时会自动忽略</string>
     
-    <!-- 工作流执行状态 -->
+    <!-- Workflow execution status -->
     <string name="workflow_execution_running">执行中…</string>
     <string name="workflow_execution_success">执行成功</string>
     <string name="workflow_execution_failed">执行失败</string>
@@ -5546,13 +5546,13 @@
     <string name="time_hours_ago">%1$d 小时前</string>
     <string name="time_days_ago">%1$d 天前</string>
 
-    <!-- 默认助手设置引导 -->
+    <!-- Default assistant setup guide -->
     <string name="default_assistant_guide_title">设置默认语音助手</string>
     <string name="default_assistant_guide_subtitle">让Briareus成为您的智能助手</string>
     <string name="default_assistant_guide_intro">将Briareus设置为系统默认助手后，您可以通过长按Home键或使用语音唤醒快速启动Briareus语音助手，获得更便捷的AI交互体验。</string>
     <string name="default_assistant_guide_steps_title">设置步骤</string>
     
-    <!-- 步骤1: 设置为默认助理 -->
+    <!-- Step 1: set as default assistant -->
     <string name="default_assistant_guide_step1_title">设置为默认助理</string>
     <string name="default_assistant_guide_step1_desc">将 Operit 设置为系统的默认数字助理应用</string>
     <string name="default_assistant_guide_step1_detail1">• 打开系统设置 → 应用 → 默认应用 → 数字助理应用</string>
@@ -5560,7 +5560,7 @@
     <string name="default_assistant_guide_step1_detail_android12">Android 12+: 设置 → 应用 → 默认应用 → 数字助理应用 → 默认数字助理应用</string>
     <string name="default_assistant_guide_open_settings">打开助理设置</string>
     
-    <!-- 步骤2: 配置启动手势 -->
+    <!-- Step 2: configure launch gesture -->
     <string name="default_assistant_guide_open_gesture_settings">打开手势设置</string>
     <string name="default_assistant_guide_step2_title">配置启动手势</string>
     <string name="default_assistant_guide_step2_desc">设置如何快速唤起 Operit 助手</string>
@@ -5570,20 +5570,20 @@
     <string name="default_assistant_guide_step2_detail3">• 语音唤醒："Hey Google"或设备指定的唤醒词（需设备支持）</string>
     <string name="default_assistant_guide_step2_note">注意：不同品牌手机的手势设置可能有所不同，请在系统设置中查看可用选项</string>
     
-    <!-- 步骤4: 测试语音助手 -->
+    <!-- Step 4: test the voice assistant -->
     <string name="default_assistant_guide_step4_title">测试语音助手</string>
     <string name="default_assistant_guide_step4_desc">设置完成后，测试是否能正常启动</string>
     <string name="default_assistant_guide_step4_detail1">• 长按Home键（主屏幕按钮）应该会调起 Briareus 语音助手</string>
     <string name="default_assistant_guide_step4_detail2">• 如果设备支持语音唤醒，说"Hey Google"或设备指定的唤醒词也可能触发 Briareus</string>
     
-    <!-- 步骤3: 测试助手功能 -->
+    <!-- Step 3: test assistant features -->
     <string name="default_assistant_guide_step3_title">测试助手功能</string>
     <string name="default_assistant_guide_step3_desc">完成设置后，测试 Briareus 是否能正常唤起</string>
     <string name="default_assistant_guide_step3_detail1">• 使用您设置的手势（如长按Home键）唤起助手</string>
     <string name="default_assistant_guide_step3_detail2">• 如果成功，应该会看到 Briareus 的语音助手界面</string>
     <string name="default_assistant_guide_step3_detail3">• 可以尝试说话或输入文字与助手交互</string>
     
-    <!-- 疑难解答 -->
+    <!-- Troubleshooting -->
     <string name="default_assistant_guide_troubleshooting_title">遇到问题？</string>
     <string name="default_assistant_guide_troubleshooting_content">如果在列表中找不到Briareus，请确保：\n\n• 应用已正确安装且未被禁用\n• 已授予必要的权限（麦克风、悬浮窗等）\n• 尝试重启设备后再次设置\n\n部分定制系统可能限制第三方应用作为默认助手，如遇此情况，您仍可通过应用内的悬浮窗功能使用Briareus。</string>
     
@@ -5610,7 +5610,7 @@
     <string name="done">完成</string>
     <string name="forbid">禁止</string>
 
-    <!-- 屏幕方向改变对话框 -->
+    <!-- Screen orientation change dialog -->
     <string name="dialog_title_orientation_change">屏幕方向变化</string>
     <string name="dialog_message_orientation_change">检测到屏幕方向发生变化，是否重新加载页面？</string>
     <string name="dialog_button_confirm">重新加载</string>
@@ -5619,7 +5619,7 @@
     <string name="settings_context_card_title">设置说明:</string>
     <string name="settings_context_card_content">· 上下文长度: 建议设为您日常使用的最大值。\n· 最大上下文长度: 建议设为模型API支持的最大值。\n软件会在上下文达到阈值时自动压缩，以防超限。请注意，上下文并非越大越好，需用户与软件协同配合。</string>
 
-    <!-- 聊天组件硬编码字符串 -->
+    <!-- Chat component hardcoded strings -->
     <string name="reply">回复</string>
     <string name="image">图片</string>
     <string name="image_expired">图片 (已过期)</string>
@@ -5939,7 +5939,7 @@
     <string name="delete_workspaces_confirmation">确定要删除选中的 %1$d 个工作区吗？\n\n删除后将无法恢复所有文件和数据。</string>
     <string name="not_used_by_any_chat">未被任何对话使用</string>
     
-    <!-- 无障碍朗读 - Markdown 块类型 -->
+    <!-- Accessibility reading - Markdown block types -->
     <string name="code_block">代码块</string>
     <string name="table_block">表格</string>
     <string name="plan_execution_graph">计划执行图</string>
@@ -5964,7 +5964,7 @@
     <string name="thinking_search_group_title">思考并搜索</string>
     <string name="thinking_search_tools_group_title_with_count">思考、搜索并调用工具（%1$d）</string>
     
-    <!-- 备份设置界面 -->
+    <!-- Backup settings screen -->
     <string name="backup_data_overview">数据概览</string>
     <string name="backup_current_profile">当前配置：%1$s</string>
     <string name="backup_chat_count">聊天记录</string>
@@ -6070,7 +6070,7 @@
     <string name="backup_faq_duplicate">导入后会出现重复的数据吗？</string>
     <string name="backup_faq_duplicate_answer">系统会根据记录ID判断，相同ID的记录会被更新而不是重复导入。不同ID的记录会作为新记录添加。</string>
     
-    <!-- 导出格式选择 -->
+    <!-- Export format selection -->
     <string name="backup_select_export_format">选择导出格式</string>
     <string name="backup_select_format_hint">请选择要导出的聊天记录格式：</string>
     <string name="backup_format_json">JSON（推荐）</string>
@@ -6084,7 +6084,7 @@
     <string name="backup_format_csv">CSV</string>
     <string name="backup_format_csv_desc">表格格式，适合数据清洗和迁移</string>
     
-    <!-- 导入格式选择 -->
+    <!-- Import format selection -->
     <string name="backup_select_import_format">选择导入格式</string>
     <string name="backup_import_format_hint">请选择要导入的聊天记录格式：</string>
     <string name="backup_format_operit">Operit JSON（推荐）</string>
@@ -6231,11 +6231,11 @@
     <string name="backup_format_unknown">未知格式</string>
     <string name="backup_format_claude">Claude</string>
 
-    <!-- 删除确认对话框 -->
+    <!-- Delete confirmation dialog -->
     <string name="backup_delete_confirm_title">确认删除</string>
     <string name="backup_delete_confirm_message">删除所有聊天记录将无法恢复。建议在执行此操作前先导出备份。\n\n确定要删除吗？</string>
     <string name="backup_delete_result_success">成功清除 %1$d 条聊天记录</string>
-    <!-- 模型配置导出安全警告 -->
+    <!-- Model config export security warning -->
     <string name="backup_model_config_warning_title">安全提示</string>
     <string name="backup_model_config_warning_contains">该配置文件包含以下敏感信息：</string>
     <string name="backup_model_config_warning_api_key">API 密钥</string>
@@ -6247,7 +6247,7 @@
     <string name="backup_model_config_warning_export_path">导出位置：</string>
     <string name="backup_model_config_warning_confirm">我知道了</string>
     
-    <!-- 记忆库导入策略 -->
+    <!-- Memory library import strategy -->
     <string name="backup_memory_import_strategy_title">选择导入策略</string>
     <string name="backup_memory_import_profile_title">选择配置</string>
     <string name="backup_memory_import_strategy_question">遇到重复的记忆（UUID相同）时如何处理？</string>
@@ -7712,10 +7712,10 @@
     <string name="update_version_title">版本 %1$s</string>
     <string name="avatar_reset">重置</string>
 
-    <!-- WorkflowExecutor (新增) -->
+    <!-- WorkflowExecutor (added) -->
     <string name="workflow_node_execution_exception">节点执行异常: %1$s</string>
 
-    <!-- MessageCoordinationDelegate (新增) -->
+    <!-- MessageCoordinationDelegate (added) -->
     <string name="chat_cannot_create_new">无法创建新对话，请重试</string>
     <string name="chat_ai_service_unavailable_memory">AI服务不可用，无法更新记忆</string>
     <string name="chat_history_empty_no_update">聊天历史为空，无需更新记忆</string>
@@ -7732,7 +7732,7 @@
     <string name="chat_summarize_failed_no_valid_summary">总结失败: 未能生成有效总结</string>
     <string name="chat_summarize_generation_failed">总结生成失败: %1$s</string>
 
-    <!-- AIForegroundService (新增) -->
+    <!-- AIForegroundService (added) -->
     <string name="service_operit_running">Briareus 正在运行</string>
     <string name="service_chat_complete_reminder">对话完成提醒</string>
     <string name="service_chat_complete_reminder_sound">对话完成提醒（提示音）</string>
@@ -7751,7 +7751,7 @@
     <string name="service_exit">退出</string>
     <string name="service_stop">停止</string>
 
-    <!-- TextExporter (新增) -->
+    <!-- TextExporter (added) -->
     <string name="export_created_time">创建时间: %1$s</string>
     <string name="export_updated_time">更新时间: %1$s</string>
     <string name="export_group">分组: %1$s</string>
@@ -7763,7 +7763,7 @@
     <string name="export_assistant">助手</string>
     <string name="export_model">（模型: %1$s）</string>
 
-    <!-- ChatBoxConverter (新增) -->
+    <!-- ChatBoxConverter (added) -->
     <string name="chatbox_unsupported_format">不支持的 ChatBox 格式</string>
     <string name="chatbox_unsupported_format_detail">请导入 ChatBox 导出的 JSON（设置 > 常规设置 > 数据备份 > 导出勾选数��）</string>
     <string name="chatbox_parse_error">解析 ChatBox 格式失败: %1$s</string>
@@ -7779,7 +7779,7 @@
     <string name="role_system">系统</string>
     <string name="role_model">模型</string>
 
-    <!-- HtmlExporter (新增) -->
+    <!-- HtmlExporter (added) -->
     <string name="html_export_title">聊天记录导出</string>
     <string name="html_export_time">导出时间</string>
     <string name="html_export_conversation_count">对话数量</string>
@@ -7790,7 +7790,7 @@
     <string name="html_export_message_count">消息数</string>
     <string name="html_export_footer">导出自 Operit AI Assistant</string>
 
-    <!-- MnnModelDownloadManager (新增) -->
+    <!-- MnnModelDownloadManager (added) -->
     <string name="mnn_no_cache_data">无缓存数据</string>
     <string name="mnn_response_empty">响应体为空</string>
     <string name="mnn_fetch_repo_files_failed">获取仓库文件列表失败: %1$s</string>
@@ -7800,7 +7800,7 @@
     <string name="mnn_download_file_failed">下载文件失败: %1$s (HTTP %2$d)</string>
     <string name="mnn_download_paused">下载已暂停</string>
 
-    <!-- MCPBridge (新增) -->
+    <!-- MCPBridge (added) -->
     <string name="mcp_send_command">发送桥接器命令</string>
     <string name="mcp_service_label">服务</string>
     <string name="mcp_other_params">其他参数</string>
@@ -7813,7 +7813,7 @@
     <string name="mcp_result">结果</string>
     <string name="mcp_error">错误</string>
 
-    <!-- EnhancedAIService (新增) -->
+    <!-- EnhancedAIService (added) -->
     <string name="enhanced_processing_input">正在处理输入...</string>
     <string name="enhanced_processing_message">正在处理消息...</string>
     <string name="enhanced_connecting_service">正在连接AI服务...</string>
@@ -7827,7 +7827,7 @@
     <string name="enhanced_process_tool_result_failed">处理工具执行结果失败: %1$s</string>
     <string name="enhanced_memory_tools_category">记忆与记忆库工具</string>
 
-    <!-- OpenAIProvider (新增) -->
+    <!-- OpenAIProvider (added) -->
     <string name="openai_retry_with_count">%1$s，正在进行第 %2$d 次重试...</string>
     <string name="openai_error_timeout">连接超时</string>
     <string name="openai_error_cannot_resolve_host">无法解析主机</string>
@@ -7836,7 +7836,7 @@
     <string name="openai_image_omitted">图片内容已省略，当前模型不支持图片处理</string>
     <string name="openai_file_omitted">文件内容已省略，当前模型不支持文件处理</string>
 
-    <!-- WorkflowExecutor (新增) -->
+    <!-- WorkflowExecutor (added) -->
     <string name="workflow_non_execute_node">非执行节点</string>
     <string name="workflow_node_no_action">节点没有配置 actionType</string>
 

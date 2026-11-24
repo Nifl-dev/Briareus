@@ -12,7 +12,7 @@ class SourceManager(context: Context) {
     private val prefs: SharedPreferences = context.getSharedPreferences("source_settings", Context.MODE_PRIVATE)
     private val json = Json { ignoreUnknownKeys = true }
 
-    // 定义所有内置的源
+    // All built-in sources
     private val builtInAptSources = listOf(
         MirrorSource("tuna_apt", "Tsinghua", "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/", true),
         MirrorSource("bfsu_apt", "BFSU", "https://mirrors.bfsu.edu.cn/ubuntu-ports/", true),
@@ -44,7 +44,7 @@ class SourceManager(context: Context) {
         MirrorSource("official_rust", "Official", "https://static.rust-lang.org", true)
     )
 
-    // 获取自定义源
+    // Load custom sources
     private fun getCustomSources(pm: PackageManagerType): List<MirrorSource> {
         val key = when (pm) {
             PackageManagerType.APT -> "custom_apt_sources"
@@ -60,7 +60,7 @@ class SourceManager(context: Context) {
         }
     }
     
-    // 保存自定义源
+    // Save a custom source
     fun saveCustomSource(pm: PackageManagerType, source: MirrorSource) {
         val customSources = getCustomSources(pm).toMutableList()
         // 如果已存在相同ID的源，替换它；否则添加
@@ -107,17 +107,17 @@ class SourceManager(context: Context) {
     val rustSources: List<MirrorSource>
         get() = builtInRustSources + getCustomSources(PackageManagerType.RUST)
 
-    // 获取当前为特定包管理器选择的源ID
+    // Currently selected source id for a package manager
     fun getSelectedSourceId(pm: PackageManagerType): String {
         return when (pm) {
-            PackageManagerType.APT -> prefs.getString("selected_apt_source", "tuna_apt") ?: "tuna_apt"
-            PackageManagerType.PIP -> prefs.getString("selected_pip_source", "tuna_pip") ?: "tuna_pip"
-            PackageManagerType.NPM -> prefs.getString("selected_npm_source", "taobao_npm") ?: "taobao_npm"
-            PackageManagerType.RUST -> prefs.getString("selected_rust_source", "ustc_rust") ?: "ustc_rust"
+            PackageManagerType.APT -> prefs.getString("selected_apt_source", "official_apt") ?: "official_apt"
+            PackageManagerType.PIP -> prefs.getString("selected_pip_source", "official_pip") ?: "official_pip"
+            PackageManagerType.NPM -> prefs.getString("selected_npm_source", "official_npm") ?: "official_npm"
+            PackageManagerType.RUST -> prefs.getString("selected_rust_source", "official_rust") ?: "official_rust"
         }
     }
     
-    // 获取当前源
+    // Currently selected source
     fun getSelectedSource(pm: PackageManagerType): MirrorSource {
         val id = getSelectedSourceId(pm)
         return when (pm) {

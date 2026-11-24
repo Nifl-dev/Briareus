@@ -209,13 +209,13 @@ class SettingsViewModel(
     
     fun deleteCustomSource(pm: PackageManagerType, sourceId: String) {
         sourceManager.deleteCustomSource(pm, sourceId)
-        // 如果删除的是当前选中的源，切换到第一个内置源
+        // If the deleted source was selected, fall back to the official upstream
         if (sourceManager.getSelectedSourceId(pm) == sourceId) {
             val firstBuiltInSource = when (pm) {
-                PackageManagerType.APT -> "tuna_apt"
-                PackageManagerType.PIP -> "tuna_pip"
-                PackageManagerType.NPM -> "taobao_npm"
-                PackageManagerType.RUST -> "ustc_rust"
+                PackageManagerType.APT -> "official_apt"
+                PackageManagerType.PIP -> "official_pip"
+                PackageManagerType.NPM -> "official_npm"
+                PackageManagerType.RUST -> "official_rust"
             }
             updateSource(pm, firstBuiltInSource)
         }
