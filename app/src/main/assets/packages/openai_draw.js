@@ -7,8 +7,8 @@
       "en": "OpenAI Draw"
   },
   "description": {
-    "zh": "使用 OpenAI 格式图像接口生成或编辑图片，支持 GPT Image 2.6 GIF 动图。支持公网 URL 和本地参考图，保存原始图片或动图到 /sdcard/Download/Operit/plugins/draw/openai_draw/draws/，并返回 Markdown 图片提示。",
-    "en": "Generate or edit images with an OpenAI-compatible API, including animated GIFs with GPT Image 2.6. Accepts public URLs and local reference images. Saves original image or animation bytes to /sdcard/Download/Operit/plugins/draw/openai_draw/draws/ and returns a Markdown image reference."
+    "zh": "使用 OpenAI 格式图像接口生成或编辑图片，支持 GPT Image 2.6 GIF 动图。支持公网 URL 和本地参考图，保存原始图片或动图到 /sdcard/Download/Briareus/plugins/draw/openai_draw/draws/，并返回 Markdown 图片提示。",
+    "en": "Generate or edit images with an OpenAI-compatible API, including animated GIFs with GPT Image 2.6. Accepts public URLs and local reference images. Saves original image or animation bytes to /sdcard/Download/Briareus/plugins/draw/openai_draw/draws/ and returns a Markdown image reference."
   },
   "category": "Draw",
   "env": [

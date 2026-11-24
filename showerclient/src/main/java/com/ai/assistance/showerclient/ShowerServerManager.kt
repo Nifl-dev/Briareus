@@ -134,7 +134,7 @@ object ShowerServerManager {
      */
     private suspend fun copyJarToExternalDir(context: Context): File = withContext(Dispatchers.IO) {
         // Reuse the same base directory as screenshots: /sdcard/Download/Operit
-        val baseDir = File("/sdcard/Download/Operit")
+        val baseDir = File("/sdcard/Download/Briareus")
         if (!baseDir.exists()) {
             baseDir.mkdirs()
         }

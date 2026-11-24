@@ -4271,9 +4271,9 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="import_color_qr">Importarea codurilor multidimensionale</string>
     <string name="scan_color_qr">Scanează codul multidimensional</string>
     <string name="tavern_json">Taverna JSON</string>
-    <string name="export_tavern_json_desc">Exportă ca .json și salvați în Download/Operit/exports</string>
+    <string name="export_tavern_json_desc">Exportă ca .json și salvați în Download/Briareus/exports</string>
     <string name="tavern_png">Taverna PNG</string>
-    <string name="export_tavern_png_desc">Exportă imaginea într-un format compatibil cu Taverna și salveaz-o în Download/Operit/exports</string>
+    <string name="export_tavern_png_desc">Exportă imaginea într-un format compatibil cu Taverna și salveaz-o în Download/Briareus/exports</string>
     <string name="image_read_error">Nu se poate citi imaginea</string>
     <string name="image_parse_error">Nu se poate interpreta imaginea</string>
     <string name="color_qr_not_recognized">Codul multidimensional color nu poate fi recunoscut</string>
@@ -5664,7 +5664,7 @@ Acum poate fi utilizat în interfața de dialog AutoGLM A devenit un model.</str
     <string name="backup_room_db_restart_later">Mai târziu</string>
     <string name="backup_room_db_last_success">Ultima copiere de rezervă reușită:%1$s</string>
     <string name="backup_room_db_last_error">Eroarea anterioară:%1$s</string>
-    <string name="backup_files_location_hint">Notă: Fișierul de rezervă este salvat în Download/Operit Dosar</string>
+    <string name="backup_files_location_hint">Notă: Fișierul de rezervă este salvat în Download/Briareus Dosar</string>
 
     <string name="backup_raw_snapshot_title">Copie de rezervă a instantaneelor de fișiere (experimental)</string>
     <string name="backup_raw_snapshot_subtitle">pe baza documentului/Copierea de rezervă și restaurarea integrală, pe unități de index</string>

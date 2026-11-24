@@ -6,7 +6,12 @@ import java.io.File
 
 object OperitPaths {
 
-    private const val OPERIT_DIR_NAME = "Operit"
+    // Briareus fork: own root dir, no longer shared with upstream Operit.
+    // Upstream Operit uses Download/Operit and the two apps are built to coexist
+    // (distinct applicationId), so that directory belongs to the other app.
+    // Deliberately NO one-time migration from the old folder: adopting it would
+    // make Briareus read and write another installed app's data tree.
+    private const val OPERIT_DIR_NAME = "Briareus"
     private const val CLEAN_ON_EXIT_DIR_NAME = "cleanOnExit"
     private const val PLUGINS_DIR_NAME = "plugins"
     private const val MCP_PLUGINS_DIR_NAME = "mcp_plugins"

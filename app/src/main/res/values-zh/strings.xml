@@ -4597,9 +4597,9 @@
     <string name="import_color_qr">导入多维码</string>
     <string name="scan_color_qr">扫描多维码</string>
     <string name="tavern_json">酒馆 JSON</string>
-    <string name="export_tavern_json_desc">导出为 .json 并保存到 Download/Operit/exports</string>
+    <string name="export_tavern_json_desc">导出为 .json 并保存到 Download/Briareus/exports</string>
     <string name="tavern_png">酒馆 PNG</string>
-    <string name="export_tavern_png_desc">导出为可导入酒馆的图片，并保存到 Download/Operit/exports</string>
+    <string name="export_tavern_png_desc">导出为可导入酒馆的图片，并保存到 Download/Briareus/exports</string>
     <string name="image_read_error">无法读取图片</string>
     <string name="image_parse_error">无法解析图片</string>
     <string name="color_qr_not_recognized">无法识别彩色多维码</string>
@@ -6005,7 +6005,7 @@
     <string name="backup_room_db_restart_later">稍后</string>
     <string name="backup_room_db_last_success">上次成功备份：%1$s</string>
     <string name="backup_room_db_last_error">上次错误：%1$s</string>
-    <string name="backup_files_location_hint">提示：备份文件保存在 Download/Operit 文件夹</string>
+    <string name="backup_files_location_hint">提示：备份文件保存在 Download/Briareus 文件夹</string>
 
     <string name="backup_raw_snapshot_title">文件快照备份（实验）</string>
     <string name="backup_raw_snapshot_subtitle">以文件/目录为单位的整体压缩备份与恢复</string>

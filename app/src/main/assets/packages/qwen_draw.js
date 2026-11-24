@@ -7,8 +7,8 @@
       "en": "Qwen Draw"
   },
   "description": {
-    "zh": "使用阿里云百炼/DashScope 画图。无参考图走文生图异步任务；传入 image_urls 或 image_paths 时走图生图（1-3 张参考图，本地图转成 data URI）。结果保存到 /sdcard/Download/Operit/plugins/draw/qwen_draw/draws/，并返回 Markdown 图片提示。",
-    "en": "Generate images via Alibaba Cloud Model Studio (DashScope). Text-to-image uses the async task API; image-to-image accepts 1-3 reference images via image_urls or local image_paths (local files are sent as data URIs). Saves to /sdcard/Download/Operit/plugins/draw/qwen_draw/draws/ and returns a Markdown image reference."
+    "zh": "使用阿里云百炼/DashScope 画图。无参考图走文生图异步任务；传入 image_urls 或 image_paths 时走图生图（1-3 张参考图，本地图转成 data URI）。结果保存到 /sdcard/Download/Briareus/plugins/draw/qwen_draw/draws/，并返回 Markdown 图片提示。",
+    "en": "Generate images via Alibaba Cloud Model Studio (DashScope). Text-to-image uses the async task API; image-to-image accepts 1-3 reference images via image_urls or local image_paths (local files are sent as data URIs). Saves to /sdcard/Download/Briareus/plugins/draw/qwen_draw/draws/ and returns a Markdown image reference."
   },
   "env": [
     {

@@ -567,7 +567,7 @@
     <string name="danger_zone">Zona Berbahaya</string>
     <string name="chat_statistics">Statistik Riwayat Obrolan</string>
     <string name="current_chats">Saat ini ada %1$d riwayat obrolan</string>
-    <string name="backup_location">File cadangan disimpan di folder "Download/Operit/backup"</string>
+    <string name="backup_location">File cadangan disimpan di folder "Download/Briareus/backup"</string>
     <string name="faq_backup">Pertanyaan Umum</string>
     <string name="history_filter_role_card">Kategorikan Berdasarkan Kartu Karakter</string>
     <string name="history_filter_role_card_desc">Klasifikasi tiga tingkat: Kartu Karakter - Folder - Percakapan</string>
@@ -3673,9 +3673,9 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="import_color_qr">Impor kode multi-dimensi</string>
     <string name="scan_color_qr">Pindai kode multi-dimensi</string>
     <string name="tavern_json">JSON Tavern</string>
-    <string name="export_tavern_json_desc">Ekspor sebagai .json dan simpan ke Download/Operit/exports</string>
+    <string name="export_tavern_json_desc">Ekspor sebagai .json dan simpan ke Download/Briareus/exports</string>
     <string name="tavern_png">PNG Tavern</string>
-    <string name="export_tavern_png_desc">Ekspor sebagai gambar yang dapat diimpor ke Tavern, dan simpan ke Download/Operit/exports</string>
+    <string name="export_tavern_png_desc">Ekspor sebagai gambar yang dapat diimpor ke Tavern, dan simpan ke Download/Briareus/exports</string>
     <string name="image_read_error">Tidak dapat membaca gambar</string>
     <string name="image_parse_error">Tidak dapat mengurai gambar</string>
     <string name="color_qr_not_recognized">Tidak dapat mengenali kode multi-dimensi berwarna</string>
@@ -4988,7 +4988,7 @@ Sekarang Anda dapat menggunakan mode AutoGLM di antarmuka percakapan.</string>
     <string name="backup_room_db_restart_later">Nanti</string>
     <string name="backup_room_db_last_success">Cadangan berhasil terakhir: %1$s</string>
     <string name="backup_room_db_last_error">Kesalahan terakhir: %1$s</string>
-    <string name="backup_files_location_hint">Petunjuk: File cadangan disimpan di folder Download/Operit</string>
+    <string name="backup_files_location_hint">Petunjuk: File cadangan disimpan di folder Download/Briareus</string>
     <string name="backup_raw_snapshot_title">Cadangan Snapshot File (Eksperimental)</string>
     <string name="backup_raw_snapshot_subtitle">Cadangan dan pemulihan kompresi keseluruhan berbasis file/direktori</string>
     <string name="backup_raw_snapshot_desc">Akan mengemas direktori data internal aplikasi seperti files/shared_prefs/datastore/databases (lingkungan terminal Linux volumenya sangat besar, tidak dicadangkan secara default). Pemulihan akan menimpa data saat ini dan memerlukan restart aplikasi untuk berlaku. Beberapa data terenkripsi mungkin tidak dapat digunakan setelah pindah perangkat/instal ulang.</string>

@@ -3754,9 +3754,9 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="import_color_qr">Import Kod QR Berwarna</string>
     <string name="scan_color_qr">Imbas Kod QR Berwarna</string>
     <string name="tavern_json">JSON Tavern</string>
-    <string name="export_tavern_json_desc">Eksport sebagai .json dan simpan ke Download/Operit/exports</string>
+    <string name="export_tavern_json_desc">Eksport sebagai .json dan simpan ke Download/Briareus/exports</string>
     <string name="tavern_png">PNG Tavern</string>
-    <string name="export_tavern_png_desc">Eksport sebagai imej yang boleh diimport ke Tavern, dan simpan ke Download/Operit/exports</string>
+    <string name="export_tavern_png_desc">Eksport sebagai imej yang boleh diimport ke Tavern, dan simpan ke Download/Briareus/exports</string>
     <string name="image_read_error">Tidak dapat membaca imej</string>
     <string name="image_parse_error">Tidak dapat menghuraikan imej</string>
     <string name="color_qr_not_recognized">Tidak dapat mengenal pasti kod QR berwarna</string>
@@ -4946,7 +4946,7 @@ Kini anda boleh menggunakan mod AutoGLM di antara muka perbualan.</string>
     <string name="backup_room_db_restart_later">Nanti</string>
     <string name="backup_room_db_last_success">Sandaran berjaya terakhir: %1$s</string>
     <string name="backup_room_db_last_error">Ralat terakhir: %1$s</string>
-    <string name="backup_files_location_hint">Petunjuk: Fail sandaran disimpan dalam folder Download/Operit</string>
+    <string name="backup_files_location_hint">Petunjuk: Fail sandaran disimpan dalam folder Download/Briareus</string>
 
     <string name="backup_raw_snapshot_title">Sandaran Snapshot Fail (Eksperimen)</string>
     <string name="backup_raw_snapshot_subtitle">Sandaran dan pemulihan mampatan keseluruhan berdasarkan unit fail/direktori</string>

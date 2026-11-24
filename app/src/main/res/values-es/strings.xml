@@ -3985,9 +3985,9 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="import_color_qr">Importar código QR de color</string>
     <string name="scan_color_qr">Escanear código QR de color</string>
     <string name="tavern_json">JSON de Tavern</string>
-    <string name="export_tavern_json_desc">Exportar como .json y guardar en Download/Operit/exports</string>
+    <string name="export_tavern_json_desc">Exportar como .json y guardar en Download/Briareus/exports</string>
     <string name="tavern_png">PNG de Tavern</string>
-    <string name="export_tavern_png_desc">Exportar como imagen importable a Tavern y guardar en Download/Operit/exports</string>
+    <string name="export_tavern_png_desc">Exportar como imagen importable a Tavern y guardar en Download/Briareus/exports</string>
     <string name="image_read_error">No se puede leer la imagen</string>
     <string name="image_parse_error">No se puede analizar la imagen</string>
     <string name="color_qr_not_recognized">No se puede reconocer el código QR de color</string>
@@ -4983,7 +4983,7 @@ Ahora puede usar el modo AutoGLM en la interfaz de conversación.</string>
     <string name="backup_room_db_restart_later">Más tarde</string>
     <string name="backup_room_db_last_success">Último respaldo exitoso: %1$s</string>
     <string name="backup_room_db_last_error">Último error: %1$s</string>
-    <string name="backup_files_location_hint">Sugerencia: los archivos de respaldo se guardan en la carpeta Download/Operit</string>
+    <string name="backup_files_location_hint">Sugerencia: los archivos de respaldo se guardan en la carpeta Download/Briareus</string>
     <string name="backup_raw_snapshot_title">Respaldo de instantánea de archivos (experimental)</string>
     <string name="backup_raw_snapshot_subtitle">Respaldo y restauración comprimidos completos por archivo/directorio</string>
     <string name="backup_raw_snapshot_desc">Empaqueta los directorios files/shared_prefs/datastore/databases del directorio de datos internos de la aplicación (el entorno Linux de terminal es grande, no se respalda por defecto). La restauración sobrescribirá los datos actuales y requerirá reiniciar la aplicación para que surta efecto. Algunos datos cifrados pueden no funcionar después de cambiar de dispositivo o reinstalar.</string>
