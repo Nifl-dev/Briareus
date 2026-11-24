@@ -507,14 +507,7 @@ object AIServiceFactory {
                 )
 
             // 其他中文服务商，当前使用OpenAI Provider (大多数兼容OpenAI格式)
-            ApiProviderType.BAIDU,
-            ApiProviderType.XUNFEI,
             ApiProviderType.ZHIPU,
-            ApiProviderType.BAICHUAN,
-            ApiProviderType.IFLOW,
-            ApiProviderType.INFINIAI,
-            ApiProviderType.ALIPAY_BAILING,
-            ApiProviderType.PPINFRA,
             ApiProviderType.NOVITA,
             ApiProviderType.MINIMAX,
             ApiProviderType.OTHER ->

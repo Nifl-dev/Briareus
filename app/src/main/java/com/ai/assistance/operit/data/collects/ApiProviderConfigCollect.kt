@@ -85,11 +85,6 @@ object ApiProviderConfigs {
             )
         ),
         ProviderApiConfig(
-            providerType = ApiProviderType.BAIDU,
-            defaultModelName = "ernie-bot-4",
-            defaultApiEndpoint = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions"
-        ),
-        ProviderApiConfig(
             providerType = ApiProviderType.ALIYUN,
             defaultModelName = "qwen-max",
             // Decoupling: the international DashScope host previously had no option at all, so
@@ -105,11 +100,6 @@ object ApiProviderConfigs {
                     label = "China (dashscope)"
                 )
             )
-        ),
-        ProviderApiConfig(
-            providerType = ApiProviderType.XUNFEI,
-            defaultModelName = "spark3.5",
-            defaultApiEndpoint = "https://spark-api-open.xf-yun.com/v2/chat/completions"
         ),
         ProviderApiConfig(
             providerType = ApiProviderType.ZHIPU,
@@ -134,11 +124,6 @@ object ApiProviderConfigs {
                     label = "International coding"
                 )
             )
-        ),
-        ProviderApiConfig(
-            providerType = ApiProviderType.BAICHUAN,
-            defaultModelName = "baichuan4",
-            defaultApiEndpoint = "https://api.baichuan-ai.com/v1/chat/completions"
         ),
         ProviderApiConfig(
             providerType = ApiProviderType.MOONSHOT,
@@ -189,11 +174,6 @@ object ApiProviderConfigs {
             )
         ),
         ProviderApiConfig(
-            providerType = ApiProviderType.IFLOW,
-            defaultModelName = "TBStars2-200B-A13B",
-            defaultApiEndpoint = "https://apis.iflow.cn/v1/chat/completions"
-        ),
-        ProviderApiConfig(
             providerType = ApiProviderType.OPENROUTER,
             defaultModelName = "google/gemini-pro",
             defaultApiEndpoint = "https://openrouter.ai/api/v1/chat/completions"
@@ -224,27 +204,27 @@ object ApiProviderConfigs {
             defaultApiEndpoint = "https://inference-api.nousresearch.com/v1/chat/completions"
         ),
         ProviderApiConfig(
-            providerType = ApiProviderType.INFINIAI,
-            defaultModelName = "infini-mini",
-            defaultApiEndpoint = "https://cloud.infini-ai.com/maas/v1/chat/completions"
-        ),
-        ProviderApiConfig(
-            providerType = ApiProviderType.ALIPAY_BAILING,
-            defaultModelName = "Ling-1T",
-            defaultApiEndpoint = "https://api.tbox.cn/api/llm/v1/chat/completions"
-        ),
-        ProviderApiConfig(
             providerType = ApiProviderType.DOUBAO,
             defaultModelName = "Doubao-pro-4k",
-            defaultApiEndpoint = "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+            // Decoupling: [redacted] International lives on a different host entirely
+            // (ark.ap-southeast.[redacted].com, verified reachable — 401 without a key).
+            defaultApiEndpoint = "https://ark.ap-southeast.[redacted].com/api/v3/chat/completions",
             endpointOptions = listOf(
                 ProviderEndpointOption(
-                    endpoint = "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
-                    label = "CN standard"
+                    endpoint = "https://ark.ap-southeast.[redacted].com/api/v3/chat/completions",
+                    label = "International (ap-southeast)"
                 ),
                 ProviderEndpointOption(
-                    endpoint = "https://ark.cn-beijing.volces.com/api/coding/v3/chat/completions",
-                    label = "CN coding"
+                    endpoint = "https://ark.ap-southeast.[redacted].com/api/coding/v3/chat/completions",
+                    label = "International coding"
+                ),
+                ProviderEndpointOption(
+                    endpoint = "https://ark.cn-beijing.[redacted].com/api/v3/chat/completions",
+                    label = "China standard"
+                ),
+                ProviderEndpointOption(
+                    endpoint = "https://ark.cn-beijing.[redacted].com/api/coding/v3/chat/completions",
+                    label = "China coding"
                 )
             )
         ),
@@ -282,11 +262,6 @@ object ApiProviderConfigs {
             defaultModelName = "",
             defaultApiEndpoint = "",
             requiresApiKey = false
-        ),
-        ProviderApiConfig(
-            providerType = ApiProviderType.PPINFRA,
-            defaultModelName = "gpt-4o-mini",
-            defaultApiEndpoint = "https://api.ppinfra.com/openai/v1/chat/completions"
         ),
         ProviderApiConfig(
             providerType = ApiProviderType.NOVITA,

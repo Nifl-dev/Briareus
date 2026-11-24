@@ -15,23 +15,17 @@ enum class ApiProviderType {
         ANTHROPIC_GENERIC, // Anthropic通用（自定义端点）
         GOOGLE, // Google (Gemini系列)
         GEMINI_GENERIC, // Gemini通用（自定义端点）
-        BAIDU, // 百度 (文心一言系列)
-        ALIYUN, // 阿里云 (通义千问系列)
-        XUNFEI, // 讯飞 (星火认知系列)
+        ALIYUN, // Alibaba Cloud (Qwen)
         ZHIPU, // 智谱AI (ChatGLM系列)
-        BAICHUAN, // 百川大模型
         MOONSHOT, // 月之暗面大模型
         MIMO, // Xiaomi MiMo
         DEEPSEEK, // Deepseek大模型
         MISTRAL, // Mistral AI (Codestral等)
         SILICONFLOW, // 硅基流动
-        IFLOW, // iFlow
         OPENROUTER, // OpenRouter (多模型聚合)
         OPENCODE, // OpenCode Zen/Go (按基础路径选择服务，按模型ID选择协议)
         FOUR_ROUTER, // 4Router
         NOUS_PORTAL, // Nous Portal / Inference API
-        INFINIAI, // 无问芯穹
-        ALIPAY_BAILING, // 支付宝百灵大模型
         DOUBAO, // 豆包（火山模型）
         NVIDIA, // NVIDIA API Catalog / NIM
         LMSTUDIO, // LM Studio本地模型服务
@@ -39,7 +33,6 @@ enum class ApiProviderType {
         OPENAI_LOCAL, // OpenAI兼容本地模型服务
         MNN, // MNN本地推理引擎
         LLAMA_CPP, // llama.cpp 本地推理引擎
-        PPINFRA, // 派欧云
         NOVITA, // Novita AI
         MINIMAX, // MiniMax
         OTHER; // 其他提供商（自定义端点）
