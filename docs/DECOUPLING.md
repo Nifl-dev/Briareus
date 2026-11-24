@@ -239,80 +239,116 @@ Defer until 1a–1c land; it is a genuine translation task and the only one.
 
 ---
 
-## 8. Verification: the OVH box can build (this host cannot)
+## 8. Verification: two build hosts, and which one to use
 
-Corrected 2026-11-24: an earlier assumption in this document said no build host was available. That
-was wrong — **the OVH box is reachable and fully equipped.** Measured over SSH (`buildbox`, `10.8.0.1`):
+**Correction (2026-11-25):** earlier revisions of this document called the build host "the OVH box"
+while measuring `10.8.0.1` / `vmi3766175`. That machine is the **Contabo** instance. The real OVH box
+is a different, larger machine. Both were verified live:
 
-| | OVH box | This Android host |
+| | OVH box (`ovh`) | Contabo box (`buildbox`) | Phone |
+|---|---|---|---|
+| Address | `debian@158.69.240.108` (LAN `10.8.0.3`) | `root@156.67.100.202` (LAN `10.8.0.1`) | — |
+| Hostname | `ovh` | `vmi3766175` | — |
+| CPU / RAM | 8 vCPU / **31 GB** (26 free) | 6 vCPU / 11 GB (10 free) | 7 GB (0 free) |
+| Disk | ample | 193 GB (183 free) | 110 GB (28 free) |
+| Java | 21 | 21 | 17 |
+| Android SDK | **`/opt/android-sdk`** — android-34/35/**36** | `/root/android-sdk` — android-35 only | **none** |
+| Gradle cache | warm | 1.2 GB | — |
+| `tmux` | **absent** — use `setsid` | present | — |
+| ffmpeg AAR + ripgrep .so | **present** (Nov 23) | **absent** | — |
+| Repo | `/home/debian/briareus`, remotes `gh`/`origin`/`up` | synced by `tar` (no `.git`) | `/root/Briareus` |
+
+**Use the OVH box.** It has both binary prerequisites already, `compileSdk = 36` is satisfied, and
+31 GB hosts `-Xmx8192m` comfortably. The Contabo box cannot compile until those two binaries are
+provisioned, and its SDK tops out at android-35.
+
+**Verified result on OVH, 2026-11-25:** `:app:compileDebugKotlin` → **BUILD SUCCESSFUL**, 0 errors,
+twice (45 s warm after the endpoint change; 6 m 13 s after the provider removal).
+
+Operational notes for the phone → OVH path:
+
+1. The terminal proxy signals the whole **process group** on timeout, so a bare `&` dies. Detached
+   `setsid` survives (no tmux on this box), but the *dispatch* call must not do anything after the
+   `&` — in-band `sleep`/`pgrep` gets killed with exit 143. Dispatch, then poll separately.
+2. Partial file sync invalidates incremental kapt state. Syncing a handful of `.kt` files produced
+   21 transient `MyObjectBox` / `Memory_` unresolved-reference errors; re-running the same command
+   cleared them with no code change. Those errors never referenced the edited files, which is how
+   to tell a stale-codegen failure from a real one.
+3. The Contabo box has **no GitHub credentials** (only `id_ed25519_phone`, no `gh`), so it cannot
+   clone; it was populated by `tar` and therefore has no `.git`.
+
+---
+
+## 8b. Why the OVH box "syncs with Operit upstream" — it does not, automatically
+
+Measured 2026-11-25 on `ovh` (`/home/debian/briareus`). Three remotes exist:
+
+| Remote | URL | Role |
 |---|---|---|
-| Hostname | `vmi3766175` | — |
-| CPU | 6 vCPU | — |
-| RAM | 11 GB (10 available) | 7 GB, 0 available |
-| Disk | 193 GB, 183 GB free | 110 GB, 28 GB free |
-| Java | OpenJDK 21.0.13 | OpenJDK 17 |
-| Android SDK | **`/root/android-sdk`** (android-35, build-tools 34.0.0 + 35.0.0) | **none** |
-| Gradle cache | 1.2 GB warm | — |
-| `ANDROID_HOME` | unset — must be exported per invocation | unset |
+| `gh` | `git@github-briareus:Nifl-dev/Briareus.git` | the fork — what actually gets built |
+| `origin` | `/home/debian/operit-upstream` | a **local bare repo** of upstream Operit |
+| `up` | `https://github.com/AAswordman/Operit.git` | upstream Operit, over HTTPS |
 
-This clears both blockers: the SDK exists, and 11 GB comfortably hosts `-Xmx8192m`.
+Facts that answer the question:
 
-**Two operational gotchas discovered:**
+1. **`origin` is a local mirror, not the fork.** This is a trap, not a sync: on the OVH box a plain
+   `git pull` reports "Already up to date" while the checkout is behind `gh/main`, because `origin`
+   points at a local snapshot. Always fetch `gh` explicitly.
+2. **Nothing on the box updates that mirror.** `systemctl list-timers` shows only stock system units
+   (`dpkg-db-backup`, `apt-daily`, `mdadm`, `man-db`, `systemd-tmpfiles-clean`); `crontab -l` is empty.
+   `/home/debian/operit-upstream` is a git clone whose own origin is
+   `https://github.com/AAswordman/Operit.git` — so it only moves when someone runs a fetch there by hand.
+3. **The fork's own repo has no upstream remote at all.** On the phone, `git remote -v` is `origin`
+   (`git@github.com:Nifl-dev/Briareus.git`) only. The stale mirror is a property of that one box, not
+   of Briareus.
+4. **It is genuinely stale.** The mirror's tip was `2c175d8`, two fork commits behind at measurement
+   time.
 
-1. **`local.properties` is required.** `sdk.dir=/root/android-sdk` must exist in the repo root on the
-   box, or Gradle refuses to resolve the SDK.
-2. **The buildbox has no GitHub credentials.** Its `~/.ssh` holds only `id_ed25519_phone` and no
-   `gh` install, so `git clone` from GitHub fails. The working pattern is one-way sync from this host
-   (`tar` over SSH — the box has no `rsync`), then build on the box.
-3. Long builds must run inside **tmux** (`tmux new-session -d -s build`). Detaching with `nohup`/
-   `setsid` alone was unreliable here; the terminal proxy also signals a whole process group on
-   timeout, so in-band `sleep`/`pgrep` after a `&` gets killed.
-
-**Status of the verification attempt (2026-11-24/25):** a cold `:app:compileDebugKotlin` on the box
-compiled **every** module successfully (`quickjs`, `mnn`, `llama`, `fbx`, `mmd`, `dragonbones`,
-`showerclient`) then failed — not on Kotlin, but on two **pre-existing, gitignored binary inputs**:
-
-| Missing input | Produced by | Why it blocked |
-|---|---|---|
-| `app/libs/ffmpeg-kit-local.aar` | `tools/ffmpeg/build_ffmpeg_kit_wsl.sh`, then imported (`.ps1`) | `ExtractAarTransform` hard-fails; `app/libs/*` is gitignored except `.keep` |
-| `app/src/main/jniLibs/arm64-v8a/liboperit_ripgrep.so` | `tools/native_ripgrep/build_native_ripgrep.ps1` (Rust, `aarch64-linux-android`) | `:app:verifyExternallyBuiltNativeLibraries` hard-fails |
-
-**These are not defects introduced by the decoupling changes** — a clean clone cannot build on any
-machine without them. `scripts/bootstrap-operit.sh` exists to supply both: it downloads the Drive
-"payload" via `gdown` + `ci/script/download_android_dependencies.sh`, and cross-compiles ripgrep with
-the NDK/Rust toolchain.
-
-Consequences for verification of the current edits:
-
-1. `-x verifyExternallyBuiltNativeLibraries` clears the ripgrep check, but the ffmpeg AAR is still an
-   `ExtractAarTransform` input, so **Kotlin typechecking cannot complete without the payload**.
-2. Therefore the current changes were verified with **static structural checks** (balanced delimiters,
-   every `ProviderApiConfig` has a `providerType`, every option has a `label`, all five new defaults
-   present and none of the three flipped providers still defaulting to a CN host). All checks pass.
-3. This is weaker than a compile. To get a real typecheck, run `scripts/bootstrap-operit.sh` on the
-   box (needs `gdown` + network to Drive, `rustup`, and the NDK) or push to CI (`android-build.yml`),
-   which already provisions them.
-
-**Recommended next step:** run the bootstrap on the box once, so every subsequent decoupling commit
-can be compiled rather than merely linted. That is a one-time cost with recurring value.
+**Consequence, and why it matters for the decoupling policy:** a local upstream mirror invites exactly
+the merge that the standing decision forbids ("Briareus is a separate app; it will never rebase, merge
+or backport from upstream"). It also contains the Chinese tree that this work is deleting. If the box
+is ever rebuilt, do not recreate `origin` as the upstream mirror — point `origin` at the fork and keep
+upstream (if needed for reference) as a read-only `up`, with no merge path and no automation.
 
 ---
 
 ## 9. Open questions (need user decision)
 
-1. **Qwen / Doubao / MiMo / SiliconFlow** have no non-CN host in code. Keep with CN host, gate, or drop?
-2. **GitHub mirror list** — prune to official-only, or keep a small non-CN subset? Supply-chain call.
+Status as of 2026-11-25 — items 1–2 are **resolved and executed**, kept here with their outcome so the
+reasoning is not lost.
+
+1. ~~Qwen / [redacted] / MiMo / SiliconFlow have no non-CN host in code~~ — **RESOLVED.** All four had
+   one; the hosts existed and were simply unwired. `dashscope-intl`, `ark.ap-southeast`,
+   `api.siliconflow.com` are now selectable defaults. MiMo needed no change: `api.xiaomimimo.com`
+   resolves to an Azure address, so it was never CN-hosted in the first place. Providers that
+   genuinely had no international host (BAIDU, XUNFEI, BAICHUAN, IFLOW, ALIPAY_BAILING, INFINIAI,
+   PPINFRA) have been removed.
+2. ~~GitHub mirror list — prune to official-only, or keep a small non-CN subset?~~ — **RESOLVED.**
+   Operator chose official-only. All 35 accelerators removed.
 3. **Marketplace removal** — delete screens outright, or hide behind the existing install-state
-   machinery first?
-4. **ModelScope** — add a Hugging Face fallback, or accept CN-only for MNN models?
-5. Once §7 lands: should `LocaleUtils.usesChineseContent` be removed entirely, or retained for
-   *runtime output* language (model reply language) even when prompts are English-only? These are
-   currently the same switch and almost certainly should become two.
+   machinery first? *(Open)*
+4. **ModelScope** — add a Hugging Face backend, or accept CN-only for MNN models? Note the catalogue
+   itself is Alibaba-hosted, so "HF only" also requires re-sourcing the catalogue. *(Open — see §4)*
+5. **`LocaleUtils.usesChineseContent`** — once the prompt work lands, remove it entirely, or retain it
+   for *runtime output* language while prompts become English-only? It is currently one switch serving
+   two purposes and almost certainly should be split. *(Open)*
+6. **Upstream mirror on the OVH box** — `origin` there points at a stale local upstream clone rather
+   than the fork. Leave it (read-only reference) or repoint `origin` at the fork and stop any upstream
+   path entirely? *(Open — see §8b)*
 
 ---
 
 ## 10. Change log
 
+- **2026-11-25** — Dropped every provider with no reachable international host, per operator policy:
+  `BAIDU`, `XUNFEI`, `BAICHUAN`, `IFLOW`, `ALIPAY_BAILING`, `INFINIAI`, `PPINFRA` removed entirely
+  (enum, config block, factory arm, model-list arm, UI label + colour, string resource). Wired
+  `DOUBAO` to its existing-but-unwired international host (`ark.ap-southeast.[redacted].com`) and
+  made it the default; CN options kept as labelled alternatives. **Compile-verified on OVH:**
+  `BUILD SUCCESSFUL in 6m13s`, 0 errors.
+- **2026-11-25** — §8 rewritten: the host used earlier and called "OVH" is the **Contabo** box
+  (`vmi3766175` / `10.8.0.1`); the real OVH box (`ovh`, 31 GB, SDK 36, both binaries present) is the
+  one that compiles. Verification result recorded there.
 - **2026-11-24 (later)** — Applied the low-risk decoupling set:
   - `util/GithubReleaseUtil.kt`: removed all 35 `GITHUB_MIRRORS`; `getMirroredUrls()` now returns
     `emptyMap()`, so `getDownloadSources()` yields the official GitHub URL only. Function kept
