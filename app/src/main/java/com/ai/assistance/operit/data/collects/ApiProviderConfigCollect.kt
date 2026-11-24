@@ -92,7 +92,19 @@ object ApiProviderConfigs {
         ProviderApiConfig(
             providerType = ApiProviderType.ALIYUN,
             defaultModelName = "qwen-max",
-            defaultApiEndpoint = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+            // Decoupling: the international DashScope host previously had no option at all, so
+            // non-CN users were stuck on the CN host. Verified reachable (401 without a key).
+            defaultApiEndpoint = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions",
+            endpointOptions = listOf(
+                ProviderEndpointOption(
+                    endpoint = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions",
+                    label = "International (dashscope-intl)"
+                ),
+                ProviderEndpointOption(
+                    endpoint = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+                    label = "China (dashscope)"
+                )
+            )
         ),
         ProviderApiConfig(
             providerType = ApiProviderType.XUNFEI,
@@ -102,7 +114,8 @@ object ApiProviderConfigs {
         ProviderApiConfig(
             providerType = ApiProviderType.ZHIPU,
             defaultModelName = "glm-4.5",
-            defaultApiEndpoint = "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+            // Decoupling: default to the international host (International option already exists).
+            defaultApiEndpoint = "https://api.z.ai/api/paas/v4/chat/completions",
             endpointOptions = listOf(
                 ProviderEndpointOption(
                     endpoint = "https://open.bigmodel.cn/api/paas/v4/chat/completions",
@@ -130,7 +143,9 @@ object ApiProviderConfigs {
         ProviderApiConfig(
             providerType = ApiProviderType.MOONSHOT,
             defaultModelName = "moonshot-v1-128k",
-            defaultApiEndpoint = "https://api.moonshot.cn/v1/chat/completions",
+            // Decoupling: default to the international host. The CN host stays available as
+            // an explicit option, but must not be the silent default for non-CN users.
+            defaultApiEndpoint = "https://api.moonshot.ai/v1/chat/completions",
             endpointOptions = listOf(
                 ProviderEndpointOption(
                     endpoint = "https://api.moonshot.cn/v1/chat/completions",
@@ -159,7 +174,19 @@ object ApiProviderConfigs {
         ProviderApiConfig(
             providerType = ApiProviderType.SILICONFLOW,
             defaultModelName = "yi-1.5-34b",
-            defaultApiEndpoint = "https://api.siliconflow.cn/v1/chat/completions"
+            // Decoupling: add the .com (international) host; .cn alone was the only route.
+            // Verified reachable (401 without a key).
+            defaultApiEndpoint = "https://api.siliconflow.com/v1/chat/completions",
+            endpointOptions = listOf(
+                ProviderEndpointOption(
+                    endpoint = "https://api.siliconflow.com/v1/chat/completions",
+                    label = "International (siliconflow.com)"
+                ),
+                ProviderEndpointOption(
+                    endpoint = "https://api.siliconflow.cn/v1/chat/completions",
+                    label = "China (siliconflow.cn)"
+                )
+            )
         ),
         ProviderApiConfig(
             providerType = ApiProviderType.IFLOW,
@@ -279,7 +306,8 @@ object ApiProviderConfigs {
         ProviderApiConfig(
             providerType = ApiProviderType.MINIMAX,
             defaultModelName = "MiniMax-M2.7",
-            defaultApiEndpoint = "https://api.minimaxi.com/v1/chat/completions",
+            // Decoupling: default to the international host (International option already exists).
+            defaultApiEndpoint = "https://api.minimax.io/v1/chat/completions",
             endpointOptions = listOf(
                 ProviderEndpointOption(
                     endpoint = "https://api.minimaxi.com/v1/chat/completions",

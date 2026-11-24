@@ -87,14 +87,44 @@ with text translation.
 
 ---
 
-## 4. Finding: MNN model downloads use ModelScope (`modelscope.cn`)
+## 4. MNN model downloads: ModelScope, and why "just use Hugging Face" is not a redirect
 
-`data/mnn/MnnModelDownloadManager.kt` builds `https://modelscope.cn/api/v1/models/…` (lines ~296,
-~704). No Hugging Face equivalent is wired in this file. On-device MNN model download therefore
-depends on a CN host.
+This section answers a specific question: *can the model download be redirected to Hugging Face?*
+**Not by redirect — it needs a second backend.** Measured details:
 
-**Recommendation:** out of scope for Step 1, but must be tracked — local-model download will fail or
-be slow for non-CN users.
+| Component | Current value |
+|---|---|
+| Model **catalog** (`MODEL_MARKET_URL`) | `https://meta.alicdn.com/data/mnn/apis/model_market.json` — **Alibaba CDN** |
+| Repo **file list** | `https://modelscope.cn/api/v1/models/{owner}/{repo}/repo/files?Recursive=1` |
+| File **download** | `https://modelscope.cn/api/v1/models/{owner}/{repo}/repo?FilePath={file}` |
+| Repo identifier | ModelScope-style `owner/repo` string (`modelScopeId`) |
+
+Why a URL swap alone does not work:
+
+1. **The catalog is not on Hugging Face.** The model list comes from an Alibaba CDN JSON whose entries
+   carry ModelScope `owner/repo` ids. HF repos are the same repos under the same `owner/name`, but
+   the *catalogue metadata* (which MNN models are offered, and their file lists) lives only there.
+   Pointing the catalogue URL at HF returns nothing usable.
+2. **Download URL shape differs.** ModelScope exposes a single-file endpoint
+   (`?FilePath=`) on a repo route. Hugging Face uses `https://huggingface.co/{repo}/resolve/main/{path}`
+   and offers the full tree via `https://huggingface.co/api/models/{repo}/tree/main`. So the file-list
+   parser (`MsResponseData`/`MsFileInfo`) and the downloader both need an HF-shaped path.
+3. **`MsFileInfo` is ModelScope-shaped** (`Name`/`Path`/`Size`/`Type`). HF's tree API returns
+   `path`/`size`/`type` with a different envelope, so the `@Serializable` models need a second variant
+   or a mapping layer.
+
+**Verdict: implementable, but it is a feature, not a redirect.** Scope: a small interface
+(`fetchRepoFiles` + `buildDownloadUrl` already exist as the two seams), an HF implementation, and a
+source selector. Roughly 100–150 lines plus a decision on whether HF becomes the default or a fallback.
+
+**Open question for the user:** should HF be (a) the new default with ModelScope as fallback,
+(b) a fallback tried after ModelScope, or (c) the only source (removes CN entirely, but the bundled
+catalogue still points at Alibaba)? Option (c) requires re-sourcing the catalogue too.
+
+**Not done in this pass.** The two network seams are identified and ready, but nothing was changed:
+this alters download behaviour for a feature with no test coverage here, and guessing the HF tree
+response shape without a real key would be untested code. Recommended next step is a probe against
+`huggingface.co/api/models/{repo}/tree/main` for one real MNN repo before writing the mapper.
 
 ---
 
@@ -209,26 +239,62 @@ Defer until 1a–1c land; it is a genuine translation task and the only one.
 
 ---
 
-## 8. Verification constraint (important)
+## 8. Verification: the OVH box can build (this host cannot)
 
-**This machine cannot build the project.** Measured 2026-11-24:
+Corrected 2026-11-24: an earlier assumption in this document said no build host was available. That
+was wrong — **the OVH box is reachable and fully equipped.** Measured over SSH (`buildbox`, `10.8.0.1`):
 
-- No Android SDK installed; `ANDROID_HOME` unset; no `local.properties`.
-- RAM: 7 GB total, 0 available. `gradle.properties` sets `org.gradle.jvmargs=-Xmx8192m` — **larger
-  than physical RAM**. A build would OOM or swap-thrash.
-- Disk: 28 GB free (sufficient, but RAM is the binding constraint).
+| | OVH box | This Android host |
+|---|---|---|
+| Hostname | `vmi3766175` | — |
+| CPU | 6 vCPU | — |
+| RAM | 11 GB (10 available) | 7 GB, 0 available |
+| Disk | 193 GB, 183 GB free | 110 GB, 28 GB free |
+| Java | OpenJDK 21.0.13 | OpenJDK 17 |
+| Android SDK | **`/root/android-sdk`** (android-35, build-tools 34.0.0 + 35.0.0) | **none** |
+| Gradle cache | 1.2 GB warm | — |
+| `ANDROID_HOME` | unset — must be exported per invocation | unset |
 
-Consequences:
+This clears both blockers: the SDK exists, and 11 GB comfortably hosts `-Xmx8192m`.
 
-1. Every change in §7 must be verified by **static reasoning + reference counting**, not compilation,
-   unless performed elsewhere.
-2. `.github/workflows/android-build.yml` exists — CI is the practical verification vehicle.
-3. Better still: the planned Contabo box (6 vCPU / 12 GB) exceeds the local RAM limit and is the
-   intended build escape hatch.
+**Two operational gotchas discovered:**
 
-**Because of this, code edits in §7 were deliberately not committed in this session.** Writing
-uncompilable Kotlin into a repo on a machine that cannot typecheck it trades a real risk for an
-apparent speed-up.
+1. **`local.properties` is required.** `sdk.dir=/root/android-sdk` must exist in the repo root on the
+   box, or Gradle refuses to resolve the SDK.
+2. **The buildbox has no GitHub credentials.** Its `~/.ssh` holds only `id_ed25519_phone` and no
+   `gh` install, so `git clone` from GitHub fails. The working pattern is one-way sync from this host
+   (`tar` over SSH — the box has no `rsync`), then build on the box.
+3. Long builds must run inside **tmux** (`tmux new-session -d -s build`). Detaching with `nohup`/
+   `setsid` alone was unreliable here; the terminal proxy also signals a whole process group on
+   timeout, so in-band `sleep`/`pgrep` after a `&` gets killed.
+
+**Status of the verification attempt (2026-11-24/25):** a cold `:app:compileDebugKotlin` on the box
+compiled **every** module successfully (`quickjs`, `mnn`, `llama`, `fbx`, `mmd`, `dragonbones`,
+`showerclient`) then failed — not on Kotlin, but on two **pre-existing, gitignored binary inputs**:
+
+| Missing input | Produced by | Why it blocked |
+|---|---|---|
+| `app/libs/ffmpeg-kit-local.aar` | `tools/ffmpeg/build_ffmpeg_kit_wsl.sh`, then imported (`.ps1`) | `ExtractAarTransform` hard-fails; `app/libs/*` is gitignored except `.keep` |
+| `app/src/main/jniLibs/arm64-v8a/liboperit_ripgrep.so` | `tools/native_ripgrep/build_native_ripgrep.ps1` (Rust, `aarch64-linux-android`) | `:app:verifyExternallyBuiltNativeLibraries` hard-fails |
+
+**These are not defects introduced by the decoupling changes** — a clean clone cannot build on any
+machine without them. `scripts/bootstrap-operit.sh` exists to supply both: it downloads the Drive
+"payload" via `gdown` + `ci/script/download_android_dependencies.sh`, and cross-compiles ripgrep with
+the NDK/Rust toolchain.
+
+Consequences for verification of the current edits:
+
+1. `-x verifyExternallyBuiltNativeLibraries` clears the ripgrep check, but the ffmpeg AAR is still an
+   `ExtractAarTransform` input, so **Kotlin typechecking cannot complete without the payload**.
+2. Therefore the current changes were verified with **static structural checks** (balanced delimiters,
+   every `ProviderApiConfig` has a `providerType`, every option has a `label`, all five new defaults
+   present and none of the three flipped providers still defaulting to a CN host). All checks pass.
+3. This is weaker than a compile. To get a real typecheck, run `scripts/bootstrap-operit.sh` on the
+   box (needs `gdown` + network to Drive, `rustup`, and the NDK) or push to CI (`android-build.yml`),
+   which already provisions them.
+
+**Recommended next step:** run the bootstrap on the box once, so every subsequent decoupling commit
+can be compiled rather than merely linted. That is a one-time cost with recurring value.
 
 ---
 
@@ -247,5 +313,15 @@ apparent speed-up.
 
 ## 10. Change log
 
+- **2026-11-24 (later)** — Applied the low-risk decoupling set:
+  - `util/GithubReleaseUtil.kt`: removed all 35 `GITHUB_MIRRORS`; `getMirroredUrls()` now returns
+    `emptyMap()`, so `getDownloadSources()` yields the official GitHub URL only. Function kept
+    (not deleted) so the update UI's source-list contract is unchanged.
+  - `data/collects/ApiProviderConfigCollect.kt`: three CN defaults flipped to their existing
+    international options — MOONSHOT (`…ai`), ZHIPU (`api.z.ai`), MINIMAX (`api.minimax.io`).
+  - Same file: wired two previously-missing international hosts as selectable options and defaults —
+    ALIYUN (`dashscope-intl`) and SILICONFLOW (`api.siliconflow.com`). Both verified reachable (401).
+  - `docs/DECOUPLING.md` §4 rewritten to explain why MNN/HF is a second backend, not a redirect;
+    §8 corrected — the OVH box **can** build.
 - **2026-11-24** — Document created. Audit of endpoints, GitHub mirrors, ModelScope, bilingual
   machinery, and build feasibility completed. Step 1 scoped, not applied.

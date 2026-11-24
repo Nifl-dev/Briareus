@@ -66,56 +66,23 @@ class GithubReleaseUtil(private val context: Context) {
             return if (isValidHex) hex.lowercase() else null
         }
 
-        private val GITHUB_MIRRORS = linkedMapOf(
-            "Ghfast" to "https://ghfast.top/",
-            "GhProxy" to "https://ghproxy.com/",
-            "GhProxyNet" to "https://ghproxy.net/",
-            "GhProxyMirror" to "https://mirror.ghproxy.com/",
-            "Gh-Proxy" to "https://gh-proxy.com/",
-            "GitMirror" to "https://hub.gitmirror.com/",
-            "Moeyy" to "https://github.moeyy.xyz/",
-            "Workers" to "https://github.abskoop.workers.dev/",
-            "H233" to "https://gh.h233.eu.org/",
-            "Gh1888866" to "https://ghproxy.1888866.xyz/",
-            "GhProxyCfd" to "https://ghproxy.cfd/",
-            "BokiMoe" to "https://github.boki.moe/",
-            "GhProxyNetHyphen" to "https://gh-proxy.net/",
-            "JasonZeng" to "https://gh.jasonzeng.dev/",
-            "Monlor" to "https://gh.monlor.com/",
-            "FastGitCc" to "https://fastgit.cc/",
-            "Tbedu" to "https://github.tbedu.top/",
-            "FirewallLxstd" to "https://firewall.lxstd.org/",
-            "Ednovas" to "https://github.ednovas.xyz/",
-            "GeekerTao" to "https://ghfile.geekertao.top/",
-            "Chjina" to "https://gh.chjina.com/",
-            "Hwinzniej" to "https://ghpxy.hwinzniej.top/",
-            "CrashMc" to "https://cdn.crashmc.com/",
-            "Yylx" to "https://git.yylx.win/",
-            "Mrhjx" to "https://gitproxy.mrhjx.cn/",
-            "Cxkpro" to "https://ghproxy.cxkpro.top/",
-            "Xxooo" to "https://gh.xxooo.cf/",
-            "Limoruirui" to "https://github.limoruirui.com/",
-            "Llkk" to "https://gh.llkk.cc/",
-            "Npee" to "https://down.npee.cn/?",
-            "Nxnow" to "https://gh.nxnow.top/",
-            "Zwy" to "https://gh.zwy.one/",
-            "Monkeyray" to "https://ghproxy.monkeyray.net/",
-            "Xx9527" to "https://gh.xx9527.cn/"
-        )
-
         /**
-         * 获取镜像加速 URL
-         * 用于加速 GitHub 下载
+         * Mirror accelerators are intentionally NOT used.
+         *
+         * The previous implementation fronted every download with one of 35 third-party
+         * GitHub accelerator proxies. Each of those is an untrusted middleman that can
+         * observe traffic and substitute the bytes it serves — and this code path installs
+         * APK update artifacts. GitHub serves releases directly and globally, so the
+         * official URL is used on its own.
+         *
+         * Kept as a function (rather than deleted) so [getDownloadSources] and the
+         * update UI keep a single, stable source-list contract.
          */
-        fun getMirroredUrls(originalUrl: String): Map<String, String> {
-            if (!originalUrl.contains("github.com") || !originalUrl.contains("/releases/download/")) {
-                return emptyMap()
-            }
-
-            return GITHUB_MIRRORS.mapValues { entry ->
-                "${entry.value}$originalUrl"
-            }
-        }
+        @Deprecated(
+            message = "GitHub accelerator mirrors were removed (untrusted third-party proxies).",
+            level = DeprecationLevel.WARNING
+        )
+        fun getMirroredUrls(originalUrl: String): Map<String, String> = emptyMap()
 
         /**
          * Every source an artifact can be fetched from, keyed by source name: the
